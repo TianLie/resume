@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微博</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		input,textarea{
+			-webkit-appearance:none;
+			outline: none;
+			resize: none;
+		}
+		i{
+			font-style: normal;
+		}
+		li{list-style-type:none;}
+		body{
+			background-color: #3383aa;
+		}
+		#wrap{
+			background-color: #fefefe;
+			width: 680px;
+			border-radius: 4px;
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+		#form{
+			width: 600px;
+			margin: 0 auto;
+		}
+		#userName{
+			width: 150px;
+			height: 25px;
+			line-height: 25px;
+		}
+		#userName,#msg{
+			box-sizing: border-box;
+			border: 1px solid #999;
+			box-shadow: inset 0 0 5px 0 #ccc;
+		}
+		#userName:focus,#msg:focus{
+			border: 1px solid #f7671d;
+			box-shadow:none;
+		}
+		#msg{
+			width: 100%;
+			height: 100px;
+			margin-top: 20px;
+		}
+		.btnList{
+			margin-top: 10px;
+			width: 100%;
+			overflow: hidden;
+			zoom: 1;
+		}
+		.btnList span{
+			float: left;
+		}
+		#submitBtn{
+			border: none;
+			background-color: #f96f27;
+			color: #fff;
+			width: 60px;
+			height: 25px;
+			border-radius: 3px;
+			float: right;
+			cursor: pointer;
+		}
+		#inner{
+			width: 600px;
+			margin: 10px auto 0;
+			text-align: left;
+		}
+		#ul dd{
+			/*overflow: hidden; */
+			width: 430px;
+			word-wrap: break-word;
+			/* -ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+			-webkit-line-clamp: 2;
+			display: -webkit-box;
+			-webkit-box-orient: vertical; */
+		}
+		#ul li{
+			position: relative;
+			margin-bottom: 10px;
+			overflow: hidden;
+		}
+		#ul li div{
+			display: inline-block;
+			vertical-align: top;
+		}
+		#ul li .div2{
+			margin-left: 25px;
+			margin-bottom: 10px;
+		}
+		#ul dt{
+			display: inline-block;
+			font-weight: bold;
+		}
+		#ul li a{
+			position:absolute;
+			top: 0;
+			right: 5px;
+			font-size: 12px;
+			text-decoration: none;
+			color: #000;
+		}
+		#ul li a:hover{
+			color: #f7671d;
+		} 
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<form id="form">
+			<label>用户名:</label><input type="text" id="userName">
+			<textarea id="msg"></textarea>
+			<p class="btnList"><span>还可以输入<strong id="wordNum">140</strong>个字</span><input type="button" value="发布" id="submitBtn"></p>
+		</form>
+		<div id="inner">
+			<ul id="ul">
+				<!-- <li>
+					<div><img src="img/1.jpg"></div>
+					<div class="div2"><dl>
+						<dt>我叫小明</dt>
+						<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+					</dl></div>
+					<a href="###" class="delete">删除</a>
+				</li> -->
+			</ul>
+		</div>
+		<img src="img/1.jpg" style="display:none;">
+	</div>
+</body>
+<script src="js/tween.js"></script>
+<script type="text/javascript">
+	//找节点
+	var userName = document.getElementById("userName");
+	var msg = document.getElementById("msg");
+	var submitBtn = document.getElementById("submitBtn");
+	var ul = document.getElementById("ul");
+	//添加点击事件
+	submitBtn.onclick = function (){
+		//判断用户名与评论的内容都存在，都不为空的时候，才执行创建节点的逻辑代码
+		if(userName.value && msg.value){
+			//创建li节点
+			var li = document.createElement("li");
+			//添加节点内容
+			li.innerHTML = '<div><img src="img/1.jpg"></div>'+
+						   '<div class="div2"><dl>' +
+						   '<dt>' + userName.value + '</dt>' +
+						   '<dd>' + msg.value + '</dd>'+
+						   '</dl></div>'+
+						   '<a href="javascript:void(0);" class="delete">删除</a>';
+			//把创建好的节点放进ul元素
+			ul.insertBefore(li,ul.children[0]);
+
+			//添加过渡效果的动画
+			var start = 0;
+			var end = li.offsetHeight;
+			li.style.height = 0;
+			var change = end - start;
+			var t = 0;
+			var maxT = 30;
+			var time = setInterval(function(){
+				t++;
+				if(t >= maxT){
+					clearInterval(time);
+				}
+				li.style.height = Tween.Bounce.easeOut(t,start,change,maxT)+"px";
+				// li.style.height = change*t/maxT + "px";
+				// console.log(li.style.height);
+			},30);
+			//节点插入之后将输入框清空
+			userName.value = "";
+			msg.value = "";
+			//节点插入之后将字数重设成140；
+			wordNum.innerHTML = 140;
+			//添加删除按钮事件
+			var delBtn = li.getElementsByTagName('a')[0];
+			delBtn.onclick = function (){
+				var t = 0;
+				var maxT = 30;
+				var start = li.offsetHeight;
+				var end = 0;
+				var change = end - start;
+				var time1 = setInterval(function(){
+					t++;
+					if(t>=maxT){
+						clearInterval(time1);
+						ul.removeChild(li);
+					}
+					li.style.height = Tween.Bounce.easeOut(t,start,change,maxT) + "px";
+				},30);
+			}
+		}else{
+			if(!userName.value){
+				userName.focus();
+			}else{
+				if (!msg.value){
+					msg.focus();
+				}
+			}
+		}
+	}
+	//检测输入字数
+	var wordNum = document.getElementById("wordNum");
+	msg.oninput = function(){
+		var r = 140 - msg.value.length;
+		if(r <= 1) {
+			msg.value = msg.value.substring(0,139);
+			r=0;
+		}
+		wordNum.innerHTML = r;
+	}
+	//兼容IE8以下的浏览器
+	msg.onpropertychange = function(){
+		var e = e || window.event; //兼容写法，e事件对象
+		if(e.propertyName.toLowerCase() == "value"){
+			wordNum.innerHTML = 140 - msg.value.length;
+		}
+	}
+</script>
+</html>

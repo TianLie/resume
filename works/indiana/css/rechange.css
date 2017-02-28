@@ -1,0 +1,35 @@
+/*充值页面*/
+/*选择金额*/
+.state-box{padding: 18px 4.2%;}
+.amount-list{border-top: 1px solid #dddddd;border-bottom: 1px solid #dddddd;padding: 0 6.4% 18px 6.4%;}
+.choose-jine{line-height: 40px;}
+.amount-box,input.amount-box{border: 1px solid #999999;width: 28%;text-align: center;line-height: 28px;height: 28px;font-size: 14px;color: #666666;margin-left: 8%;margin-top: 20px;}
+.amount-box input{padding: 0;border-radius: 0;-webkit-border-radius: 0;height: 20px;line-height: 20px; border: none;font-size: 14px;color: #666666;text-align: center;}
+.amount-box:nth-child(3n+1){margin-left: 0;}
+.amount-box:first-child,.amount-box:nth-child(2),.amount-box:nth-child(3){margin-top: 0;}
+.active{border: 1px solid #de2f50;}
+/*选择支付方式*/
+.mui-input-group .mui-input-row{height: 50px;}
+.choose-pay{height: 50px;line-height: 50px;padding-left: 15px;}
+.payType-img{width: 33px;height: 32px;}
+.payType-img img{height: 100%;}
+.pay-dt{font-size: 14px;color: #3c3c3c;}
+.pay-dd{font-size: 12px;color: #999999;margin-top: 6px;}
+.pay-active .pay-dd{color: #df3959;}
+.mui-input-row label{padding-top: 8px;padding-bottom: 0;}
+.mui-radio input[type=radio]{top: 12px;}
+.pay-list{padding-left:3%;}
+.mui-radio input[type=radio]:checked:before{color: #39c127;font-size: 24px;}
+.mui-radio input[type=radio]:before{font-size: 24px;}
+/*充值按钮*/
+.payBtn-box{bottom: 0;width: 100%;text-align: center;padding: 10px 0;border-top: 1px solid #eeeeee;}
+.pay-btn{width: 90%;background-color: #de2f51;color: #fff;padding: 14px 0;font-size: 15px;}
+/*支付页面*/
+.mui-content>.mui-table-view:first-child{margin-top: 0;}
+.mui-table-view-cell.mui-active{background-color: #fff;}
+.mui-table-view-cell.mui-collapse .mui-collapse-content{background-color: #eeeeee;}
+.pal5p{padding-left: 5.3%;}
+.fz13{color: #9c9c9c;}
+.mui-navigate-right:after{color: #2fa2de;font-weight: bold;font-size: 24px;bottom: -4px;top: auto;}
+.duobi{padding-right: 20px;}
+.borbtm{border-bottom: 1px solid #dddddd;}

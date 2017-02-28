@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>编辑地址</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/myAdress.css"/>
+    	
+    <!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<link href="../css/mui.picker.css" rel="stylesheet" />
+		<link href="../css/mui.poppicker.css" rel="stylesheet" />
+
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">编辑地址</h1>
+	    <a href="###" class="mui-pull-right deleteBtn">删除</a>
+	</header>
+	<div class="mui-content">
+	    <div class="bgff">
+	    	<div class="mui-input-group input-list nobor1">
+	    		<div class="mui-input-row">
+		    	    <label class="fz14 cl999">收货人</label>
+		    	    <input type="text" placeholder="请输入姓名">
+		    	</div>
+		    	<div class="mui-input-row">
+		    	    <label class="fz14 cl999">联系方式</label>
+		    	    <input type="text" placeholder="请输入联系方式">
+		    	</div>
+	    	</div>
+	    	<div class="select-area">
+	    		<ul class="mui-table-view nobor">
+		    	    <li class="mui-table-view-cell mui-collapse clearfix" id="showCityPicker">
+		    	        <a class="fz14 cl999 fl" href="#"><label class="fz14 cl999">地区</label><span id="cityResult" class="mal50 fz15"></a>
+		    	        <span class="sanjiao"></span>
+		    	    </li>
+		    	</ul>
+	    	</div>
+	    	<div class="mui-input-row">
+	    	    <label class="fz14 cl999">详细地址</label>
+	    	    <input type="text" placeholder="请输入详细地址">
+	    	</div>
+	    	<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<span class="fz14 cl999">设为默认</span>
+					<div class="mui-switch mui-switch-mini" id="mySwitch">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+	    </div>
+		<div class="btn-box">
+			<p class="fz14 cl999">(实物收货地址用户实物奖品中奖后的发货，最多可添加 三个)</p>
+			<button class="save-box">保存</button>
+		</div>
+	</div>
+	<!--加载脚本-->
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.picker.js"></script>
+		<script src="../js/mui.poppicker.js"></script>
+		<script src="../js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		//地址
+		var cityPicker3 = new mui.PopPicker({
+				layer: 3
+		});
+		cityPicker3.setData(cityData3);
+		var showCityPickerButton = document.getElementById('showCityPicker');
+		var cityResult3 = document.getElementById('cityResult');
+		var sanjiao = document.getElementsByClassName("sanjiao")[0];
+		showCityPickerButton.addEventListener("tap",function(){
+			sanjiao.style.transform = "rotate(-180deg)";
+			sanjiao.style.marginTop = "2px";
+			cityPicker3.show(function(items) {
+				cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+				sanjiao.style.transform = "rotate(0deg)";
+				sanjiao.style.marginTop = "6px";
+				//返回 false 可以阻止选择框的关闭
+				//return false;
+			});
+		})
+		//默认开关
+		var mySwitch = document.getElementById("mySwitch")
+		mySwitch.addEventListener("toggle",function(event){
+		  if(event.detail.isActive){
+		    console.log("你设了该地址为默认");
+		  }else{
+		    console.log("你关闭了默认地址");  
+		  }
+		})
+		</script>
+</body>
+</html>

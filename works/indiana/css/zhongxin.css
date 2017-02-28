@@ -1,0 +1,38 @@
+/*个人中心页*/
+.geren-box{background: 0 0 url("../images/zhongxin-bg.jpg") no-repeat; width: 100%;height: 225px;background-size: 100% 100%;}
+.zhongxin-icon{background: url("../images/zhongxin-sprite.png") no-repeat;background-size: 100px 600px;-webkit-background-size: 100px 600px;width: 24px;height: 22px;vertical-align: middle;}
+.share-icon{background-position: 0 0;}
+.set-icon{background-position: 0 -46px;}
+.share-box{padding: 14px 4% 8px 4%;}
+.tou-box{width: 65px;height: 65px;border-radius: 50%;-webkit-border-radius: 50%; background-color: rgba(230,230,230,0.5);overflow: hidden;margin: 0 auto;}
+.tou-box img{height: 100%;}
+.chong-box{width: 32%;height: 30px;line-height: 30px; border-radius: 4px;-webkit-border-radius: 4px; background-color: #de2f51;}
+.mat14{margin-top: 6px;}
+.mat12{margin-top: 12px;}
+/*列表*/
+.wei-box{color: #fff;font-size: 10px; padding: 0 3.5%; background-color: #de2f51;border-radius: 4px;-webkit-border-radius: 4px;}
+.h2Text{font-size: 15px;color: #363636;display: inline-block;}
+.list-icon{background: url("../images/zhongxin-sprite.png") no-repeat;background-size: 100px 600px;-webkit-background-size: 100px 600px;padding-left: 30px;height: 20px;}
+.jifen-icon{background-position: 0 -112px}
+.youhui-icon{background-position: 0 -158px}
+.dizhi-icon{background-position: 0 -204px;padding-top: 2px;}
+.snatch-icon{background-position: 0 -249px;}
+.win-icon{background-position: 0 -300px;padding-top: 2px;}
+.single-icon{background-position: 0 -344px;}
+/*声明*/
+.tips-box{font-size: 15px;color: #808080;text-align: center;margin-top: 16px;}
+/*底部*/
+.wo-icon{background-position-x: right;}
+
+
+/*我的优惠券*/
+.youhui_speite{background: url("../images/yohui_sprite.png") no-repeat; background-size: 30px 100px;-webkit-background-size: 30px 100px;width: 15px;height: 15px;vertical-align: middle;}
+.jilu_icon{background-position: 0 -60px;}
+.pa2p{padding: 0 2%;}
+.youhui_top{line-height: 44px;}
+.mui-slider{background-color: #fff;padding-bottom: 16px;}
+.youhui_list{box-sizing: border-box;border: 1px solid #dedede;margin-right: 2%;float: left;width: 49%;margin-top: 9px;padding: 2%;}
+.youhui_list:nth-child(2n){margin-right: 0;}
+.youhui_img{width: 100%;height: 100px;}
+.youhui_img img{height: 100%;}
+.new_img{position: absolute;top: 0;left: 0;width: 35%;}

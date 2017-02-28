@@ -1,0 +1,26 @@
+/*我的收货地址*/
+.dizhi-box{border: 1px solid #ededed;}
+.adress-box{padding-left: 18px;padding-right: 8px;padding-bottom: 8px;border-bottom: 1px solid #ededed;}
+.adress-box:last-child{border-bottom: none;}
+.title-box{padding-top: 10px;padding-bottom: 10px;}
+.dizhi-title{color: #1c92ff;background: 0 0 url("../images/location-logo.png") no-repeat;background-size: 14px 20px;-webkit-background-size: 14px 20px;padding-left: 28px;}
+.bianji{color: #989898;}
+.title-box{border-bottom: 1px solid #dddddd;}
+.cl8a8{width: 23%;white-space: nowrap;}
+.adress{width: 72%;vertical-align: top;margin-left: 10px;}
+.adress-list{padding-top: 10px;}
+/*编辑地址*/
+.deleteBtn{line-height: 44px;font-size: 12px;color: #fff;}
+.mui-input-row label{width: 30%;white-space: nowrap;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{width: 70%;font-size: 15px;}
+/*地区下拉菜单*/
+.mal50{margin-left: 50px;}
+.mal10{margin-left: 10px;}
+.nobor:before,.nobor1:after{height: 0;}
+.mui-table-view-cell.mui-active{background-color: #fff;}
+.sanjiao{border-width: 6px;border-style: solid;border-color: #797986 transparent transparent transparent;float: right;margin-top: 6px;}
+/*滑块*/
+.mui-switch{border: 2px solid #e5e5e5;}
+/*按钮*/
+.btn-box{padding: 0 4.2%;padding-top: 18px;}
+.save-box{width: 100%;background-color: #1ba6ff;border: none;color: #fff;padding: 0 0;font-size: 18px;line-height: 40px;margin-top: 20px;}

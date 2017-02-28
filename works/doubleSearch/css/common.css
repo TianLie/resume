@@ -1,0 +1,71 @@
+body{min-width: 1240px;text-align: center;margin: 0 auto;}
+body{font: 12px/1.5 arial,\5b8b\4f53,georgia,verdana,helvetica,sans-serif;}
+/*内容*/
+.content{text-align: center;}
+.wrap{width: 1200px;margin: 0 auto;}
+/*头部图标*/
+.load-iocn{background: url(../img/indexNav-sprite.png) no-repeat;padding-left: 20px;height: 14px;line-height: 14px;}
+.skin{background-position: 0 0;}
+.set{background-position: 0 -48px;}
+.load{background-position: 0 -96px;}
+.feedback{background-position: 0 -135px;}
+.padlr{padding: 0 15px;}
+/*宽100%*/
+.w100p{width: 100%;}
+/*左浮动*/
+.fl{float: left;}
+/*右浮动*/
+.fr{float: right;}
+.fc{float: center;}
+/*定位*/
+.psA{position: absolute;}
+.psR{position: relative;}
+.psF{position: fixed;}
+/*字体居右*/
+.tex_r{text-align: right;}
+/*字体居左*/
+.tex_l{text-align: left;}
+/*字体大小设置*/
+.fz12{font-size: 12px;}
+.fz14{font-size: 14px;}
+.fz20{font-size: 20px;}
+.fz36{font-size: 36px;}
+/*字体颜色设置*/
+.cl666{color: #666666;}
+.clbfd{color: #bfd85b;}
+.clece{color: #ece9f5;}
+.clfff{color: #fff;}
+.cl909{color: #9099a1;}
+.cl595{color: #595959;}
+.cl038{color: #0384fa;}
+.clccc{color: #cccccc;}
+a,span,i{display: inline-block;}
+/*背景颜色*/
+.bgwhite{background-color: #fff;}
+/*底部*/
+.wrapper{position: relative;width: 100%;}
+.header{position: fixed;top: 0;z-index: 999999;width: 100%;box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;}
+.footer{z-index: 99;position: relative;}
+#footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #f0f0f0;
+	margin-top: 10px;
+	}
+.footerList{
+	text-align: left;
+	padding: 20px 0;
+}
+.footerList a{
+	float: left;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #999999;
+	border-right: 1px solid #999999;
+	padding: 0 18px;
+}
+.footerList a:last-child{
+	border-right: none;
+}
+.mab54{margin-bottom: 104px;}

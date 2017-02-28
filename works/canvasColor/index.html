@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>6.颜色拾取器（见color.gif）</title>
+		<style type="text/css">
+			#canvas{
+				border: 1px solid #aaa;
+			}
+			#block{
+				border: 1px solid #aaa;
+				width: 50px;
+				height: 50px;
+				display: inline-block;
+				vertical-align: top;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="400" height="400">您的浏览器不支持canvas.</canvas>
+		<span id="block"></span>
+		<script type="text/javascript">
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			var block = document.getElementById("block");
+			for(var i = 0; i < 16; i++){
+				for(var j = 0; j < 16; j++){
+					ctx.fillStyle = "rgb(255,"+(255 - i *16)+",0)";
+					ctx.fillRect(i*25,j*25,25,25);
+				}
+			}
+			canvas.onmousemove = function (e) {
+				var e = e || window.event;
+				var x = e.layerX;
+				var y = e.layerY;
+				var imgData = ctx.getImageData(x,y,1,1);
+				var r = imgData.data[0];
+				var g = imgData.data[1];
+				var b = imgData.data[2];
+				canvas.style.cursor = "copy";
+				block.style.backgroundColor = "rgb("+r+","+g+","+b+")";
+			}
+		</script>
+	</body>
+</html>

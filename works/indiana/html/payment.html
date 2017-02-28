@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/rechange.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">支付</h1>
+	</header>
+	<div class="mui-content">
+		<div>
+			<ul class="mui-table-view">
+		        <li class="mui-table-view-cell mui-collapse">
+		            <a class="mui-navigate-right" href="#">
+		            	<p class="fz14 cl333">商品数量<span class="fz15 cl1ba pal5p"><i>2</i>件</span></p>
+		            	<p class="fz14 cl333">应付金额<span class="fz15 clde2 pal5p"><i>10</i>夺宝币</span></p>
+		            </a>
+		            <div class="mui-collapse-content">
+		                <p class="fz13">华硕玩家国度G60JW4720超薄ROG游戏本<span><i>5</i>人次</span></p>
+		                <p class="fz13">华硕玩家国度G60JW4720超薄ROG游戏本<span><i>5</i>人次</span></p>
+		            </div>
+		        </li>
+		    </ul>
+		</div>
+	    <div class="bgff mat9">
+	    	<p class="fz14 cl333 choose-pay borbtm">余额支付<span class="fz12">(账户余额: <i>0</i>夺宝币）</span></p>
+	    	<p class="fz14 cl333 choose-pay">其他支付方式<span class="fr fz15 clde2 duobi"><i>10</i>夺宝币</span></p>
+	    	<form class="mui-input-group">
+				<div class="mui-input-row mui-radio pay-box pay-active">
+					<label class="clearfix">
+						<span class="fl payType-img"><img src="../images/alipay.png"/></span>
+						<dl class="fl pay-list">
+							<dt class="pay-dt">支付宝</dt>
+							<dd class="pay-dd">推荐拥有支付宝的用户使用</dd>
+						</dl>
+					</label>
+					<input name="radio1" type="radio" checked>
+				</div>
+				<div class="mui-input-row mui-radio pay-box">
+					<label class="clearfix">
+						<span class="fl payType-img"><img src="../images/weChat.png"/></span>
+						<dl class="fl pay-list">
+							<dt class="pay-dt">支付宝</dt>
+							<dd class="pay-dd">推荐拥有支付宝的用户使用</dd>
+						</dl>
+					</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-input-row mui-radio pay-box">
+					<label class="clearfix">
+						<span class="fl payType-img"><img src="../images/unionpay.png"/></span>
+						<dl class="fl pay-list">
+							<dt class="pay-dt">支付宝</dt>
+							<dd class="pay-dd">推荐拥有支付宝的用户使用</dd>
+						</dl>
+					</label>
+					<input name="radio1" type="radio">
+				</div>
+			</form>
+	    </div>
+	</div>
+	<footer class="psF payBtn-box bgff">
+		<button class="pay-btn">确认支付</button>
+	</footer>
+	<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//支付方式
+		function payType(){
+			var indexP = 0;
+			$(".pay-box").on("touchstart",function(){
+				indexP = $(this).index();
+				$(".pay-box").eq(indexP).addClass("pay-active").siblings().removeClass("pay-active");
+			})
+		}
+		payType();
+	</script>
+</body>
+</html>

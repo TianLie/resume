@@ -1,0 +1,310 @@
+body{
+	font-family: "华文楷体";
+}
+.banner img{
+	width: 100%;
+}
+
+/*contact Begin*/
+.tdcBox{
+	position: relative;
+}
+.tdc_tittle{
+	color: #000000;
+	font-size: 48px;
+	line-height: 42px;
+	text-align: center;
+	padding-top: 48px;
+	padding-bottom: 38px;
+}
+.blue_lf{
+	background:  right -169px url("../img/index_sprite.png") no-repeat;
+	position: absolute;
+	left: 0;
+	padding-right: 10px;
+	_padding-right: 11px;
+	z-index: 1;
+}
+.blue_lf span,.blue_rg span{
+	display: inline-block;
+	background-color: #14a4ee;
+	height: 65px;
+	line-height: 65px;
+	font-size: 36px;
+	color: #fff;
+	padding: 0 10px;
+}
+.blue_rg{
+	background:  left -98px url("../img/index_sprite.png") no-repeat;
+	position: absolute;
+	right: 0;
+	padding-left: 10px;
+}
+.space_fl{
+	margin-left: 38px;
+}
+.tex{
+	margin-top: 86px;
+}
+.tex p{
+	margin-bottom: 10px;
+	font-size: 30px;
+	line-height: 36px;
+}
+.tex_id p{
+	text-indent: 2em;
+}
+.tex_ip{
+	width: 42%;
+}
+.codeBox dl{
+	float: left;
+	width: 50%;
+	text-align: center;
+	font-size: 24px;
+}
+.codeBox img{
+	display: inline-block;
+}
+.codeBox dd{
+	margin-top: 10px;
+}
+.map_con{
+	width: 100%;
+}
+.map_con img{
+	width: 100%;
+}
+.addres{
+	font-size: 30px;
+	line-height: 36px;
+	padding-left: 54px;
+	padding-top: 28px;
+}
+
+/*cases*/
+.commerce_tit{
+	font-family: "BDZYJT";
+	font-size: 48px;
+	text-align: center;
+	padding-top: 29px;
+	padding-bottom: 63px;
+}
+.web_list li{
+	display: inline-block;
+	*display:inline;
+ 	*zoom:1;
+	float: left;
+	margin-right: 6%;
+	margin-right\0: 5.9%;
+	margin-bottom: 32px;
+	height: 332px;
+	overflow: hidden;
+}
+.web_list a{
+	display: inline-block;
+	position: relative;
+}
+.web_list a span{
+	background-color: #9b9ea0;
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.webBox{
+	position: relative;
+}
+.tittle_ru{
+	width: 74px;
+	border-radius: 6px;
+	position: absolute;
+	padding: 26px 0;
+	text-align: center;
+}
+.tittle_rg{
+	background-color: #0aa1d9;
+	top: 333px;
+	right: -5px;
+}
+.tittle_lf{
+	background-color: #ffffff;
+	top: 125px;
+	left: -5px;
+}
+.tittle_ru span{
+	display: block;
+	width: 32px;
+	margin: 0 auto;
+	font-size: 36px;
+	line-height: 44px;
+}
+.app_ccenter{
+	background-color: #0aa1d9;
+	margin-top: -8px;
+	padding-bottom: 23px;
+}
+.appBox{
+	padding-top: 80px;
+}
+.appImg{
+	width: 46%;
+}
+.app_tex{
+	width: 46%;
+	font-size: 30px;
+	line-height: 36px;
+}
+.app_tex h2{
+	text-indent: 2em;
+	margin-bottom: 28px;
+}
+.moreBox{
+	width: 100%;
+	text-align: center;
+	margin-top: 62px;
+}
+a.moreBtn{
+	color: #02aae9;
+	font-size: 48px;
+	background-color: #edeeee;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 8px 10px;
+	padding-right: 16px;
+}
+.moreImg{
+	display: inline-block;
+	position: relative;
+	top: 0;
+}
+
+/*物联网及其智能化产品*/
+.productBox{
+	background-color: #edeeee;
+	margin-top: -110px;
+	padding-top: 105px;
+}
+.nav{
+	margin: 0 auto;
+	background-color: #fff;
+	padding-top: 26px;
+	*padding-bottom: 20px;
+}
+.nav a{
+	display: inline-block;
+	float: left;
+	color: #000000;
+	font-size: 36px;
+	line-height: 36px;
+	margin-bottom: 20px;
+	margin-left: 2.4%;
+	margin-right: 2.4%;
+	white-space: nowrap;
+}
+.nav a:hover{
+	color: #0aa1d9;
+}
+.productList{
+	padding-top: 24px;
+	padding-bottom: 100px;
+}
+.productList .f_l{
+	margin-left: 2.4%;
+}
+.productList .f_r{
+	margin-right: 2.4%;
+}
+.proBox{
+	margin-bottom: 40px;
+}
+.prd_img{
+	display: inline-block;
+	background-color: #ffffff;
+	text-align: center;
+	width: 100%;
+	padding: 18px 15px;
+}
+.prd_img img{
+	display: block;
+	width: 100%;
+}
+.prd_tex{
+	width: 58%;
+	padding-top: 24px;
+	padding-left: 32px;
+}
+.prd_tex dt{
+	font-size: 30px;
+	margin-bottom: 34px;
+	font-weight: bold;
+}
+.prd_tex dd{
+	font-size: 26px;
+	line-height: 32px;
+}
+.consultBox{
+	margin-top: -100px;
+}
+.consultBtn{
+	position: absolute;
+	top: 280px;
+	left: 50%;
+	margin-left: -252px;
+	z-index: 99;
+	color: #fff;
+	font-size: 36px;
+	background-color: #002633;
+	padding: 14px 24px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.consultBtn a{
+	color: #0aa1d9;
+	text-decoration: underline;
+}
+.consultBox img{
+	max-height: 500px;
+}
+
+.pd2{
+	padding: 0 2%;
+}
+
+.mab50{
+	margin-bottom: 50px;
+}
+.mat{
+	margin-top: 532px;
+}
+
+.mat140{
+	margin-top: 140px;
+}
+
+/*图片100%*/
+.contactUs img,.app_topBg img,.app_bottomBg img,.consultBox img,.web_list{
+	width: 100%;
+}
+/*contact End*/
+
+
+/* 媒体查询 */
+@media screen and (max-width:1200px){
+	/*上边距*/
+    .mat{
+    	margin-top: 474px;
+    }
+    .addres{
+    	padding-left: 84px;
+    }
+    .web_list li{
+    	margin-right: 5.2%;
+    }
+}

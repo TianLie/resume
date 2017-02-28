@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>布局练习</title>
+	<link rel="stylesheet" href="css/comment.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: arial;
+		}
+		body{
+			background: url("images/body_bg.jpg");
+		}
+		.wrap{
+			width: 948px;
+			margin: 0 auto;
+			padding-left: 8px;
+			padding-right: 6px;
+			background: url("images/main_bg.jpg") repeat-y;
+		}
+		.header{
+			overflow: hidden;
+			zoom:1;
+			background:url("images/head_bg.jpg") 0 0 repeat-x;
+		}
+		.logo{
+			float: left;
+		}
+		.logo img{
+			float: left;
+		}
+		.nav_wrap{
+			float: right;
+			width: 608px;
+			padding-top: 6px;
+		}
+		.nav{
+			overflow: hidden;
+		}
+		.nav_list{
+			float: right;
+			height: 28px;
+			background: #ff9935 url("images/nav_bg.jpg") 0 0 no-repeat;
+			padding-left: 56px;
+		}
+		.nav_list a{
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+			color: black;
+			line-height: 28px;
+			padding: 0 10px;
+		}
+		.nav_list a span{
+			font-weight: bold;
+		}
+		.banner_wrap{
+			position: relative;
+			width: 460px;
+			height: 122px;
+		}
+
+		.banner_bg{
+			width: 460px;
+			height: 100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #fff; 
+			opacity: 0.5;  
+			filter:alpha(opacity=50);
+			/* background-color: rgba(255,255,255,0.5);  */
+
+			/* filter:alpha(opacity=50);  */
+			margin-top: 23px;
+			border-radius: 
+		}
+		.banner_tittle{
+			color: #844558;
+			height: 64px;
+			position: absolute;
+			top: 35px;
+			left: 11px; 
+		}
+		.main{
+			overflow: hidden;
+			padding: 10px 10px 18px 7px;
+			zoom:1;
+		}
+		.main_left{
+			float: left;
+			width: 227px;
+		}
+
+		/* 音乐盒设置 */
+		.musicBox_btns a{
+			text-decoration: none;
+			color:black;
+			text-align: center;
+			font-size: 12px;
+			display: inline-block;
+			width: 55px;
+			height: 23px;
+			line-height: 23px;
+			background: url("images/common_btn_bg.jpg") 0 -48px no-repeat; 
+		}
+		.musicBox_btns a:hover{
+			background-position: 0 -71px;
+			color: #b61d20;
+		}
+		.musicBox_btns_lists{
+			padding-left: 13px;
+			padding-right: 10px;
+		}
+		.musicBox_btns_lists a{
+			display: block;
+			text-decoration: none;
+			color: black;
+			font-size: 12px;
+			border-bottom-style: dashed;
+			border-bottom-width: 1px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			background: url("images/ear.jpg") right 0px no-repeat;
+			background-position: right 5px;
+		}
+		.musicBox_btns_audition a{
+			font-size: 12px;
+			color: #b71e21;
+			font-weight: bold;
+		}
+		.musicBox_btns_audition{
+			padding-left: 142px;
+			margin-top: 9px;
+		}
+		/* 日历 */
+		.calendar_main_bd{
+			background: url("images/calendar_bg_center.jpg") 0 0 repeat-x;
+			text-align: center;
+		}
+		.calendar_main_bd_left{
+			background: url("images/calendar_bg_left.jpg") 0 0 no-repeat;
+		}
+		.calendar_main_bd_right{
+			background: url("images/calendar_bg_right.jpg") right 0 no-repeat;
+			height: 182px;
+			padding-bottom: 12px;
+		}
+		.month{
+			width: 150px; 
+			margin: 0 auto;
+		}
+		.month table{
+			text-align: center;
+			padding: 0 auto;
+			/* padding-top: 9px; */
+			font-size: 12px;
+		}
+		.month table th{
+			color: #b41f23;
+			font-weight: bold;
+		}
+		.month table td{
+			font-size: 12px;
+			line-height: 20px;
+			width: 21px;
+			height: 19px;
+		}
+		.month table a{
+			color: black;
+			text-decoration: none;
+			display: block;
+			line-height: 19px;
+			width: 18px;
+			height: 19px;
+		}
+		.month table a:hover{
+			color: #fff;
+			background-color: #b22023;
+		}
+		.month_select{
+			padding-top: 7px;
+			padding-left: 11px;
+		}
+		.month table tr td.month_select a:hover{
+			background: none;
+			color: #b51e25;
+			font-weight: bolder;
+		}
+
+
+		/* 中间设置 */
+		.main_center{
+			float: left;
+			width: 453px;
+			margin-left: 11px;
+		}
+		/* 歌词创作 */
+		.lyrics{
+			width: 406px;
+			margin: 0 auto;
+			font-size: 12px;
+			line-height: 22px;
+			overflow: hidden;
+			zoom: 1;
+		}
+		.lyrics_left{
+			float: left;
+			border-right-color: #fcb66e;
+			border-right-width: 1px;
+			border-right-style: solid;
+			/* text-align: left; */
+			width: 49%;
+		}
+		.lyrics_right{
+			float: right;
+			/* width: 50%;  */
+			/*text-align: left; */
+			/* padding-left: 20px;
+			font-size: 12px;
+			line-height: 22px; */
+		}
+		.lyrics a{
+			color: #b21f25;
+			padding-left: 100px;
+		}
+		/* 心情日记 */
+		.moodDiary{
+			width: 448px; 
+			margin: 0 auto;
+			padding-top: 2px;
+
+		}
+		.moodDiary span{
+			display: inline-block;
+			text-align: center;
+			height: 24px;
+			line-height: 24px;
+			overflow: hidden;
+			white-space: nowrap;
+			font-size:12px;
+			background: url("images/list_bg.jpg") 0 bottom repeat-x;
+		}
+		.moodDiary ul li{
+			padding: 0 17px; 
+		}
+		.tittle{
+			background: #ffc48a;
+			color: #b52022;
+			font-weight: bold;
+		}
+		.tittle span{
+			background:none;
+		}
+		.no_spanbg span{
+			background:none;
+		}
+		.moodDiary_v1{
+			width: 40%;
+		}
+		.moodDiary_v2{
+			width: 35%;
+			position: relative;
+			_top:1px;
+		}
+		.moodDiary_v3{
+			width: 24%;
+			position: relative;
+			_top:1px;
+		}
+		.title .moodDiary_v2,.title .moodDiary_v1{
+			_top:0;
+		}
+		.moodDiary_v1 a{
+			color: black;
+			text-decoration: none;
+		}
+
+		/* 右边设置 */
+		.main_right{
+			float: right;
+			width: 227px;
+		}
+		/* 访问记录 */
+		.common_main_access{
+			padding-left: 20px; 
+			padding-right: 17px;
+		}
+		.common_main_access ul li{
+			list-style-type: none;
+			background: url("images/common_main_access.jpg") left 0 no-repeat;
+			border-bottom-style: dashed;
+			border-bottom-width: 1px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			padding-left: 26px;  
+			background-position: 0 7px;
+			font-size: 12px;
+			font-weight: lighter;
+		}
+		.common_main_access ul li span{
+			color: #b32026;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.common_main_access ul li em{
+			padding-left: 33px;
+		}
+		/* 留言 */
+		.common_main_message a{
+			background: url("images/common_main_access.jpg") left 0 no-repeat;
+			background-position: 0 7px;
+			display: block;
+			padding-left: 21px;
+			text-decoration: none;
+			color: black;
+			font-size: 12px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+		.common_main_message a:hover span{
+			text-decoration: underline;
+		}
+		.common_main_message a em{
+			color: #b32026;
+			font-weight: bold;
+		}
+		.common_main_message a strong{
+			font-weight: bold;
+		}
+
+		/* 好友设置 */
+		.friend{
+			overflow: hidden;
+			width: 223px;
+			margin: 0 auto;
+			padding-top: 2px;
+		}
+		.friend dl{
+			font-size: 12px;
+		}
+		.friend dt{
+			float: left;
+		}
+		.friend dd{
+			display: inline-block;
+			padding-left: 14px; 
+		}
+		.toy{
+			font-size: 14px;
+			font-weight: bold;
+			color: #b32026;
+			padding-bottom: 10px;
+		}
+		.friend a{
+			padding-left: 19px; 
+			color: black;
+			text-decoration: none;
+			border-bottom-color: #ff9934;
+			border-bottom-width: 1px;
+			border-bottom-style: solid;
+			display: inline-block;
+			padding-top: 10px;
+			padding-bottom: 10px; 
+			overflow: hidden;
+			zoom: 1;
+			width: 204px;
+
+		}
+		.friend img{
+			border-color: #fff;
+			border-width: 3px;
+			border-style: solid;
+			border-radius: 3px;
+		}
+		.friend a:hover{
+			background-color: #ff9935;
+		} 
+		
+		#noborder{
+			border-bottom-width: 0;
+			border:none;
+		}
+		
+		/* 脚本设置 */
+		.footer{
+			background: #ffb166 url("images/footer_bg.jpg") 0 0 repeat-x;
+			padding-bottom: 2px;
+		}
+		.footer_list{
+			margin: auto auto; 
+			text-align: center;
+			height: 85px;
+			line-height: 85px;
+		}
+		.footer_list a{
+			color: #7e1519;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		.footer_list a:hover{
+			text-decoration: underline;
+		}
+		.footer_list span{
+			color: #7e1519;
+			font-weight: bold;
+			padding: 0 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="logo">
+				<img src="images/logo.jpg" alt="">
+			</div>
+			<div class="nav_wrap">
+				<div class="nav">
+					<div class="nav_list">
+						<a href="###">首页</a><span>|</span><a href="###">会员中心</a><span>|</span><a href="###">登录</a><span>|</span><a href="###">注册</a>
+					</div>
+				</div>
+				<div class="banner_wrap">
+					<div class="banner_bg"></div>
+					<div class="banner_tittle">
+						<h1>XXX的个人星空间</h1>
+						<p>个人星空间介绍，总是希望着，总是希望着........</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+		
+			<div class="main_left">
+			<!-- 音乐达人 --> 
+				<div class="player_wrap">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">音乐达人</a></h2>
+								<!-- <a class="more" href="###">more</a> -->
+							</div>
+						</div>
+					</div>
+					<div class="common_main">
+						<div class="common_main_portrait">
+							<img src="images/portrait.jpg" alt="">
+						</div>
+						<div class="common_main_links">
+							<div>
+								<a href="###">个人资料</a><a href="###" class="common_links_center">交友资料</a><a href="###">加为好友</a>
+							</div>
+							<div class="common_main_links_row">
+								<a href="###">投他一票</a><a href="###" class="common_links_center">给她留言</a><a href="###">送她卡片</a>
+							</div>
+						</div>
+					</div>
+					<div class="comment_footer">
+							<div class="comment_footer-right"></div>
+					</div>
+					</div>
+
+					<!-- 音乐盒  -->
+					<div class="musicBox mt13">
+						<div class="comment_head">
+							<div class="comment_left">
+								<div class="comment_right">
+									<h2><a href="###">音乐盒</a></h2>
+									<a class="more more_haveUnderline" href="###">more</a>
+								</div>
+							</div>
+						</div>
+						<div class="common_main no_pt">
+							<div class="musicBox_btns">
+								<a href="###">歌单一</a><a href="###" class="common_links_center">歌单二</a><a href="###">歌单三</a>
+							</div>
+							<div class="musicBox_btns_lists">
+									<a href="###"><strong>1.</strong>有没有人告诉你 - 陈楚生</a>
+									<a href="###"><strong>2.</strong>改变自己 - 王力宏</a>
+									<a href="###"><strong>3.</strong>还不是因为爱 - 苏醒</a>
+									<a href="###"><strong>4.</strong>西界 - 林俊杰</a>
+									<a href="###"><strong>5.</strong>我们的歌 - 王力宏</a>
+									<a href="###"><strong>6.</strong>如果你也听说 - 张惠妹</a>
+									<a href="###"><strong>7.</strong>热浪 - 温岚</a>
+									<a href="###"><strong>8.</strong>少年游 - 魏晨 - 快乐男声</a>
+							</div>
+							<div class="musicBox_btns_audition">
+								<a href="###">试听全部</a>
+							</div>
+						</div>
+						<div class="comment_footer">
+								<div class="comment_footer-right"></div>
+						</div>
+					</div>
+					
+					<!-- 经纪公司  -->
+					<div class="firm mt13">
+						<div class="comment_head">
+							<div class="comment_left">
+								<div class="comment_right">
+									<h2><a href="###">音乐达人</a></h2>
+									<a class="more more_haveUnderline" href="###">more</a> 
+								</div>
+							</div>
+						</div>
+						<div class="common_main">
+							<div class="common_main_portrait">
+								<img src="images/portrait.jpg" alt="">
+							</div>
+							<div class="common_main_firmLinks">
+								<ul>
+									<li>
+										<span class="firmLinks_l"><a class="arrows" href="###">&lt;&lt;</a></span><span class="common_links_spancenter">阿姨</span><span class="firmLinks_r"><a class="arrows" href="###">&gt;&gt;</a></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="comment_footer">
+								<div class="comment_footer-right"></div>
+						</div>
+					</div>
+					
+					<!-- 日历  -->
+					<div class="calendar_wrap mt13">
+						<div class="comment_head">
+							<div class="comment_left">
+								<div class="comment_right">
+									<h2><a href="###">日历</a></h2>
+									<a class="more more_haveUnderline" href="###">more</a> 
+								</div>
+							</div>
+						</div>
+						<div class="common_main no_pt">
+							<div class="calendar_main_bd">
+								<div class="calendar_main_bd_left">
+									<div class="calendar_main_bd_right">
+										<div class="month">
+											<table>
+												<tr><th colspan="7">January 2007</th></tr>
+												<tr>
+													<th>M</th>
+													<th>T</th>
+													<th>W</th>
+													<th>T</th>
+													<th>F</th>
+													<th>S</th>
+													<th>S</th>
+												</tr>
+												<tr>
+												<td><a href="###">1</a></td>
+												<td><a href="###">2</a></td>
+												<td><a href="###">3</a></td>
+												<td><a href="###">4</a></td>
+												<td><a href="###">5</a></td>
+												<td><a href="###">6</a></td>
+												<td><a href="###">7</a></td>
+											</tr>
+											<tr>
+												<td><a href="###">8</a></td>
+												<td><a href="###">9</a></td>
+												<td><a href="###">10</a></td>
+												<td><a href="###">11</a></td>
+												<td><a href="###">12</a></td>
+												<td><a href="###">13</a></td>
+												<td><a href="###">14</a></td>
+											</tr>
+											<tr>
+												<td><a href="###">15</a></td>
+												<td><a href="###">16</a></td>
+												<td><a href="###">17</a></td>
+												<td><a href="###">18</a></td>
+												<td><a href="###">19</a></td>
+												<td><a href="###">20</a></td>
+												<td><a href="###">21</a></td>
+											</tr>
+											<tr>
+												<td><a href="###">22</a></td>
+												<td><a href="###">23</a></td>
+												<td><a href="###">24</a></td>
+												<td><a href="###">25</a></td>
+												<td><a href="###">26</a></td>
+												<td><a href="###">27</a></td>
+												<td><a href="###">28</a></td>
+											</tr>
+											<tr>
+												<td><a href="###">29</a></td>
+												<td><a href="###">30</a></td>
+												<td><a href="###">31</a></td>
+											</tr>
+											<tr>
+												<td colspan="3" class="month_select"><a href="###" class="month_select_left">&lt;DEC</a></td>
+												<td>&nbsp;</td>
+												<td colspan="3" class="month_select"><a href="###" class="month_select_right">FVB&gt;</a></td>
+											</tr>
+											</table>
+										</div>
+									</div>
+								</div>		
+							</div>
+						</div>
+						
+						<div class="comment_footer">
+							<div class="comment_footer-right"></div>
+						</div>
+					</div>
+
+				</div>
+				
+			<div class="main_center">
+				<!-- 视频 -->
+				<div class="video_wrap">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">视频</a></h2>
+								<a class="more" href="###">more</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="common_center_main">
+					<div class="common_center_main_tiyan">
+							<a href="###"><img src="images/common_center_main_imgL.jpg" alt=""><span>爱的初体验&nbsp;223票</span><em>&nbsp;</em></a><a href="###"><img src="images/common_center_main_imgC.jpg" alt=""><span>爱的初体验&nbsp;223票</span><em>&nbsp;</em></a><a href="###"><img src="images/common_center_main_imgR.jpg" alt=""><span>爱的初体验&nbsp;223票</span><em>&nbsp;</em></a>
+					</div>
+				</div>
+						
+				<div class="comment_footer">
+					<div class="comment_footer-right"></div>
+				</div>
+
+			<!-- 歌词创作 -->
+				<div class="lyrics_wrap mt13">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">歌词创作</a></h2>
+								<a class="more" href="###">more</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="common_center_main">
+					<div class="lyrics">
+						<div class="lyrics_left">
+							 当你在穿山越岭的另一边<br />
+							 我在孤独的路上没有尽头<br />
+							 一辈子有多少来不及<br />
+							 发现已经失去<br />
+							 最重要的东西<br />
+							 恍然大悟早已远去<br />
+							 为何总是在犯错之后<br />
+							 ...... <a href="###" class="viewAll">查看全部</a>
+						</div>
+						<div class="lyrics_right">
+							当你在穿山越岭的另一边<br />
+							 我在孤独的路上没有尽头<br />
+							 一辈子有多少来不及<br />
+							 发现已经失去<br />
+							 最重要的东西<br />
+							 恍然大悟早已远去<br />
+							 为何总是在犯错之后<br />
+							 ...... <a href="###" class="viewAll">查看全部</a>
+						</div>
+					</div>
+				</div>
+				<div class="comment_footer">
+					<div class="comment_footer-right"></div>
+				</div>
+
+				<!-- 相册-->
+				<div class="PhotoAlbum_wrap mt13">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">相册</a></h2>
+								<a class="more" href="###">more</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="common_center_main">
+					<div class="common_center_main_tiyan">
+						<a href="###"><img src="images/common_center_main_imgL.jpg" alt=""><span>爱的初体验&nbsp;223票</span><em>&nbsp;</em></a><a href="###"><img src="images/common_center_main_imgC.jpg" alt=""><span>爱的初体验&nbsp;223票</span><em>&nbsp;</em></a><a href="###"><img src="images/common_center_main_imgR.jpg" alt=""><span>爱的初体验&nbsp;223票</span><em>&nbsp;</em></a>
+					</div>
+				</div>
+					
+				<div class="comment_footer">
+					<div class="comment_footer-right">
+					</div>
+				</div>
+
+				<!-- 心情日记-->
+				<div class="moodDiary_wrap mt13">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">心情日记</a></h2>
+								<a class="more" href="###">more</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="common_center_main no_pt no_pl">
+					<div class="moodDiary">
+						<ul>
+							<li class="tittle">
+								<span class="moodDiary_v1">标题</span><span class="moodDiary_v2">日期</span><span class="moodDiary_v3">票数</span>
+							</li>
+							<li>
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+							<li>
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+							<li>
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+							<li>
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+							<li>
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+							<li>
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+							<li>
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+							<li class="no_spanbg">
+								<span class="moodDiary_v1"><a href="">我不知道什么是什么...</a></span><span class="moodDiary_v2">2007.09.23</span><span class="moodDiary_v3">2007.09.23</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+						
+				<div class="comment_footer">
+					<div class="comment_footer-right"></div>
+				</div>
+
+			</div>
+
+			<div class="main_right">
+				<!-- 访问记录 -->
+				<div class="access_wrap">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">访问记录</a></h2>
+								<!-- <a class="more" href="###">more</a>  -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="common_main no_pt no_pl">
+					<div class="common_main_access">
+						<ul>
+							<li><span>好友数量</span><em>961</em></li>
+							<li><span>累积投票</span><em>456879</em></li>
+							<li><span>本日投票</span><em>250</em></li>
+							<li><span>总访问量</span><em>1245564</em></li>
+							<li><span>本日访问</span><em>1235782</em></li>
+						</ul>
+					</div>	
+				</div>
+				<div class="comment_footer">
+					<div class="comment_footer-right"></div>
+				</div>
+				<!-- 留言 -->
+				<div class="message_wrap mt13">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">留言</a></h2>
+								<a class="more" href="###">more</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="common_main no_pt">
+					<div class="common_main_message">
+							<a href="###"><span><em>二毛</em>&nbsp;<strong>对</strong>&nbsp;<em>玩具</em>&nbsp;<strong>说：</strong>我不知道你说了什么或者看什么。。。</span></a>
+							<a href="###"><span><em>二毛</em>&nbsp;<strong>对</strong>&nbsp;<em>玩具</em>&nbsp;<strong>说：</strong>我不知道你说了什么或者看什么。。。</span></a>
+							<a href="###"><span><em>二毛</em>&nbsp;<strong>对</strong>&nbsp;<em>玩具</em>&nbsp;<strong>说：</strong>我不知道你说了什么或者看什么。。。</span></a>
+							<a href="###"><span><em>二毛</em>&nbsp;<strong>对</strong>&nbsp;<em>玩具</em>&nbsp;<strong>说：</strong>我不知道你说了什么或者看什么。。。</a></span>
+					</div>	
+				</div>
+				<div class="comment_footer">
+					<div class="comment_footer-right"></div>
+				</div>
+
+				<!-- 好友 -->
+				<div class="message_wrap mt13">
+					<div class="comment_head">
+						<div class="comment_left">
+							<div class="comment_right">
+								<h2><a href="###">好友</a></h2>
+								<a class="more" href="###">more</a> 
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="common_main no_pt no_pl">
+					<div class="friend">
+						<a href="###">
+							<dl>
+								<dt><img src="images/friend_img.jpg" alt=""></dt>
+								<dd class="toy">玩具熊的卡</dd>
+								<dd>这样一个人...</dd>
+							</dl>
+						</a>
+						<a href="###">
+							<dl>
+								<dt><img src="images/friend_img.jpg" alt=""></dt>
+								<dd class="toy">玩具熊的卡</dd>
+								<dd>一辈子的朋友...</dd>
+							</dl>
+						</a>
+						<a href="###">
+							<dl>
+								<dt><img src="images/friend_img.jpg" alt=""></dt>
+								<dd class="toy">玩具熊的卡</dd>
+								<dd>一辈子的朋友...</dd>
+							</dl>
+						</a>
+						<a href="###" id="noborder">
+							<dl>
+								<dt><img src="images/friend_img.jpg" alt=""></dt>
+								<dd class="toy">玩具熊的卡</dd>
+								<dd>一辈子的朋友...</dd>
+							</dl>
+						</a>
+					</div>
+				</div>
+				
+				<div class="comment_footer">
+					<div class="comment_footer-right"></div>
+				</div>
+
+				<!-- 偶像  -->
+					<div class="firm mt13">
+						<div class="comment_head">
+							<div class="comment_left">
+								<div class="comment_right">
+									<h2><a href="###">偶像</a></h2>
+									<a class="more" href="###">more</a> 
+								</div>
+							</div>
+						</div>
+						<div class="common_main">
+							<div class="common_main_portrait">
+								<img src="images/portrait.jpg" alt="">
+							</div>
+							<div class="common_main_firmLinks">
+								<ul>
+									<li>
+										<span class="firmLinks_l"><a class="arrows" href="###">&lt;&lt;</a></span><span class="common_links_spancenter">阿姨</span><span class="firmLinks_r"><a class="arrows" href="###">&gt;&gt;</a></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="comment_footer">
+								<div class="comment_footer-right"></div>
+						</div>
+					</div>
+
+			</div>
+
+		</div>
+		<div class="footer">
+			<div class="footer_list">
+				<a href="">新手上路</a><span>|</span><a href="">关于我们</a><span>|</span><a href="">服务条例</a><span>|</span><a href="">服务公告</a><span>|</span><a href="">行销合作</a><span>|</span><a href="">广告刊登</a><span>|</span><a href="">隐私政策</a><span>|</span><a href="">客服中心</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

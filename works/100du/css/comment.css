@@ -1,0 +1,242 @@
+.comment_main{
+	margin-top: 10px;
+	overflow: hidden;
+	zoom: 1;
+}
+.comment_main_l{
+	float: left;
+	width: 350px;
+	border:1px solid #e5e5e5;
+	border-radius: 6px;
+}
+.shop_commentmain{
+	border-width:0 1px 1px 1px;
+	border-color: #e5e5e5;
+	border-style: solid;
+	border-radius: 0 0 6px 6px;
+}
+.comment_main_r{
+	float: right;
+	width: 350px;
+	border:1px solid #e5e5e5;
+	border-radius: 6px;
+}
+/*论坛*/
+.comment_main_r_tittle{
+	line-height: 40px;
+	font-weight: bold;
+	overflow: hidden;
+	zoom: 1;
+}
+.comment_main_r_tittle em{
+	color: #cc0d13;
+	padding-right: 5px;
+}
+.comment_main_r_tittle span{
+	width: 75%;
+	padding-left: 12px;
+	float: left;
+}
+.comment_main_r_tittle a{
+	color: black;
+	text-decoration: none;
+	background: url("../images/more_bg.jpg") right 0 no-repeat;
+	background-position: 35px 14px;
+	width: 20%;
+	float: right;
+}
+/* 右边内容 */
+.right_comment_main{
+	margin-top: 10px;
+	border:1px solid #e5e5e5;
+	border-radius: 6px;
+}
+.right_comment_main_tittle{
+	line-height: 40px;
+	font-weight: bold;
+	overflow: hidden;
+	zoom: 1;
+}
+.right_comment_main_tittle em{
+	color: #cc0d13;
+	padding-right: 5px;
+}
+.right_comment_main_tittle span{
+	width: 69%;
+	padding-left: 12px;
+	float: left;
+}
+.right_comment_main_tittle a{
+	color: black;
+	text-decoration: none;
+	background: url("../images/more_bg.jpg") right 0 no-repeat;
+	background-position: 35px 14px;
+	width: 25%;
+	float: right;
+}
+.right_comment_main_nav{
+	background: url("../images/paper_nav_spanbg.jpg") 0 top repeat-x;
+	height: 24px;
+	width: 214px;
+	margin: 0 auto;
+	padding-left: 6px;
+}
+.right_comment_main_nav a{
+	color: #666;
+	text-decoration: none;
+	background: url("../images/paper_nav_abg.jpg") 0 0 no-repeat;
+	display: inline-block;
+	width: 68px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+}
+.right_comment_main_nav a:hover{
+	background-position: 0 -24px;
+}
+/*抢卷儿*/
+.right_comment_main_main{
+	width: 214px;
+	margin: 0 auto;
+}
+.right_comment_main_main span{
+	display: inline-block;
+	/*text-align: center;*/
+	overflow: hidden;
+	white-space: nowrap;
+	color: #999;
+}
+.right_comment_main_main a{
+	text-decoration: none;
+	color: #000;
+	background: url("../images/whatHot_hotNew_bg.jpg") left 0 no-repeat;
+	background-position: left 7px;
+	padding-left: 7px;
+}
+.comment_top_bg li{
+	width: 214px;
+	margin: 0 auto;
+	background: url("../images/comment_top_bg.jpg") 0 top repeat-x;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+/*今日推荐*/
+.recommend_main_list{
+	overflow: hidden;
+	zoom: 1;
+	width: 214px;
+	margin: 0 auto;
+	padding-bottom: 12px;
+}
+.recommend_main_list a{
+	display: inline-block;
+	color: #6e6e6e;
+	text-decoration: none;
+	background: url("../images/comment_top_bg.jpg") 0 bottom repeat-x;
+	width: 214px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	position: relative;
+}
+.recommend_main_list a dt{
+	float: left;
+}
+.recommend_main_list a dt img{
+	border:1px solid #e6e6e6;
+	padding: 2px;
+}
+.recommend_main_list a dd{
+	display: inline-block;
+	float: left;
+	padding-left: 12px;
+	white-space: nowrap;
+}
+.recommend_main_list a .shop_province{
+	position: absolute;
+	left: 60px;
+	top: 46px;
+}
+/* 折扣店 */
+.nopb{
+	padding-bottom: 0;
+}
+.commet_discountShop li{
+	width: 214px;
+	margin: 0 auto;
+	background: url("../images/comment_top_bg.jpg") 0 top repeat-x;
+	padding-top: 4px;
+	padding-bottom: 7px;
+	padding-left: 7px;
+}
+.commet_discountShop span{
+	color: #c3c3c3;
+}
+.type{
+	color: #c75d61;
+	text-decoration: none;
+}
+.shopname{
+	color: #000;
+	text-decoration: none;
+}
+.spanRight_pr{
+	padding-right: 8px;
+}
+.spanleft{
+	background: url("../images/whatHot_hotNew_bg.jpg") left 0 no-repeat;
+	background-position: left 7px;
+	padding-left: 7px;
+}
+.commet_discountShop .li_nobg{
+	background: none;
+}
+/* 清除边框 */
+.nobd{
+	border: none;
+	border: 0;
+}
+/*消除上距离*/
+.marpt10{
+	margin-top: 0;
+}
+/* 上下距离6px */
+.comment_margintb{
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+/* 设置表格背景颜色 */
+.dailyActivit_calendar table .table_tb_bgc{
+	background-color: #f8f8f8;
+	
+}
+.dailyActivit_calendar table .table_tb_bgc a{
+	color: #d2d2d2;
+}
+.dailyActivit_calendar table .table_tb_bgc a:hover{
+	background: none;
+}
+/*右边各块高*/
+.load_hight{
+	height: 140px;
+}
+.advertising1_hight{
+	height: 90px;
+}
+.advertising2_hight{
+	height: 180px;
+}
+.paper_height{
+	height: 240px;
+}
+.recommended_height{
+	height: 420px;
+}
+.hopshop_height{
+	height: 180px;
+}
+.shop360{
+	height: 350px;
+}
+.join_height{
+	height: 370px;
+}

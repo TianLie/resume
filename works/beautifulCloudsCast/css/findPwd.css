@@ -1,0 +1,10 @@
+/*找回密码*/
+body,html{color: #FFFFFF;}
+.findPwd{padding-top: 36px;height: 100%;position: relative;}
+.w92p{width: 92%;margin: 0 auto;}
+.findTitle{color: #4a4a4a;}
+input.shuru{margin-top: 78px; border: none;border-bottom: 2px solid #d1d1d1;background-position: 6px 10px;padding-left: 12%;color: #000000;}
+input.findBtn{border: none;background-color: #cdcdcd;height: 40px;color: #FFFFFF;text-align: center;font-size: 18px; letter-spacing:10px}
+a.duxinRegister{background-position: 0 -44px;padding-left: 6.37%;color: #26a1e3;font-size: 12px;right: 0;padding-top: 16px;}
+.kfTel,a.kfTel{color: #b9b8b8;border-bottom: 1px solid #8f8e8e;}
+.tel-box{bottom: 36px;color: #b9b8b8;}

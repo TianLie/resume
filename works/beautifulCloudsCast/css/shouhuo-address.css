@@ -1,0 +1,13 @@
+/*添加地址*/
+.mui-table-view-cell.mui-active{background-color: #ffffff;}
+.mat5{margin-top: 5px;border-top: 2px solid #d1d1d1;}
+.shouhuo-box label{color: #565656;font-size: 14px;width: 25%;white-space: nowrap;}
+.baocun-btn{background-color: #1bc2ff; width: 40%;text-align: center;height: 36px;}
+.mat30{margin-top: 30px;}
+.shouhuo-box input,.shouhuo-box textarea{font-size: 14px; color: #565656;padding-left: 20%;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{width: 75%;}
+.pal6p{padding-left: 6%;}
+.pal2p{padding-left: 2.7%;}
+.dizhi{font-size: 14px; color: #565656;}
+.detailed-box.xiangxi,.xiangxi{height: 134px;}
+.detailed{padding-right: 12px;padding-top: 10px;}

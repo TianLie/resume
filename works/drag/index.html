@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#div1,#div2{
+			border: 1px solid #aaa;
+			width: 250px;
+			height: 50px;
+			float: left;
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+	<img src="img/img.jpg" height="50" width="250" id="img" draggable="true"></div>
+	<div id="div2"></div>
+	<script type="text/javascript">
+	var img = document.getElementById("img");
+	var div1 = document.getElementById("div1");
+	var div2 = document.getElementById("div2");
+	img.ondragstart = function(e){
+		e.dataTransfer.setData("Img",e.target.id);
+	}
+	div1.ondragover = function(e){
+		e.preventDefault();
+	}
+	div1.ondrop = function(e){
+		e.preventDefault();
+		var data = e.dataTransfer.getData("img");
+		e.target.appendChild(document.getElementById(data));
+	}
+	div2.ondragover = function(e){
+		e.preventDefault();
+	}
+	div2.ondrop = function(e){
+		e.preventDefault();
+		var data = e.dataTransfer.getData("img");
+		e.target.appendChild(document.getElementById(data));
+	}
+	</script>
+</body>
+</html>

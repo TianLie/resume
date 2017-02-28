@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>充值</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/rechange.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">充值</h1>
+	</header>
+	<div class="mui-content">
+	    <div class="state-box"> 
+	    	<p class="fz14 cl999">充值金额用于购买两元夺宝提供的电商优惠劵（1元等于一张优惠劵),同时获得相应个竖的夺宝币，可以用于两元夺宝，充值的款项将无法退回。</p>
+	    </div>
+	    <div class="bgff amount-list">
+	    	<h2 class="fz15 cl333 choose-jine">选择充值金额</h2>
+	    	<ul>
+	    		<li class="clearfix">
+	    			<a href="###" class="fl amount-box active">10</a>
+	    			<a href="###" class="fl amount-box">20</a>
+	    			<a href="###" class="fl amount-box">20</a>
+	    			<a href="###" class="fl amount-box">100</a>
+	    			<a href="###" class="fl amount-box">200</a>
+	    			<a href="###" class="fl amount-box"><input type="number" placeholder="其他金额" /></a>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <div class="bgff mat9">
+	    	<h2 class="fz15 cl333 choose-pay">选择支付方式</h2>
+	    	<form class="mui-input-group">
+				<div class="mui-input-row mui-radio pay-box pay-active">
+					<label class="clearfix">
+						<span class="fl payType-img"><img src="../images/alipay.png"/></span>
+						<dl class="fl pay-list">
+							<dt class="pay-dt">支付宝</dt>
+							<dd class="pay-dd">推荐拥有支付宝的用户使用</dd>
+						</dl>
+					</label>
+					<input name="radio1" type="radio" checked>
+				</div>
+				<div class="mui-input-row mui-radio pay-box">
+					<label class="clearfix">
+						<span class="fl payType-img"><img src="../images/weChat.png"/></span>
+						<dl class="fl pay-list">
+							<dt class="pay-dt">支付宝</dt>
+							<dd class="pay-dd">推荐拥有支付宝的用户使用</dd>
+						</dl>
+					</label>
+					<input name="radio1" type="radio">
+				</div>
+				<div class="mui-input-row mui-radio pay-box">
+					<label class="clearfix">
+						<span class="fl payType-img"><img src="../images/unionpay.png"/></span>
+						<dl class="fl pay-list">
+							<dt class="pay-dt">支付宝</dt>
+							<dd class="pay-dd">推荐拥有支付宝的用户使用</dd>
+						</dl>
+					</label>
+					<input name="radio1" type="radio">
+				</div>
+			</form>
+	    </div>
+	</div>
+	<footer class="psF payBtn-box bgff">
+		<button class="pay-btn">马上充值</button>
+	</footer>
+	<!--加载脚本-->
+	<!--<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+			//选择金额
+		function amount(){
+			var indexA = 0
+			$(".amount-box").on("tap",function(){
+				indexA = $(this).index();
+				$(".amount-box").eq(indexA).addClass("active").siblings().removeClass("active");
+				$(".amount-box input").blur(function(){
+					$(".amount-box input").val("");
+				})
+			})
+		}
+		amount();
+		//支付方式
+		function payType(){
+			var indexP = 0;
+			$(".pay-box").on("touchstart",function(){
+				indexP = $(this).index();
+				$(".pay-box").eq(indexP).addClass("pay-active").siblings().removeClass("pay-active");
+			})
+		}
+		payType();
+	</script>
+</body>
+</html>

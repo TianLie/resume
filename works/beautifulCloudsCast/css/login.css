@@ -1,0 +1,16 @@
+/*登录*/
+input.shuru{border: none;border-bottom: 2px solid #d1d1d1;background-position: 6px 10px;padding-left: 12%;color: #000000;}
+a.duanxi-logins {
+	color: #26a1e3;
+	font-size: 12px;
+}
+a.loginTx{color: #26a1e3;font-size: 16px;}
+.login-pd{padding-left: 16.4%;padding-right: 16.4%;}
+.pdt16{padding-top: 16px;}
+a.mui-icon{color: #ffffff;width: 50px;height: 50px;border-radius: 50%;line-height: 50px;text-align: center;}
+.mui-icon-qq{background-color: #33ccff;}
+.mui-icon-weixin{background-color: #80d740;}
+.mui-icon-weibo{background-color: #fa5b4e;}
+.pdt90{padding-top: 90px;}
+.marl21p{margin-left: 21.7%;}
+.login-tel-box{color: #b9b8b8;margin-top: 45px;}

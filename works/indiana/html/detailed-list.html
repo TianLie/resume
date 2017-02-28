@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>清单</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/detailed-list.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">清单</h1>
+	</header>
+	<div class="mui-content mab50">
+		<div class="list-box">
+			<ul class="bgff">
+				<li class="list">
+					<div class="list-title">
+						<a href="###" class="list-name">华硕 玩家国度G60JW4720超薄ROG游戏本</a>
+						<span class="deleteBtn">删除</span>
+					</div>
+					<div class="clearfix list-detail">
+						<div class="fl img-box">
+							<img src="../images/zuixin-img.jpg"/>
+						</div>
+						<div class="fl detail-box">
+							<p class="fz12 cl999">
+								<span>总需<i>16999</i></span>
+								<span class="shengyu">剩余<i class="clde2">3918</i>人次</span>
+							</p>
+							<p class="mui-numbox">
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" value="5" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</p>
+							<p class="fz11 cldbd">奖品最新一期火热进行中！</p>
+						</div>
+						<div class="fr baoyou">
+							包邮
+						</div>
+					</div>
+				</li>
+				<li class="list">
+					<div class="list-title">
+						<a href="###" class="list-name">华硕 玩家国度G60JW4720超薄ROG游戏本</a>
+						<span class="deleteBtn">删除</span>
+					</div>
+					<div class="clearfix list-detail">
+						<div class="fl img-box">
+							<img src="../images/zuixin-img.jpg"/>
+						</div>
+						<div class="fl detail-box">
+							<p class="fz12 cl999">
+								<span>总需<i>16999</i></span>
+								<span class="shengyu">剩余<i class="clde2">3918</i>人次</span>
+							</p>
+							<p class="mui-numbox">
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input class="mui-input-numbox" type="number" value="5" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</p>
+							<p class="fz11 cldbd">奖品最新一期火热进行中！</p>
+						</div>
+						<div class="fr baoyou">
+							包邮
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--结算-->
+	    <div class="settle-box clearfix">
+	    	<div class="fl shu-box">
+	    		<p class="fz15 clfff">总计: <span class="cle93">5&nbsp;</span>夺宝币</p>
+	    		<p class="fz12 clbab">共<span>2&nbsp;</span>件商品</p>
+	    	</div>
+	    	<div class="fr settle">
+	    		<a href="###" class="fz15 clfff">去结算></a>
+	    	</div>
+	    </div>
+	</div>
+	<footer class="w100p footer-box clearfix">
+		<a href="../index.html" class="fl w20p">
+			<span class="index-icon footer-icon duobao-icon"></span>
+			<p class="fz10">两元夺宝</p>
+		</a>
+		<a href="newest-jiexiao.html" class="fl w20p">
+			<span class="index-icon footer-icon jiexiao-icon"></span>
+			<p class="fz10">最新揭晓</p>
+		</a>
+		<a href="shai-list.html" class="fl w20p">
+			<span class="index-icon footer-icon shaidan-icon"></span>
+			<p class="fz10">晒单</p>
+		</a>
+		<a href="detailed-list.html" class="fl w20p footer-active">
+			<span class="index-icon footer-icon qingdan-icon"></span>
+			<p class="fz10">清单</p>
+		</a>
+		<a href="personal-zhongxin.html" class="fl w20p">
+			<span class="index-icon footer-icon wo-icon"></span>
+			<p class="fz10">我</p>
+		</a>
+	</footer>
+	<!--加载脚本-->
+	<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".deleteBtn").on("touchstart",function(){
+			$(this).parents(".list").remove();
+		})
+	</script>
+</body>
+</html>

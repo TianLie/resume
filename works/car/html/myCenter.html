@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>个人中心</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/center.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">个人中心</h1>
+	</header>
+	<div class="mui-content mab98">
+		<!--头像信息-->
+	    <div class="portrait_box w100p">
+	    	<div class="por">
+	    		<div class="portrait_img">
+		    		<img src="../images/portrait_img.png"/>
+		    		<input type="file" accept="image/*" />
+		    	</div>
+		    	<div class="user">李先生</div>
+		    	<div class="phone">13105685630</div>
+	    	</div>
+	    </div>
+	    <!--预约选项-->
+	    <div class="yuyue_sel">
+	    	<ul class="yuyue_list mui-clearfix">
+	    		<li class="active">已预约</li>
+	    		<li>取消预约</li>
+	    	</ul>
+	    	<div class="yuyue">
+	    		<!--已预约-->
+	    		<div class="yuyue_wrap active">
+	    			<div class="yuyue_w">
+		    			<div class="time"><span>7:00-8:00</span></div>
+		    			<div class="bookingInfo">
+		    				<p class="mab16">教练：<span>宝安韩教</span></p>
+		    				<p>地点：<span>深圳宝安区宝安71区留仙二路59号</span></p>
+		    			</div>
+		    			<div class="date_btn clearfix">
+		    				<span class="fl date"><i class="iconfont icon-riqi"></i>2016-6-16</span>
+		    				<span class="fr order_btn">取消预约</span>
+		    			</div>
+		    		</div>
+		    		<div class="yuyue_w">
+		    			<div class="time"><span>9:00-10:00</span></div>
+		    			<div class="bookingInfo">
+		    				<p class="mab16">教练：<span>罗湖刘教</span></p>
+		    				<p>地点：<span>深圳罗湖区水贝二路(近新地酒店)</span></p>
+		    			</div>
+		    			<div class="date_btn clearfix">
+		    				<span class="fl date"><i class="iconfont icon-riqi"></i>2016-5-28</span>
+		    				<span class="fr order_btn">取消预约</span>
+		    			</div>
+		    		</div>
+		    		<div class="yuyue_w">
+		    			<div class="time clearfix"><span>9:00-10:00</span><i class="mui-icon mui-icon-trash fr"></i></div>
+		    			<div class="bookingInfo">
+		    				<p class="mab16">教练：<span>罗湖刘教</span></p>
+		    				<p>地点：<span>深圳罗湖区水贝二路(近新地酒店)</span></p>
+		    			</div>
+		    			<div class="date_btn clearfix">
+		    				<span class="fl date"><i class="iconfont icon-riqi"></i>2016-5-28</span>
+		    				<span class="fr order_btn">已完成</span>
+		    			</div>
+		    		</div>
+	    		</div>
+	    		<!--取消预约-->
+	    		<div class="yuyue_wrap">
+		    		<div class="yuyue_w">
+		    			<div class="time"><span>7:00-8:00</span></div>
+		    			<div class="bookingInfo">
+		    				<p class="mab16">教练：<span>宝安韩教</span></p>
+		    				<p>地点：<span>深圳宝安区宝安71区留仙二路59号</span></p>
+		    			</div>
+		    			<div class="date_btn clearfix">
+		    				<span class="fl date"><i class="iconfont icon-riqi"></i>2016-5-25</span>
+		    				<span class="fr order_btn dele_btn">删除</span>
+		    			</div>
+		    		</div>
+		    		<div class="yuyue_w">
+		    			<div class="time"><span>9:00-10:00</span></div>
+		    			<div class="bookingInfo">
+		    				<p class="mab16">教练：<span>福田潘教</span></p>
+		    				<p>地点：<span>深圳罗湖区松园路88号景园酒店首层</span></p>
+		    			</div>
+		    			<div class="date_btn clearfix">
+		    				<span class="fl date"><i class="iconfont icon-riqi"></i>2016-5-25</span>
+		    				<span class="fr order_btn dele_btn">删除</span>
+		    			</div>
+		    		</div>
+		    	</div>
+	    	</div>
+	    </div>
+	    <div class="block"></div>
+	    <div class="cancel_wrap">
+	    	<div class="cancel_box">
+	    		<div class="clearfix"><span class="iconfont icon-shibai1"></span></div>
+	    		<div class="tips">
+	    			<p>取消预约 </p>
+	    			<!--<p>请尽快联系您的教练， </p>
+	    			<p>不然下次不能预约哦！ </p>-->
+	    		</div>
+	    		<div>
+	    			<button class="quxiao_btn">确定取消</button>
+	    		</div>
+	    	</div>
+		    	
+		</div>
+	</div>
+	<footer class="footer">
+		<ul class="footer_icon clearfix">
+			<li><a href="../index.html" class="iconfont icon-yuyue"></a></li>
+			<li class="cur"><a href="myCenter.html" class="iconfont icon-geren"></a></li>
+			<li><a href="contactUs.html" class="iconfont icon-dianhua"></a></li>
+			<li><a href="priceForm.html" class="iconfont icon-biaodanxinxitishi"></a></li>
+		</ul>
+	</footer>
+	<script src="../js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		/*切换*/
+		var index = 0 
+		$(".yuyue_list li").on("click",function(){
+			index = $(this).index();
+			$(".yuyue_list li").eq(index).addClass("active").siblings().removeClass("active");
+			$(".yuyue .yuyue_wrap").eq(index).show().siblings().hide();
+		})
+		/*删除*/
+		$(".dele_btn").on("click",function(){
+		 	$(this).parents(".yuyue_w").remove();
+		})
+		/*取消预约*/
+		/*提前五个小时*/
+		var nian;
+		var yue;
+		var ri;
+		var shi;
+		var targetDate;
+		$(".order_btn").on("click",function(){
+			var currentDate = new Date();
+			console.log(currentDate)
+			var jieshi = $(this).parents(".yuyue_w").children(".time").text();
+			var jieDate = $(this).parents(".date_btn").children(".date").text()
+			shi = jieshi.substring(0,1);
+			nian = jieDate.substring(0,4);
+			yue = jieDate.substring(5,6);
+			ri = jieDate.substring(7,9)
+			targetDate = new Date(nian,yue-1,ri,shi);
+			var remainTime = targetDate - currentDate;//返回的是毫秒数
+			var days = parseInt(remainTime/1000/60/60/24);
+			var hours = parseInt(remainTime/1000/60/60%24);
+			console.log(hours);
+			var t = $(this).text();
+			if(t == "取消预约"){
+				if(hours >= 5 || days >= 0){
+					$(".block").show();
+					$(".cancel_wrap").show();
+				}else{
+					mui.alert('取消失败，请尽快联系我们取消，不然下次不能预约哦')
+				}
+			}
+			
+		})
+		
+		$(".icon-shibai1").on("click",function(){
+			$(".block").hide();
+			$(".cancel_wrap").hide();
+		})
+		/*确定取消按钮*/
+		$(".quxiao_btn").on("click",function(){
+			alert("确定取消");
+			$(".block").hide();
+			$(".cancel_wrap").hide();
+		})
+		$(".mui-icon-trash").on("click",function(){
+			$(this).parents(".yuyue_w").remove();
+		})
+;	</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>锅打灰太狼</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<style type="text/css">
+		#wrap{
+			background: url("img/game_bg.jpg") 0 0 no-repeat;
+			width: 320px;
+			height: 480px;
+			position: relative;
+			margin: 0 auto;
+			/* cursor: url("img/pan.png"),default; */
+		}
+		#scroe{
+			color: #fff;
+			font-size: 20px;
+			font-family: arial;
+			position: absolute;
+			left: 60px;
+			top: 9px;
+		}
+		#timeBar{
+			background: url("img/progress.png") 0 0 no-repeat;
+			position: absolute;
+			left: 63px;
+			top: 66px;
+			width: 186px;
+			height: 16px;
+		}
+		 #wolfBox{
+			position: absolute;
+		} 
+		#wolfBox img{
+			position: absolute;
+			width: 108px;
+			height: 101px;
+		}
+		#muen{
+			position: absolute;
+			top: 165px;
+			height: 176px;
+			width: 100%;
+			text-align: center;
+			/*display: none;*/
+		}
+		#start,#handle{
+			font-family: "Microsoft Yahei";
+			font-size: 30px;
+			line-height: 50px;
+			color: #f60;
+			display: block;
+			text-shadow: 0 0 5px #ffff00;
+		}
+		#gameOver{
+			display: none;
+			position: absolute;
+			top:200px;
+			width:100%;
+			text-align: center;
+			font-family: "Microsoft Yahei";
+			line-height: 50px;
+			font-size: 30px;
+			font-weight: bold;
+			color: #F60;
+			text-shadow: 0 0 5px #FFFF00;
+		}
+		#rule{
+			display: none;
+			position: absolute;
+			left: 19%;
+			top: 35%;
+			width: 60%;
+			padding: 6px 6px;
+			color:#fff;
+			font-family: "Microsoft Yahei";
+			font-size: 20px;
+			border-radius: 15px;
+			border: 2px solid #000;
+			background-color: hsla(60,50%,40%,0.4);
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="scroe">0</div>
+		<div id="timeBar"></div>
+		<div id="wolfBox"></div>
+		<div id="muen">
+			<a href="javascript:void(0);" id="start">开始</a>
+			<a href="javascript:void(0);" id="handle">游戏操作说明</a>
+		</div>
+		<div id="gameOver">game over!</div>
+		<div id="rule">用平底锅打扁灰太狼来保护羊。 注意，小灰太郎还是小朋友，大家不要打他。</div>
+	</div>
+	<script type="text/javascript">
+	//加载id
+	function $(id){
+		return document.getElementById(id);
+	}
+	// 找节点
+	var wrap = $("wrap");
+	var scroe = $("scroe");
+	var timeBar  = $("timeBar");
+	var muen = $("muen");
+	var start = $("start");
+	var handle = $("handle");
+	var gameOver = $("gameOver")
+	var wolfBox = $("wolfBox");
+	var rule = $("rule");
+	var time = 0;
+	var whoTime = 0;
+	var creatwolfTime = 0;
+	var scroefen = 0;
+	// var runFlag = true; //设置一个动画是否走完的标志位
+	// 添加点击游戏开始按钮事件
+	start.onclick = function(){
+		muen.style.display = "none";
+		wrap.style.cursor = 'url("img/pan.png"),default';
+		timerBar();
+		creatwolfTime = setInterval(function(){
+			creatwolf();
+		},500);
+	}
+	// 添加点击规则按钮
+	handle.onclick = function(){
+		rule.style.display = "block";
+		muen.style.display = "none";
+	}
+	// 添加点击规则事件
+	rule.onclick = function(){
+		muen.style.display = "block";
+		rule.style.display = "none";
+	}
+	// 加载血量条
+	function timerBar(){
+		var gameTime = timeBar.offsetWidth;
+		time = setInterval(function(){
+			gameTime --;
+			if(gameTime <= 0){
+				clearInterval(time);
+				clearInterval(creatwolfTime);
+				gameOver.style.display = "block";
+			}
+			timeBar.style.width = gameTime +"px";
+			// getPs();
+			// console.log(timeBar.style.width);
+		},100);
+	}
+	// 加载灰太狼
+	var position = [
+		{l:"95px",t:"115px"},
+		{l:"15px",t:"159px"},
+		{l:"184px",t:"141px"},
+		{l:"100px",t:"191px"},
+		{l:"14px",t:"220px"},
+		{l:"198px",t:"211px"},
+		{l:"116px",t:"273px"},
+		{l:"27px",t:"293px"},
+		{l:"204px",t:"295px"}
+	];
+	// 加载灰太狼和小灰灰
+	function creatwolf(){
+		var wolf = document.createElement("img");
+		//随机获取洞口的坐标位置
+		var p = position[parseInt(Math.random()*9 + 0)];
+		var who = Math.random() > 0.8 ? "x" : "h";
+		wolf.index = 0;
+		wolf.src="img/" + who + wolf.index + ".png";
+		//随机获取洞口的坐标位置
+		// var p = position[parseInt(Math.random()*9 + 0)];
+		wolf.style.left = p.l;
+		wolf.style.top = p.t;
+		wolf.flag = true;
+		wolf.ifClick = false;
+		var runFlag = true;
+		wolfBox.appendChild(wolf);
+		wolf.onclick = function() {
+			if(runFlag){
+				if(who == "h"){
+					scroefen = scroefen + 10;
+				}else{
+					scroefen = scroefen - 10;
+				}
+				if(scroefen <= 0){
+					scroefen = 0;
+				}
+				wolf.ifClick = true;
+				wolf.index = 5;
+				scroe.innerHTML = scroefen;
+			}
+			runFlag = false;
+		}
+		wolf.ownTimer = setInterval(function(){
+			if(wolf.flag || wolf.ifClick){
+				wolf.index++;
+			}else{
+				wolf.index--;
+			}
+
+			if(wolf.index >= 5){
+				wolf.flag = false;
+			}
+			if(wolf.index <= 0 || wolf.index >= 9){
+				clearInterval(wolf.ownTimer);
+				wolf.parentNode.removeChild(wolf);
+			}
+			wolf.src="img/" + who + wolf.index + ".png";
+		},100);
+	}
+	</script>
+</body>
+</html>

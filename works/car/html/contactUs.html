@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>联系我们</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/center.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">联系我们</h1>
+	    <a href="javascript:void(0);" class="mui-pull-right mui-icon mui-icon-more-filled"></a>
+	</header>
+	<div class="mui-content mab50">
+	    <div class="trainer_list">
+	    	<ul>
+	    		<li class="clearfix">
+	    			<span class="fl trainer_name">孔小姐</span>
+	    			<span class="fr lianxi">
+	    				<i class="iconfont icon-dianhua1"></i>
+	    				<i class="iconfont icon-erweima"></i>
+	    			</span>
+	    		</li>
+	    		<li class="clearfix">
+	    			<span class="fl trainer_name">徐教练</span>
+	    			<span class="fr lianxi">
+	    				<i class="iconfont icon-dianhua1"></i>
+	    				<i class="iconfont icon-erweima"></i>
+	    			</span>
+	    		</li>
+	    		<li class="clearfix">
+	    			<span class="fl trainer_name">韩教练</span>
+	    			<span class="fr lianxi">
+	    				<i class="iconfont icon-dianhua1"></i>
+	    				<i class="iconfont icon-erweima"></i>
+	    			</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <div class="pad4">
+	    	<div class="kiss_car">
+	    		<img src="../images/kiss_car.jpg"/>
+	    		<p>请扫描以上二维码，关注“亲亲学车”微信公众号。全天候无休,解答学员咨询。</p>
+	    	</div>
+	    	<div class="cl2f dizhi">
+	    		公司地址：深圳市宝安区共和工业路45号华丰商务中心A座316
+	    	</div>
+	    </div>
+	    <div class="block"></div>
+	    <div class="tel_w">
+	    	<div class="tel_box">
+	    		<h2 class="boda_t">拨打</h2>
+		    	<p class="tel_num">13902912867</p>
+		    	<div class="cal_s clearfix">
+		    		<a href="tel:13902912867" class="phone_num">是</a>
+		    		<a href="javaScript:void(0)" class="no_btn">否</a>
+		    	</div>
+	    	</div>
+	    	
+	    </div>
+	    <div class="block block1"></div>
+	    <div class="code_w">
+	    	<div class="code_box">
+	    		<img src="../images/code.jpg" class="code_img"/>
+	    		<p class="code_tex">扫二维码，加我微信</p>
+	    	</div>
+	    </div>
+	</div>
+	<footer class="footer">
+		<ul class="footer_icon clearfix">
+			<li><a href="../index.html" class="iconfont icon-yuyue"></a></li>
+			<li><a href="myCenter.html" class="iconfont icon-geren"></a></li>
+			<li class="cur"><a href="contactUs.html" class="iconfont icon-dianhua"></a></li>
+			<li><a href="priceForm.html" class="iconfont icon-biaodanxinxitishi"></a></li>
+		</ul>
+	</footer>
+	<script src="../js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var tell = ["13902912867","18502912867","19782912867"]
+		var index=0;
+		$(".icon-dianhua1").on("click",function(){
+			index = $(this).parents("li").index();
+			console.log(index)
+			$(".tel_num").html(tell[index]);
+			$(".phone_num").attr("href",'tel:'+tell[index]+'')
+			$(".block").show();
+			$(".tel_w").show();
+		})
+		$(".no_btn").on("click",function(){
+			$(".block").hide();
+			$(this).parents(".tel_w").hide();
+		})
+		$(".icon-erweima").on("click",function(){
+			index = $(this).parents("li").index();
+			console.log(index)
+			$(".code_img").attr("src",'../images/code.jpg');
+			$(".block1").show();
+			$(".code_w").show();
+		})
+		$(".block1").on("click",function(){
+			$(".block1").hide();
+			$(".code_w").hide();
+		})
+	</script>
+</body>
+</html>

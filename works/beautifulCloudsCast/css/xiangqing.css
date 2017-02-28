@@ -1,0 +1,54 @@
+/*详情*/
+.mui-slider-indicator .mui-active.mui-indicator{background: #aaa;}
+.mui-slider-indicator .mui-indicator{background: #e6e6e6;-webkit-box-shadow: none;}
+.tancanBtn.mui-slider-indicator .mui-active.mui-indicator{background: #49d9ff;}
+.mui-slider{margin-bottom: 2px;}
+.he360px{height: 360px;}
+.mui-slider .mui-slider-group .mui-slider-item.tupian{padding: 0 10%;line-height: 360px;height: 360px;}
+.mui-slider .mui-slider-group .mui-slider-item img{vertical-align: middle;display: inline-block;}
+.back-box{top: 15px;left: 15px; text-align: center; width: 38px;height: 38px;line-height:38px;border-radius: 50%;-webkit-border-radius: 50%;background-color: #cccccc;}
+.mui-icon-back{color: #fff;}
+.shangpin-box{padding:20px 4%;}
+.h2name{color: #333;}
+.money{color: #e92a2a;margin-top: 4px;}
+.detail{margin-top: 8px;}
+.spriteBox{background:  0 0 url(../images/xiangqing-sprite.png) no-repeat;background-size: 50px 300px; -webkit-background-size: 50px 300px;}
+.fenxiang{width: 24px;height: 24px;top: 0;right: 0;}
+.yixuan{color: #cbcbcb;}
+a.mui-navigate-right span{font-size: 12px;}
+.xuanze{color: #000000;}
+.mat10{margin-top: 10px;}
+.mui-table-view:before{background-color: #ddd;height: 2px;}
+.mui-table-view:after{background-color: #ddd;height: 2px;}
+/*优惠套餐最佳搭配*/
+.taocan-box{color: #a5a5a5;padding: 8px 0;border: 1px solid #e8e8e8;box-sizing: border-box;-webkit-box-sizing: border-box;}
+a.taocan{color: #26b0ee;font-size: 12px;width: 49%;display: inline-block;text-align: center;}
+.taocan-list{width: 50%;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.mui-table-view .mui-media-object{max-width: 36%;height: 100%;}
+.tancanName{white-space: nowrap;text-overflow: ellipsis;}
+.buy{color: #838383;font-size: 10px;padding: 2px 8px;margin-top: 9px;}
+.borbtm{border-bottom: 2px solid #e8e8e8;}
+.borrig{border-right: 1px solid #e8e8e8;;}
+.mui-table-view-cell{padding: 10px 12px;}
+.tancanBtn{position: initial;line-height: 26px;}
+.taocanBox{display: none;}
+.box-active{display: block;}
+.mui-ellipsis.tx2{overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;line-height: 16px;}
+/*更多图标*/
+.more-box{z-index: 20;}
+/*底部立即购买*/
+.now-box{bottom: 0;padding: 6px 4%;text-align: center;z-index: 99;}
+.home{background-position: 0 -56px;width: 22px;height: 22px;vertical-align: middle;}
+.cat{background-position: 0 -104px;width: 22px;height: 22px;vertical-align: middle;}
+.mui-btn-blue{width: 72%;height: 40px; background-color: #1cbbff;border: none;vertical-align: middle;margin: 0 4.6%;}
+/*上拉查看图文详情*/
+.tuwen-title{color: #686868;padding-top: 9px;}
+.mui-icon-arrowup{display: inline-block;vertical-align: middle;}
+.shuoming-box{color: #A5A5A5;}
+.shuoming-box a{width: 32%;display: inline-block;color: #a5a5a5;}
+.shuoming-box a:hover{color: #26b0ee;}
+a.a-active{color: #26b0ee;}
+.mabm64{margin-bottom: 49px};
+.shuoBox{display: none;}
+.shuoBox-active{display: block;}
+.mui-action-back{z-index: 100;}

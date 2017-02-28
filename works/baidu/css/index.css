@@ -1,0 +1,592 @@
+body {
+  font: 12px arial;
+}
+#header {
+  margin-right: 5px;
+}
+#header .nav_list {
+  float: right;
+  white-space: nowrap;
+}
+#header .nav_list > li {
+  float: left;
+}
+#header .nav_list > li > a {
+  display: inline-block;
+  text-decoration: underline;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #333;
+  line-height: 24px;
+  font-weight: bold;
+}
+#header .nav_list > li > a.login,
+#header .nav_list > li > a.set,
+#header .nav_list > li > a.more {
+  font-weight: normal;
+}
+#header .nav_list > li > a.more {
+  color: #fff;
+  background-color: #38f;
+  padding: 0 3px;
+  text-decoration: none;
+  margin-left: 26px;
+  margin-right: 2px;
+}
+#header .nav_list > li > a:hover {
+  color: #00c;
+}
+.set_box {
+  position: relative;
+}
+.set_box .set:after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 100%;
+}
+.set_box:hover .set_list {
+  display: block;
+}
+.set_list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 70px;
+  border: 1px solid #d9d9d9;
+  box-shadow: 1px 1px 5px #d1d1d1;
+}
+.set_list a {
+  display: block;
+  text-align: center;
+  line-height: 26px;
+  text-decoration: none;
+  color: #333;
+  background-color: #fff;
+}
+.set_list a:hover {
+  color: #fff;
+  background-color: #38f;
+}
+.set_list::before {
+  position: absolute;
+  top: -12px;
+  left: 29px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #d9d9d9 transparent;
+}
+.set_list:after {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+.right_bar {
+  position: relative;
+}
+.right_bar:hover .right_list {
+  display: block;
+}
+.right_bar .right_list {
+  display: none;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 66px;
+  background-color: #f9f9f9;
+  border-left: 1px solid #e2e2e2;
+  text-align: center;
+  padding: 0 8px;
+}
+.right_bar .right_list > li:first-child {
+  height: 43px;
+  line-height: 43px;
+  padding-top: 9px;
+  text-align: left;
+  text-indent: 12px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.right_bar .right_list > li:first-child a {
+  color: #666;
+}
+.right_bar .right_list .last-list {
+  height: 76px;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+.right_bar .right_list .last-list a {
+  color: #666;
+}
+.right_bar .right_list ul li {
+  border-bottom: 1px solid #d9d9d9;
+}
+.right_bar .right_list ul li a {
+  display: block;
+  padding: 8px 0;
+  color: #666;
+}
+.right_bar .right_list ul li a:hover {
+  text-decoration: underline;
+}
+.right_bar .right_list ul li a i {
+  display: block;
+  height: 36px;
+  margin: 0 auto 2px;
+}
+.right_bar .right_list ul > li:nth-child(1) i {
+  width: 40px;
+  background: url(../images/icon.png) -72px center no-repeat;
+}
+.right_bar .right_list ul > li:nth-child(2) i {
+  width: 30px;
+  background: url(../images/icon.png) -114px center no-repeat;
+}
+.right_bar .right_list ul > li:nth-child(3) i {
+  width: 36px;
+  background: url(../images/icon.png) -36px center no-repeat;
+}
+.right_bar .right_list ul > li:nth-child(4) i {
+  width: 30px;
+  background: url(../images/icon.png) -150px center no-repeat;
+}
+.right_bar .right_list ul > li:nth-child(5) i {
+  width: 36px;
+  background: url(../images/icon.png) -184px center no-repeat;
+}
+.right_bar .right_list ul > li:nth-child(6) i {
+  width: 36px;
+  background: url(../images/icon.png) -222px center no-repeat;
+}
+#content {
+  text-align: center;
+  margin-top: 60px;
+}
+#content .logo {
+  width: 270px;
+  height: 129px;
+  margin: 0 auto;
+}
+#content .logo img {
+  width: 100%;
+  height: 100%;
+}
+#content .search {
+  margin-top: 20px;
+  white-space: nowrap;
+}
+#content .search .input1 {
+  width: 500px;
+  height: 34px;
+  border: 1px solid #ccc;
+}
+#content .search .input1:focus {
+  border: 1px solid #3385ff;
+}
+#content .search .input2 {
+  display: inline-block;
+  position: absolute;
+  background-color: #3385ff;
+  height: 36px;
+  width: 100px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  outline: medium;
+  border-bottom: 1px solid #2d78f4;
+  cursor: pointer;
+}
+#content .search .input2:hover {
+  background-color: #317ef3;
+  border-bottom: 1px solid #2869c8;
+  box-shadow: 1px 1px 1px #ccc;
+}
+#footer {
+  margin-top: 230px;
+  text-align: center;
+}
+#footer > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+#footer .left_box dl {
+  float: left;
+  padding: 12px 0 12px 70px;
+  margin-right: 20px;
+  text-align: left;
+  color: #999;
+  line-height: 23px;
+}
+#footer .left_box dl dt {
+  font-weight: bold;
+  color: #4C4C4C;
+}
+#footer .left_box dl dd {
+  letter-spacing: 1px;
+}
+#footer .left_box dl:nth-child(1) {
+  background: url(../images/phone_code.png) 0 0 no-repeat;
+}
+#footer .left_box dl:nth-child(2) {
+  background: url(../images/qr_code.png) 0 0 no-repeat;
+}
+#footer .right_box .footer_list1 {
+  text-align: left;
+}
+#footer .right_box .footer_list1 ul li {
+  display: inline-block;
+}
+#footer .right_box .footer_list1 ul li a {
+  color: #272727;
+}
+#footer .right_box .footer_list2 {
+  color: #666;
+  margin-top: 5px;
+  background: url("../images/foot.png") right 0 no-repeat;
+  padding-right: 20px;
+}
+#footer .right_box .footer_list2 a {
+  color: #666;
+}
+#popBox {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#popBox .login_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -200px;
+  margin-left: -196px;
+  width: 393px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 30;
+  font: 14px/18px arial, "\5b8b\4f53", sans-serif, "Microsoft YaHei", tahoma;
+}
+.login_tittle {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-width: 1px 1px 0 1px;
+  border-bottom: 0;
+}
+.login_tittle .button {
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  width: 16px;
+  height: 16px;
+}
+.login_tittle .button a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/pass_login_icons.png) -56px -48px;
+}
+.login_tittle .button a:hover {
+  background-position: -72px -48px;
+}
+.login_tittle span {
+  font-size: 16px;
+  font-family: "宋体";
+  height: 18px;
+  font-weight: bold;
+  width: auto;
+  color: #666;
+  background: url("../images/baidu_logo_24_056405eb.png") 18px center no-repeat;
+  text-indent: 50px;
+  padding: 15px 0 13px;
+  display: block;
+  margin-right: 29px;
+  overflow: hidden;
+  text-align: left;
+  box-sizing: content-box;
+  text-overflow: ellipsis;
+}
+.login_main {
+  padding: 0 20px;
+  font: 14px/18px arial, "\5b8b\4f53", sans-serif, "Microsoft YaHei", tahoma;
+  padding-bottom: 50px;
+}
+.login_main .quick_login {
+  text-align: right;
+  margin: 24px 0 10px 0;
+}
+.login_main .quick_login a {
+  font-size: 12px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, STHeiti, "宋体";
+  color: #666;
+  cursor: pointer;
+  padding-left: 15px;
+  background: url("../images/smsSwitchPhone.png") no-repeat;
+}
+.login_main .quick_login a:hover {
+  color: #2e7fdb;
+  text-decoration: underline;
+}
+.login_main .userName_item {
+  margin-bottom: 15px;
+  position: relative;
+}
+.login_main .userName_item::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.login_main .userName_item input {
+  padding: 12px 10px 12px 10px;
+  border: 1px solid #ddd;
+  width: 260px;
+  color: #666;
+  font-size: 14px;
+  height: 16px;
+}
+.login_main .userName_item input:focus {
+  border: 1px solid #488ee7;
+}
+.login_main .userName_item .name {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  padding: 0 0 0 24px;
+  background: url("../images/input_icons.png") center -73px no-repeat;
+  z-index: 40;
+}
+.login_main .userName_item .name:focus {
+  background-position: center -113px;
+}
+.login_main .userName_item .user {
+  padding-right: 50px;
+  padding-left: 38px;
+}
+.login_main .passWord_item {
+  position: relative;
+  margin-bottom: 15px;
+}
+.login_main .passWord_item::after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.login_main .passWord_item input {
+  padding: 12px 10px 12px 10px;
+  border: 1px solid #ddd;
+  width: 260px;
+  color: #666;
+  font-size: 14px;
+  height: 16px;
+}
+.login_main .passWord_item input:focus {
+  border: 1px solid #488ee7;
+}
+.login_main .passWord_item .passname {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  padding: 0 0 0 24px;
+  background: url("../images/input_icons.png") center -150px no-repeat;
+  z-index: 40;
+}
+.login_main .passWord_item .passname:focus {
+  background-position: center -190px;
+}
+.login_main .passWord_item .passWord {
+  padding-right: 50px;
+  padding-left: 38px;
+}
+.login_main .automatic {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.login_main .automatic input {
+  vertical-align: middle;
+}
+.login_main .automatic label {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #666;
+}
+.login_main .automatic a {
+  position: absolute;
+  right: 20px;
+  color: #1B66C7;
+  text-decoration: none;
+  font-size: 12px;
+}
+.login_main .automatic a:hover {
+  text-decoration: underline;
+  color: #2e7fdb;
+}
+.login_main .login_btn {
+  margin-bottom: 15px;
+}
+.login_main .login_btn input {
+  display: inline-block;
+  background-color: #3f89ec;
+  width: 350px;
+  height: 48px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.login_main .register {
+  text-align: right;
+}
+.login_main .register a {
+  color: #1B66C7;
+  font-size: 12px;
+  text-decoration: none;
+}
+.login_main .register a:hover {
+  text-decoration: underline;
+}
+.else_login {
+  border-top: 1px solid #eee;
+  font: 14px/18px arial, "\5b8b\4f53", sans-serif, "Microsoft YaHei", tahoma;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.else_login .else_tittle {
+  color: #666;
+  font-size: 12px;
+}
+.else_nav {
+  text-align: left;
+}
+.else_nav ul li {
+  display: inline-block;
+}
+.else_nav ul li a {
+  width: 0;
+  height: 24px;
+  overflow: hidden;
+  display: block;
+  margin-top: 15px;
+  margin-right: 25px;
+  color: #00C;
+  text-decoration: underline;
+  padding-left: 24px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.else_nav ul li .qq_login {
+  background: url("../images/pass_login_icons.png") -88px 0 no-repeat;
+}
+.else_nav ul li .wb_login {
+  background: url("../images/pass_login_icons.png") -64px 0 no-repeat;
+}
+.last_ew {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../images/pass_login_icons.png") -44px -86px no-repeat;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+#codeBox {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#codeBox .login_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -200px;
+  margin-left: -196px;
+  width: 393px;
+  height: 474px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 30;
+  font: 14px/18px arial, "\5b8b\4f53", sans-serif, "Microsoft YaHei", tahoma;
+}
+.code_main {
+  text-align: center;
+}
+.code_main .code_tittle {
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 15px;
+  padding-top: 40px;
+  padding-left: 0;
+  font-weight: bold;
+}
+.code_main .phone_app {
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  background: #f1f1f1;
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 3px;
+  margin-top: 25px;
+}
+.code_main .phone_app a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #1b66c7;
+  font-family: Arial, Helvetica, STHeiti, "宋体";
+}
+.code_main .phone_app a:hover {
+  text-decoration: underline;
+}
+.code_qrcode {
+  margin: 0 auto;
+  width: 136px;
+}
+.code_qrcode img {
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 123px;
+  height: 123px;
+}
+.last_pc {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: url("../images/pass_login_icons.png") 0 -86px no-repeat;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}

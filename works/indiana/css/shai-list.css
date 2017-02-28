@@ -1,0 +1,15 @@
+/*晒单页面*/
+.shai-box{background-color: #fff;width: 100%;padding: 10px 10px 14px 10px;border-top: 1px solid #dddddd;}
+.tou-box{width: 30px;height: 30px;border-radius: 50%;-webkit-border-radius: 50%;overflow: hidden;}
+.tou-box img{height: 100%;}
+.shaiImg{margin-top: 10px;}
+.shaiImg img{max-width:80px;height: 80px;}
+.shaiList-box{width: 86%;margin-left: 10px;}
+.user{font-size: 14px;color: #1ba6ff; float: left;}
+.time{font-size: 10px;color: #999999;float: right;}
+.zan{background: 0 0 url("../images/zan-sprite.png") no-repeat;background-size: 60px 30px;-webkit-background-size: 60px 30px;width: 16px;height: 15px;vertical-align: middle;}
+.zan-box{text-align: right;margin-top: 10px;}
+.try{margin-left: 10px;}
+.zanBtn{font-size: 13px;color: #676767;}
+a.active{color: #1ba6ff;}
+.active .zan{background-position-x: right;}

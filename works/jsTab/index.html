@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#wrap{
+			width: 510px;
+			height: 286px;
+			overflow: hidden;
+			position: relative;
+			margin: 0 auto;
+			cursor: pointer;
+		}
+		#inner{
+			width: 9999px;
+			zoom: 1;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		#inner img{
+			width: 510px;
+			height: 286px;
+			float: left;
+		}
+		#wrap a{
+			position: absolute;
+			top: 0;
+			width: 40px;
+			height: 100%;
+			background-color: rgba(0,0,0,0.4);
+			color: #fff;
+			opacity: 0;
+			font-size: 28px;
+			text-align: center;
+			line-height: 286px;
+			text-decoration: none;
+		}
+		#wrap:hover a{
+			opacity: 1;
+		}
+		#leftBtn{
+			left: 0;
+		}
+		#rightBtn{
+			right: 0;
+		}
+		#btnList{
+			position:absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 0;
+		}
+		#btnList button{
+			width: 30px;
+			height: 30px;
+			border-radius: 15px;
+		}
+		#btnList button.active{
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="inner">
+			<img src="img/1.jpg">
+			<img src="img/2.jpg">
+			<img src="img/3.jpg">
+			<img src="img/4.jpg">
+			<img src="img/5.jpg">
+			<img src="img/6.jpg">
+			<img src="img/7.jpg">
+			<img src="img/8.jpg">
+			<img src="img/9.jpg">
+		</div>
+		<a href="javascript:void(0);" id="leftBtn">&lt;</a>
+		<a href="javascript:void(0)" id="rightBtn">&gt;</a>
+		<p id="btnList">
+			<button class="active">1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+		</p>
+	</div>
+	<script src="tween.js"></script>
+	<script type="text/javascript">
+	//找节点
+	var wrap = document.getElementById("wrap");
+	var inner = document.getElementById("inner");
+	var leftBtn = document.getElementById("leftBtn");
+	var rightBtn = document.getElementById("rightBtn");
+	var btnList = document.getElementById("btnList").getElementsByTagName("button");
+	var imgList = inner.getElementsByTagName("img");
+	var perWidth = imgList[0].offsetWidth;
+	inner.innerHTML += inner.innerHTML;
+	var index = 0;
+	var time = 0;
+	var autotime = 0;
+	//添加按钮事件循环
+	for(var i = 0; i < btnList.length; i++){
+		btnList[i].index = i;
+		btnList[i].onclick = function (){
+			index = this.index;
+			tab();
+		}
+	}
+	//添加切换时间
+	function tab(){
+		clearInterval(autotime);
+		// clearTimeout(timego);
+		var t = 0;
+		var maxT = 30;
+		var start = inner.offsetLeft;
+		var end = -perWidth*index;
+		var change = end - start;
+		autotime = setInterval(function(){
+			t++;
+			if(t >= maxT){
+				clearInterval(autotime);
+				// timego = setTimeout(next,1000);
+			}
+			inner.style.left = Tween.Sine.easeIn(t,start,change,maxT) + "px";
+			if(index > btnList.length && t >= maxT){
+				inner.style.left = "0px";
+			}
+		},30);
+		for(var j = 0; j < btnList.length; j++){
+			btnList[j].className = "";
+		}
+		if(index >= btnList.length){
+			btnList[0].className = "active"
+		}else{
+			btnList[index].className = "active";
+		}
+		// inner.style.left = -perWidth * index + "px";
+	}
+	//切换到下一张图片
+	function next(){
+		index++;
+		if(index > btnList.length){
+			index = 0;
+		}
+		tab();
+	}
+	//添加下一张按钮事件
+	rightBtn.onclick = function (){
+		next();
+	}
+	//切换到上一张
+	function  front(){
+		index--;
+		if(index < 0){
+			index = btnList.length-1;
+			inner.style.left = -perWidth * btnList.length + "px";
+		}
+		tab();
+	}
+	//添加上一张按钮事件
+	leftBtn.onclick = function(){
+		front();
+	}
+	//添加自动切换到下一张
+	time = setInterval(next,2000);
+	//鼠标经过图片上，自动切换停止
+	wrap.onmouseover = function(){
+		clearInterval(time);
+	}
+	//鼠标离开图片位置，自动切换继续
+	wrap.onmouseout = function (){
+		// clearInterval(time);
+		time = setInterval(next,2000);
+	}
+	</script>
+</body>
+</html>

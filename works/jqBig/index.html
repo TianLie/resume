@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			border: 1px solid #ccc;
+		}
+		#minBox{
+			position: relative;
+			width: 350px;
+			height: 350px;
+			margin-left: 30px;
+			margin-top: 50px;
+		}
+		#minBox img{
+			position: absolute;
+		}
+		#maxBox{
+			display: none;
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			left: 400px;
+			top: 0;
+			overflow: hidden;
+		}
+		#maxBox img{
+			position: absolute;
+		}
+		#slider{
+			background-color: pink;
+			opacity: 0.4;
+			width: 150px;
+			height: 150px;
+			display: none;
+			position: absolute;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="minBox">
+		<img src="img/min.jpg">
+		<div id="slider"></div>
+	</div>
+	<div id="maxBox">
+		<img src="img/max.jpg">
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-blow.js"></script>
+	<script type="text/javascript">
+	$(document).blow();
+	</script>
+</body>
+</html>

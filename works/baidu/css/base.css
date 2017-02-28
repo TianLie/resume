@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+input {
+  border: none;
+  border-width: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  height: 0;
+  width: 0;
+  display: inline-block;
+}

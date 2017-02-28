@@ -1,0 +1,38 @@
+/*注册 登陆页面*/
+.sigIn-box{border: 1px solid #fff;display: inline-block;line-height: 32px;border-radius: 3px;-webkit-border-radius: 3px;}
+.w80{width: 80px;}
+a.active{background-color: #fff;color: #de2f50;}
+.mui-input-group .mui-input-row{height: 44px;}
+.input-list label{width: 20%;white-space: nowrap;font-size: 14px; color: #333333;padding: 16px 15px;}
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{width: 80%;}
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], select, textarea{
+	height: 44px;padding: 16px 15px;
+}
+.phone-box .mui-input-clear~.mui-icon-clear{
+	right: 120px;
+	top: 12px;
+}
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{
+	color: #b4b1b6;
+}
+.mui-checkbox input[type=checkbox], .mui-radio input[type=radio]{width: 16px;height: 16px;}
+.mui-input-group .mui-input-row:after{left: 0;}
+/*验证码*/
+.verification{position: absolute;top: 7px;right: 15px;z-index: 100;border-radius: 6px;width: 22.6%;-webkit-border-radius: 6px;}
+.mui-checkbox input[type=checkbox]:before{content: '\e413'; font-size: 18px;color: #cccccc;}
+.mui-checkbox input[type=checkbox]:checked:before{content: '\e413';color: #cccccc;}
+.select-box{position: relative;color: #cccccc;}
+.mui-checkbox input[type=checkbox]:checked:after{content: '\e472'; color: #1c8ff1;font-weight:600;font-size: 18px;font-family: Muiicons;position: absolute;left: 1px;top: 0;}
+.mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio]{left: 15px;}
+.mui-checkbox.mui-left .read-box{padding-left: 9.6%;color: #999;padding-top: 6px;padding-bottom: 0;}
+/*按钮*/
+.reg-btn{color: #fff;padding: 12px 0;margin: 0 auto;border-radius: 6px;-webkit-border-radius: 6px;font-size: 17px;}
+.signIn-box{margin-top: 18px;padding: 0 15px;}
+/*登陆*/
+.forgot-box{text-align: right;}
+a.forgot{font-size: 12px;color: #1ba6ff;margin-top: 10px;}
+/*找回密码*/
+.look-box{position: absolute;background: 0 0 url("../images/suo-icon.png") no-repeat; width: 18px;height: 22px;background-size: 100% 100%;-webkit-background-size: 100% 100%;top: 10px;left: 20px;}
+input.pwd-box{padding-left: 46px;}
+.sigInBox{display: none;}
+.sigInBox:first-child{display: block;}

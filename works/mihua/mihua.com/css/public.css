@@ -1,0 +1,117 @@
+body{font: 12px/1.5em Verdana,Helvetica,Arial,sans-serif;}
+body{min-width: 1200px; width: 100%;}
+*{
+	padding: 0;
+	margin: 0;
+}
+.content{
+	width: 100%;
+	overflow: hidden;
+}
+.wapper{
+	padding: 0 10%;
+}
+/*  浮动 */
+.f_l,.top_left{
+	float: left;/* 左浮动 */
+}
+.f_r,.top_right{
+	float: right;/* 右浮动 */
+}
+.p_r{
+	position: relative;
+}
+.top_left a{
+	display: inline-block;
+}
+
+/*居中*/
+.texCen{
+	width: 100%;
+	text-align: center;
+	margin-top: 66px;
+}
+
+/* 头部 Begin */
+#top{
+	background-color: #282828;
+	width: 100%;
+	padding: 10px 0;
+}
+.top_left{
+	width: 60%;
+	margin-top: 3px;
+}
+.top_right{
+	width: 30%;
+}
+.logo{
+	vertical-align: middle;
+	display: inline-block;
+}
+.top_tit{
+	font-size: 36px;
+	font-family: "华文楷体";
+	position: relative;
+	top: 6px;
+}
+.contact_list .con{
+	display: block;
+	background: 0 0 url("../img/index_sprite.png") no-repeat;
+	color: #fff;
+	padding-left: 49px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 24px;
+	font-family: "华文楷体";
+}
+.con.mail{
+	background-position: 0 -52px;
+	margin-top: 14px;
+	padding-left: 36px;
+}
+.contact_list{
+	width: 62%; 
+}
+.qrcode_img{
+	width: 69px;
+	height: 69px;
+}
+.qrcodeBox{
+	position: relative;
+}
+#qrcodeBig{
+	display: none;
+	position: absolute;
+	left: -45%;
+	z-index: 9999999999;
+}
+
+/* 头部 End */
+
+/* 尾部 Begin */
+#footer{
+	background-color: #282828;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	z-index: 9;
+}
+#footer p{
+	font-family: "宋体";
+	font-size: 24px;
+	line-height: 42px
+}
+/* 尾部 End */
+
+
+/* 媒体查询 */
+@media screen and (max-width:1200px){
+   
+   .contact_list {
+    	width: 68%;
+    }
+    .wapper{
+		padding: 0 8%;
+	}
+}

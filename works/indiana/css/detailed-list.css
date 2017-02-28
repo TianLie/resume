@@ -1,0 +1,20 @@
+/*清单页面*/
+/*清单列表*/
+.list-box{border: 1px solid #cccccc;border-right: none;}
+.list{padding: 0 15px;border-bottom: 1px solid #ccc;}
+.list:last-child{border-bottom: none;}
+.list-title{border-bottom: 1px solid #dddddd;height: 34px;line-height: 34px;}
+.list-name{font-size: 14px;color: #363636;white-space: nowrap;width: 72%;overflow: hidden;text-overflow: ellipsis;}
+.deleteBtn{float: right;font-size: 12px;color: #666666;}
+.img-box{max-width: 68px;height: 68px;}
+.detail-box{margin-left: 7%;}
+.baoyou{width: 32px;height: 32px;background-color: #df3051;border-radius: 50%;-webkit-border-radius: 50%;color: #fff;white-space: nowrap;font-size: 12px;text-align: center;line-height: 32px;margin-top: 20px;}
+.list-detail{padding-top: 12px;padding-bottom: 10px;}
+.shengyu{margin-left: 26px;}
+.mui-numbox{margin: 8px 0;}
+.mui-numbox [class*=btn-numbox], .mui-numbox [class*=numbox-btn]{background-color: #fff}
+/*结算*/
+.settle-box{width:100%;background-color: #43434b;height: 50px; bottom: 57px;left: 0;position: absolute;}
+.shu-box{padding-left: 4%;padding-top: 7px;}
+.settle{width: 25%;background-color: #e93759;height: 100%;text-align: center;}
+.settle a{line-height: 50px;height: 100%;}

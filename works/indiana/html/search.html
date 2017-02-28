@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>搜索</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/search.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav bordtm1">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <div class="mui-input-row mui-search w83P">
+	        <input type="search" class="mui-input-clear" placeholder="搜索感兴趣的商品" class="fz13">
+	    </div>
+	</header>
+	<div class="mui-content mat9">
+	    <!--热门专题-->
+	    <div class="zhuangti-box bgff bordercc">
+	    	<div class="clearfix lih38 padlr16 borbtmdd">
+				<h2 class="fl fz14 cl333 lih38">热门专题</h2>
+				<a href="###" class="fr fz12 cl666">更多<span class="mui-icon mui-icon-arrowright fz12"></span></a>
+			</div>
+			<div class="padt15">
+				<div id="slider" class="mui-slider" >
+				  <div class="mui-slider-group mui-slider-loop">
+				    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="#">
+				        <div class="img-box"><img src="../images/remen-img.jpg"/></div>
+				        <div class="slide-text"><p>夺宝手机节</p></div>
+				      </a>
+				    </div>
+				    <!-- 第一张 -->
+				    <div class="mui-slider-item">
+				      <a href="#">
+				        <div class="img-box"><img src="../images/remen-img.jpg"/></div>
+				        <div class="slide-text"><p>夺宝手机节</p></div>
+				      </a>
+				    </div>
+				    <!-- 第二张 -->
+				    <div class="mui-slider-item">
+				      <a href="#">
+				        <div class="img-box"><img src="../images/remen-img.jpg"/></div>
+				        <div class="slide-text"><p>夺宝手机节</p></div>
+				      </a>
+				    </div>
+				    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				    <div class="mui-slider-item mui-slider-item-duplicate">
+				      <a href="#">
+				        <div class="img-box"><img src="../images/remen-img.jpg"/></div>
+				        <div class="slide-text"><p>夺宝手机节</p></div>
+				      </a>
+				    </div>
+				  </div>
+				</div>
+			</div>
+	    </div>
+	    <!--热门品类-->
+	    <div class="pinlei-box mat9 bgff">
+	    	<div class="peilei-header fz14 cl333 lih38">
+	    		热门品类
+	    	</div>
+	    	<div class="clearfix">
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon iphone-icon"></span>
+	    				<span class="pinlei-text">苹果专区</span>
+	    			</a>
+	    		</div>
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon miui-icon"></span>
+	    				<span class="pinlei-text">小米专区</span>
+	    			</a>
+	    		</div>
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon digital-icon"></span>
+	    				<span class="pinlei-text">潮流数码</span>
+	    			</a>
+	    		</div>
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon dianqi-icon"></span>
+	    				<span class="pinlei-text">家用电器</span>
+	    			</a>
+	    		</div>
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon snacks-icon"></span>
+	    				<span class="pinlei-text">零食天地</span>
+	    			</a>
+	    		</div>
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon live-icon"></span>
+	    				<span class="pinlei-text">生活日用</span>
+	    			</a>
+	    		</div>
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon chongzhi-icon"></span>
+	    				<span class="pinlei-text">虚拟充值</span>
+	    			</a>
+	    		</div>
+	    		<div class="fl w50p pinleiBox">
+	    			<a href="###" class="w100p">
+	    				<span class="peilei-icon else-icon"></span>
+	    				<span class="pinlei-text">其他商品</span>
+	    			</a>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+	<!--脚本-->
+	<script type="text/javascript">
+		//获得slider插件对象
+		var gallery = mui('.mui-slider');
+		gallery.slider({
+		  interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+		});
+	</script>
+</body>
+</html>

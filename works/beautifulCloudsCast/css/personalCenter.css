@@ -1,0 +1,25 @@
+/*个人中心*/
+.mui-bar-nav{border-bottom: none;}
+.touxiang-box{top: 30%;left: 3.8%;}
+.touxiang{position: relative; width: 60px;height: 60px;border-radius: 50%;-webkit-border-radius: 50%;background-color: #ffffff;vertical-align: middle;}
+.touxiang:before{position:absolute;top:8px;left: 12px; content:"";display: inline-block;width: 40px;height: 40px;background: 0 0 url(../images/touxiang.png) no-repeat;background-size:36px 40px;-webkit-background-size:36px 40px;}
+.level-box{top: -83px; right: -21px;}
+a.clW{color: #ffffff;font-size: 18px;}
+.denglu-box{padding-left: 3.6%;vertical-align: middle;}
+.rightBd::after{display: inline-block; content: "\e583";font-family:Muiicons;color: #ddd;}
+.dingdan-title{padding-left: 15px;}
+.dingdan-box{padding-top: 12px;}
+.title,a.title{color: #333333;font-size: 16px;}
+a.check-dingdan{color: #cccbcb;font-size: 12px;}
+.mui-table-view:before{height: 0;}
+.sprite-box{display: inline-block; background: 0 0 url(../images/gerenzhongxin-sprite.png) no-repeat; background-size: 50px 300px;-webkit-background-size: 50px 300px;}
+.pay{width: 28px;height: 22px;}
+.shouhuo{width: 24px;height: 22px;background-position: 0 -60px;}
+.weihu{width: 20px;height: 22px;background-position: 0 -107px;}
+.mat10{margin-top: 10px;}
+.mabm64{margin-bottom: 63px;}
+input.op0{overflow: hidden; width: 60px;height: 60px;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+filter:alpha(opacity=0);
+-moz-opacity:0;
+-khtml-opacity: 0;
+opacity:0;}

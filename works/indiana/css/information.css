@@ -1,0 +1,7 @@
+/*个人信息页*/
+/*头像*/
+.touxiang-box{vertical-align: middle;}
+.tou-text{vertical-align: top;line-height: 64px;}
+.tou-box{width: 65px;height: 65px;border-radius: 50%;-webkit-border-radius: 50%; background-color: #e7e5e6;margin-right: 26px;text-align: center;overflow: hidden;}
+.tou-box img{height: 100%;}
+

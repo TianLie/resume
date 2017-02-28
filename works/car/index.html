@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>预约表单</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jcDate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/center.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+    <style type="text/css">
+    	.duiqi{
+    		width: 86%;
+    		display: inline-block;
+    		color: #f69997;
+    		font-size: 10px;
+    		text-align: justify;
+    		letter-spacing: 2px;
+    		display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-justify:inter-word;
+    	}
+    	.tixing_one{
+    		white-space: nowrap;
+    	}
+    	.tixing_kao{
+    		width: 86.7%;
+    		float: right;
+    	}
+    </style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <h1 class="mui-title">预约表单</h1>
+	</header>
+	<div class="mui-content">
+	    <div class="coach_box bgwhite pad4">
+	    	<a href="javaScript:void(0)" class="clearfix co_sel">
+	    		<span class="coach_img fl">
+	    			<img src="images/coach_img.png"/>
+	    			<i class="fz15 co_name">宝安韩教</i>
+	    		</span>
+	    		<span class="iconfont icon-go fr"></span>
+	    	</a>
+	    </div>
+	    <div class="information">
+	    	<form>
+	    		<div class="infon_w mui-input-group">
+	    			<p class="pad4 tip_t"><i class="iconfont icon-tixing"></i>请填写您的联系方式和信息</p>
+	    			<div class="mui-input-row pad4">
+			            <label>真实姓名 </label>
+			            <input type="text" class="mui-input-clear user_name">
+			        </div>
+			        <div class="mui-input-row pad4">
+			            <label>联系电话  </label>
+			            <input type="text" class="mui-input-clear user_tel">
+			        </div>
+	    		</div>
+	    		<div class="infon_w mui-input-group">
+	    			<p class="pad4 tip_t tixing_one clearfix"><i class="tixing fl">提醒：</i><i class="tixing_kao">考试人员10点开始预约&nbsp;非考试人员12点开始</i></p>
+	    			<div class="mui-input-row pad4">
+			            <label>日期  </label>
+			            <span class="temps_w">
+			            	<input type="text" class="date_s" value="2016-5-25">
+			            	<i class="iconfont icon-xiala"></i>
+			            </span>
+			        </div>
+			        <div class="mui-input-row pad4">
+			            <label>时间   </label>
+			            <span class="temps_w">
+			            	<select name="" class="temps">
+			            	</select>
+			            	<i class="iconfont icon-xiala"></i>
+			            </span>
+			        </div>
+			        <div class="mui-input-row pad4">
+			        	<a href="html/bookingDetail.html" class="clearfix yuyue_del">
+			        		<label>预约情况   </label>
+			            	<span class="iconfont icon-go fr"></span>
+			        	</a>
+			        </div>
+	    		</div>
+		    </form>
+		    <p class="pad4 tixing2 clearfix"><i class="fl">注意：</i><i class="fr duiqi">如若需要取消预约,请提前5小时至个人中心取消,小于5小时必须联系我们取消</i></p>
+		    <div class="yuyue_btn pad4">
+		    	<button type="button" class="mui-btn mui-btn-block green_btn">马上预约</button>
+		    </div>
+		    
+	    </div>
+	    <div class="block"></div>
+	    <div class="yuyue_orW order_suc">
+	    	<div class="yuyue_or">
+	    		<div class="clearfix"><span class="iconfont icon-shibai1"></span></div>
+	    		<div class="yu_icon">
+	    			<span class="iconfont icon-check"></span>
+	    		</div>
+	    		<div class="fz18 yue_tip">
+	    			预约成功 
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="yuyue_orW order_fail">
+	    	<div class="yuyue_or">
+	    		<div class="clearfix"><span class="iconfont icon-shibai1"></span></div>
+	    		<div class="yu_icon">
+	    			<span class="iconfont icon-shibai"></span>
+	    		</div>
+	    		<div class="fz16 yue_tip">
+	    			预约失败  
+	    		</div>
+	    		<div class="fz16 yue_tip">
+	    			此时间段已约满  
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="block"></div>
+	    <div class="coachBox mui-card mui-scroll-wrapper" id="scroll">
+	    	<div class="coachBox_list mui-scroll" >
+		    		<ul class="mui-table-view">
+		    			<li><img src="images/kiss_car.jpg"/>宝安韩教1</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教2</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教3</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教4</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教5</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教6</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教7</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教8</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教9</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教10</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教11</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教12</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教13</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教14</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教15</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教16</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教17</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教18</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教19</li>
+		    			<li><img src="images/coach_img.png"/>宝安韩教20</li>
+		    		</ul>
+	    	</div>
+	    </div>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jQuery-jcDate.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function (){
+		$("input.date_s").jcDate({					       
+				IcoClass : "jcDateIco",
+				Event : "click",
+				Speed : 100,
+				Left : 0,
+				Top : 28,
+				format : "-",
+				Timeout : 100
+		})
+	});
+	
+	/*时间*/
+	var timeing = ["7点-8点","8点-9点","9点-10点","10点-11点","11点-12点","13点-14点","14点-15点","15点-16点","16点-17点","17点-18点","18点-19点","19点-20点","20点-21点"];
+	for(var i = 0; i < timeing.length; i++){
+		var op = $("<option></option>");
+		op.html(timeing[i]);
+		$(".temps").append(op)
+	}
+	/*预约*/
+	var order_is = ["李先生","张先生","未预约","未预约","陈小姐","李小姐","张先生","未预约","张先生","刘小姐","胡先生","未预约","张先生"];
+	var len = $(".temps option").size();
+	var index = 0;
+	var or;
+	var se_i = 0;
+	$(".temps").change(function(){
+		index = $(".temps").get(0).selectedIndex;
+		or = order_is[index];
+		var t_val = $(this).val();
+		/*获取当前日期*/
+		var t_date = new Date();
+		var t_year = t_date.getFullYear();//年
+		var t_month = t_date.getMonth() + 1;//yue
+		console.log(t_month)
+		var t_day = t_date.getDate();//日
+		var t_hours = t_date.getHours();//时
+		var d = t_val.indexOf("点");
+		se_i++;
+		/*选中点数*/
+		var tar_y = $("#jcDateTt span").text();
+		var tar_m = $("#jcDateTt samp").text();
+		var date_s = $(".date_s").val();
+		var tar_d = date_s.slice(7,date_s.length);
+		var tar_h = t_val.slice(0,d);
+		if(tar_y == t_year && tar_m == t_month && tar_d == t_day){
+			if(tar_h <= t_hours){
+				alert("时间不对，重选");
+				console.log(se_i)
+				if(se_i < 2){
+					var op = $("<option></option>");
+					op.prependTo($(".temps"));
+					$(".temps").val("")
+				}else{
+					$(".temps").val("")
+				}
+			}
+		}else{
+			if(tar_y != t_year){
+				alert("年份不对");
+				if(se_i < 2){
+					var op = $("<option></option>");
+					op.prependTo($(".temps"));
+					$(".temps").val("")
+				}else{
+					$(".temps").val("")
+				}
+			}
+			if(tar_m != t_month){
+				alert("月份不对");
+				if(se_i < 2){
+					var op = $("<option></option>");
+					op.prependTo($(".temps"));
+					$(".temps").val("")
+				}else{
+					$(".temps").val("")
+				}
+			}
+			if(tar_d != t_day){
+				alert("日期不对");
+				if(se_i < 2){
+					var op = $("<option></option>");
+					op.prependTo($(".temps"));
+					$(".temps").val("")
+				}else{
+					$(".temps").val("")
+				}
+			}
+		}
+		
+		//console.log(or)
+		$(".yuyue_btn button").on("click",function(){
+			var user_val = $(".user_name").val();
+			var tel_val = $(".user_tel").val();
+				if(or != "未预约"){
+					if(!user_val){
+						$(".user_name").focus();
+						mui.alert('请输入真实姓名！');
+					}else if(!tel_val){
+						$(".user_tel").focus();
+						mui.alert('请输入联系电话！');
+					}else if(user_val || tel_val){
+						$(".block").show();
+						$(".order_fail").show();
+					}
+				}else{
+					if(!user_val){
+						$(".user_name").focus();
+						mui.alert('请输入真实姓名！');
+					}else if(!tel_val){
+						$(".user_tel").focus();
+						mui.alert('请输入联系电话！');
+					}else{
+						$(".block").show();
+						$(".order_suc").show();
+						window.location.href="html/myCenter.html";
+					}
+					
+				}
+				
+			});
+	})
+	
+	$(".yuyue_btn button").on("click",function(){
+		var user_val = $(".user_name").val();
+		var tel_val = $(".user_tel").val();
+		if(!user_val){
+			$(".user_name").focus();
+			mui.alert('请输入真实姓名！');
+		}else if(!tel_val){
+			$(".user_tel").focus();
+			mui.alert('请输入联系电话！');
+		}
+	})
+	
+	
+	$(".icon-shibai1").on("click",function(){
+		$(".block").hide();
+		$(this).parents(".yuyue_orW").hide();
+	})
+	
+	/*点击教练按钮,弹出教练选择*/
+	$(".co_sel").on("click",function(){
+		$(".block").show();
+		$(".coachBox").show();
+	})
+	var coIndex = 0;
+	$(".coachBox_list").on("click","li",function(){
+		coIndex = $(this).index();
+		$(".co_name").html($(this).text());
+		$(".coach_img img").attr('src',$(this).children("img").attr("src"))
+		$(".block").hide();
+		$(".coachBox").hide();
+	})
+	</script>
+		<script>
+		/*教练列表滑动*/
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			(function($) {
+				$('#scroll').scroll({
+					indicators: true //是否显示滚动条
+				});
+			})(mui);
+		</script>
+</body>
+</html>

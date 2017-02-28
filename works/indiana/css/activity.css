@@ -1,0 +1,6 @@
+/*两元活动页面*/
+.act-list{padding: 0 12px;}
+.time-box{text-align: center;padding-top: 15px;padding-bottom: 6px;}
+.time{width:15%;background-color: #cccccc;border-radius: 3px;color: #fff;white-space: nowrap;height: 15px;line-height: 15px;font-size: 10px;}
+.activity-box{border: 1px solid #cccccc;padding: 8px;border-radius: 3px;}
+.del-box{text-align: right;color: #1ba6ff;}

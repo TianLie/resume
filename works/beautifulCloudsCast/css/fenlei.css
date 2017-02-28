@@ -1,0 +1,87 @@
+/*分类商品*/
+
+.header-box {
+	padding-top: 10px;
+	/*padding-bottom: 10px;*/
+	background-color: #f5f5f5;
+	padding-right: 10px;
+}
+
+input.mui-input-clear {
+	background-color: #ffffff;
+}
+
+.mui-search .mui-placeholder {
+	text-align: left;
+	height: 32px;
+	line-height: 32px;
+}
+
+.mui-search .mui-placeholder:before {
+	font-size: 24px;
+}
+
+.mui-search input[type=search] {
+	padding-left: 14%;
+}
+
+.mui-icon.mui-icon-search span {
+	padding-left: 14%;
+}
+
+input[type=search] {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	height: 32px;
+	line-height: 32px;
+}
+
+.mui-search .mui-placeholder .mui-icon {
+	color: #a3a3a3;
+}
+
+.mui-icon-search:before {
+	color: #a3a3a3;
+	font-size: 24px;
+}
+
+.mui-search.mui-active:before {
+	color: #a3a3a3;
+	font-size: 24px;
+}
+
+.mui-input-row .mui-input-clear~.mui-icon-clear,
+.mui-input-row .mui-input-password~.mui-icon-eye,
+.mui-input-row .mui-input-speech~.mui-icon-speech {
+	color: #a3a3a3;
+}
+
+.mui-icon-clear:before,
+.mui-icon-close-filled:before {
+	content: '\e404';
+	color: #a3a3a3;
+	font-size: 24px;
+}
+.mui-input-row.mui-search .mui-icon-clear{top: 4px;}
+body{background-color: #fff;}
+.he100p{height: 100%;}
+.search-box {
+	width: 87.2%;
+	height: 32px;
+}
+.mui-content{overflow: hidden;height: 85%;margin-top: -6px;}
+.list-box{width: 28%;border-right: 2px solid #dddddd;text-align: center;}
+a.list-text{color: #303030;}
+.list-text{white-space: nowrap;font-size: 12px;border-bottom: 2px solid #dddddd;padding: 26px 0;width: 65px;text-align: center;}
+.list-text:hover{color: #26a1e3;}
+.active{border-bottom: 2px solid #dddddd;border-top: 2px solid #dddddd; position: relative;top: -2px;}
+.active a{border-bottom: none;color: #26a1e3;}
+.active::after{z-index:10;position: absolute; right: -3px; top: 0px; content: "";display: inline-block;background-color: #ffffff;width: 4px;height: 73px;}
+.listBox{width: 70%;}
+.list-img{width: 28%; padding-top: 22px;padding-bottom: 22px;}
+.listBox-list{vertical-align: middle;display: none;}
+.listBox-active{display: block;}
+.list-neirong{width: 72%;}
+.mui-table-view-cell a.list-tx{padding-top:28px;padding-bottom: 28px; color: #464646;font-size: 16px;}
+.mui-table-view:before{height: 0;}
+.mui-navigate-right:after, .mui-push-right:after{font-size: 22px;}

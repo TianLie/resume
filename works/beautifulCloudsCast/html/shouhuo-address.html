@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>收货地址</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/shouhuo-address.css"/>
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">添加收货地址</h1>
+			<a href="javaScript:void(0);" class="mui-icon mui-pull-right mui-icon-more-filled"></a>
+		</header>
+		<div class="mui-content mat5">
+			<div class="shouhuo-box">
+				<form class="mui-input-group">
+					<div class="mui-input-row">
+						<label>收货姓名</label>
+						<input type="text" placeholder="真实名字">
+					</div>
+					<div class="mui-input-row">
+						<label>手机号码</label>
+						<input type="number" placeholder="11位手机号码">
+					</div>
+					<ul class="mui-table-view">
+					    <li class="mui-table-view-cell mui-collapse">
+					        <a class="mui-navigate-right" href="#"><label>所在地区</label><span id="sheng" class="pal6p dizhi">省</span><span id="shi" class="pal2p dizhi">市</span><span id="qu" class="pal2p dizhi">区</span></a>
+					        <div class="mui-collapse-content">
+					            <p>
+					            	<select id="province">
+										<option>省</option>
+									</select>
+									<select id="city">
+										<option>市</option>
+									</select>
+									<select id="area">
+										<option>区</option>
+									</select>
+					            </p>
+					        </div>
+					    </li>
+					</ul>
+					<div class="mui-input-row detailed-box xiangxi">
+						<label class="xiangxi">详细地址</label>
+					    <textarea id="textarea" cols="30" rows="5" placeholder="详细配送地址" class="xiangxi detailed"></textarea>
+					</div>
+				</form>
+				<div class="w100p texalc mat30">
+					<button class="fz16 clW baocun-btn">保存</button>
+				</div>
+			</div>
+			<div class="psf more-box"><a href="javaScript:void(0);" class="disp mui-icon mui-icon-more"></a></div>
+		</div>
+		<script src="../js/china.js"></script>
+		<script type="text/javascript">
+			//找节点
+		var province = document.getElementById("province");
+		var sheng = document.getElementById("sheng");
+		var city = document.getElementById("city");
+		var shi = document.getElementById("shi");
+		var area = document.getElementById("area");
+		var qu = document.getElementById("qu");
+		var chinaArea = JSON.parse(chinaArea);
+		var provinceList = chinaArea.china.province;
+		//传入对象province
+		for(var i = 0; i < provinceList.length; i++){
+			//创建option节点
+			var option = document.createElement("option");
+			option.innerHTML = provinceList[i]["-name"];
+			province.appendChild(option); 
+		}
+		//选中省份后出现对应的城市
+		var cityList = null;
+		province.onchange = function(){
+			//显示省份
+			sheng.innerHTML = provinceList[this.selectedIndex-1]["-name"];
+			//换省份时，把之前选择的城市和区都清空
+			city.innerHTML = "<option>市</option>";
+			area.innerHTML = "<option>区</option>";
+			if(this.selectedIndex > 0){
+				cityList = provinceList[this.selectedIndex-1].city;
+				for(var i = 0; i < cityList.length; i++){
+					var option = document.createElement("option");
+					option.innerHTML = cityList[i]["-name"];
+					city.appendChild(option);
+				}
+			}
+		}
+		var areaList = null;
+		city.onchange = function(){
+			//显示市
+			shi.innerHTML = cityList[this.selectedIndex-1]["-name"];
+			//换城市时，把之前选择的区清空
+			area.innerHTML = "<option>区</option>"
+			if(this.selectedIndex > 0){
+				areaList = cityList[this.selectedIndex].county;
+				for(var i = 0; i < areaList.length; i++){
+					var option = document.createElement("option");
+					option.innerHTML = areaList[i]["-name"];
+					area.appendChild(option);
+				}
+			}
+		} 
+		area.onchange = function(){
+			//显示区
+			qu.innerHTML = areaList[this.selectedIndex-1]["-name"];
+		}
+		</script>
+	</body>
+
+</html>

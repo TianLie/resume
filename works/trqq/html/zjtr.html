@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>走进泰润_泰润集团</title>
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/public.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<div class="main">
+			<!--头部 Begin-->
+			<div class="header">
+				<div class="waper clearfix">
+					<div class="top_left">
+						<div class="logo">
+							<a href="../index.html">
+								<img src="../images/logo_new.jpg" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="top_right clearfix">
+						<div class="fl conter_left">
+							<p>泰泰润与你共创&nbsp;&nbsp;共营&nbsp;&nbsp;共富</p>
+							<p class="conte26"><span class="icon_tel"><img src="../images/tel.png" alt="" /></span>业务咨询：400-0852-562</p>
+						</div>
+						<div class="fr code_r">
+							<img src="../images/code.jpg" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部 End-->
+			<!--导航条 Bengin-->
+			<div class="nav_box">
+				<div class="waper">
+					<ul class="nav_list clearfix">
+						<li><a href="../index.html">首页</a></li>
+						<li class="active"><a href="zjtr.html">走进泰润</a></li>
+						<li><a href="news.html">新闻中心</a></li>
+						<li><a href="product.html">泰润精品</a></li>
+						<li><a href="main.html">专题报道</a></li>
+						<li class="mar_r"><a href="yyzl.html">影音资料</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--导航条 End-->
+			<!--banner Begin-->
+			<div class="banner_wap">
+				<img src="../images/banner.jpg" alt="" />
+			</div>
+			<!--banner End-->
+			<!--内容 Begin-->
+			<div class="content_box">
+				<div class="waper">
+					<!--走进泰润-->
+					<div class="clearfix">
+						<!--左侧导航栏-->
+						<div class="fl nav_left">
+							<span class="toTr">走进泰润</span>
+							<ul class="navLeft_list">
+								<li><a href="javaScript:void(0);">新闻简介</a></li>
+								<li><a href="javaScript:void(0);">泰润佳音</a></li>
+								<li><a href="javaScript:void(0);">语录阳光</a></li>
+								<li><a href="javaScript:void(0);">企业文化</a></li>
+								<li><a href="javaScript:void(0);">领导关怀</a></li>
+								<li><a href="javaScript:void(0);">发展历程</a></li>
+								<li class="navLe_act"><a href="javaScript:void(0);">公司架构</a></li>
+							</ul>
+						</div>
+						<div class="fr nav_right">
+							<div class="navLeft_tab">
+								<img src="images/wazi.png" alt="" />
+							</div>
+							<div class="navLeft_tab">
+								<img src="../images/2-1510151033310-L.jpg" alt="" />
+							</div>
+							<div class="navLeft_tab">
+								<img src="../images/2_10151009194D1.jpg" alt="" />
+							</div>
+							<div class="navLeft_tab">
+								<img src="images/wazi.png" alt="" />
+							</div>
+							<div class="navLeft_tab">
+								<img src="images/wazi.png" alt="" />
+							</div>
+							<div class="navLeft_tab">
+								<img src="images/wazi.png" alt="" />
+							</div>
+							<div class="navLeft_tab act">
+								<img src="images/arct.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--内容 End-->
+			<!--尾部 Begin-->
+			<div class="footer">
+				版权为泰润国际所有，未经允许不得转载或链接 桂ICP备12096283 Copyright©2014
+			</div>
+			<!--尾部 End-->
+		</div>
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script>
+			var index = 0;
+			var li_act = "navLe_act";
+			var tabClass = "act"
+			$(".navLeft_list").on("click","li",function(){
+				index = $(this).index();
+				$(this).addClass(li_act).siblings().removeClass(li_act);
+				$(".navLeft_tab").eq(index).addClass(tabClass).siblings().removeClass(tabClass);
+			})
+		</script>
+	</body>
+</html>

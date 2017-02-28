@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>放大镜</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			border: 1px solid #ccc;
+		}
+		#minBox{
+			position: relative;
+			width: 350px;
+			height: 350px;
+			margin-left: 30px;
+			margin-top: 50px;
+		}
+		#minBox img{
+			position: absolute;
+		}
+		#maxBox{
+			display: none;
+			position: absolute;
+			width: 500px;
+			height: 500px;
+			left: 400px;
+			top: 0;
+			overflow: hidden;
+		}
+		#maxBox img{
+			position: absolute;
+		}
+		#slider{
+			background-color: pink;
+			opacity: 0.4;
+			width: 150px;
+			height: 150px;
+			display: none;
+			position: absolute;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="minBox">
+		<img src="img/min.jpg">
+		<div id="slider"></div>
+	</div>
+	<div id="maxBox">
+		<img src="img/max.jpg">
+	</div>
+	<script type="text/javascript">
+	// 找节点
+		var minBox = document.getElementById("minBox");
+		var maxBox = document.getElementById("maxBox");
+		var slider = document.getElementById("slider");
+		var maxImg = maxBox.children[0];
+		// 返回小图框left、top、right和bottom
+		var minBoxPos = minBox.getBoundingClientRect();
+		// 在小图框内移动
+		minBox.onmousemove = function (e){
+			var e = e || window.event;
+			// 放大镜和大图可见
+			slider.style.display = "block";
+			maxBox.style.display = "block";
+			// 放大镜的left值
+			var sdLeft = e.clientX - minBoxPos.left - slider.offsetWidth/2;
+			// 放大镜的top值
+			var sdTop = e.clientY - minBoxPos.top - slider.offsetHeight/2;
+			console.log(sdLeft + "," + sdTop);
+			// 判断边界
+			if(sdLeft < 0 ){
+				sdLeft =0;
+			}else if(sdLeft > (minBox.clientWidth - slider.offsetWidth)){
+				sdLeft = minBox.clientWidth - slider.offsetWidth;
+			}
+			if(sdTop < 0){
+				sdTop = 0;
+			}else if(sdTop > (minBox.clientHeight - slider.offsetHeight)){
+				sdTop = minBox.clientHeight - slider.offsetHeight;
+			}
+			slider.style.left = sdLeft + "px";
+			slider.style.top = sdTop + "px";
+			// 放大镜在小框内移动倍数
+			var scaleY = sdTop / (minBox.clientHeight - slider.offsetHeight);
+			var scaleX = sdLeft / (minBox.clientWidth - slider.offsetWidth);
+			maxImg.style.left = -scaleX * (maxImg.clientWidth - maxBox.offsetWidth) + "px";
+			maxImg.style.top = - scaleY * (maxImg.clientHeight - maxBox.offsetHeight) + "px";
+		}
+		// 移出小图
+		minBox.onmouseleave = function(){
+			slider.style.display = "none";
+			maxBox.style.display = "none";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,478 @@
+/*个人中心*/
+.portrait_box{
+	background: 0 bottom url("../images/portrait.jpg") no-repeat;
+	height: 162px;
+	background-size: 100% 162px;
+	-webkit-background-size: 100% 162px;
+	position: relative;
+	text-align: center;
+}
+.portrait_box:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 1;
+}
+.por{position: relative;z-index: 5;padding-top: 24px;}
+.portrait_img{
+	width: 59px;
+	height: 59px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: #dbdbdb;
+	margin: 0 auto;
+	position: relative;
+}
+.portrait_img img{
+	width: 57px;
+	height: 57px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.portrait_img input[type="file"]{
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 57px;
+	height: 57px;
+}
+.mui-icon-trash{
+	line-height: 35px;
+	font-size: 20px;
+	color: #41d4c4;
+}
+.user,.phone{color: #fff;}
+.user{font-size: 12px;padding-top: 12px;}
+.phone{font-size: 10px;padding-top: 14px;}
+
+/*选择教练*/
+.coachBox{
+	height: 600px;
+	position: fixed;
+	top: 50%;
+	width: 80%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin: -68% -40%;
+	left: 50%;
+	height: 80%;
+	display: none;
+	z-index: 9999;
+}
+.coachBox li{
+	padding: 8px 10px;
+	border-bottom: 1px solid #c0c0c0;
+}
+.coachBox li img{
+	vertical-align: middle;
+	margin-right: 8px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+.coachBox li:last-child{
+	border-bottom: none;
+}
+
+
+/*预约*/
+.yuyue_list,.borb_c0,.time,.bookingInfo{border-bottom: 1px solid #c0c0c0;}
+.time,.bookingInfo,.date_btn{padding-left: 4.5%;padding-right: 4.6%;}
+.yuyue_list li{
+	float: left;
+	display: inline-block;
+	width: 50%;
+	background-color: #fff;
+	text-align: center;
+	font-size: 14px;
+	line-height: 44px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-right: 1px solid #c0c0c0;
+}
+.yuyue_list li.active{color: #4bd7ce;}
+.yuyue_list li:last-child{border-right: none;}
+.yuyue_wrap{
+	display: none;
+}
+.yuyue_w{
+	background-color: #fff;
+	margin-top: 8px;
+	border-bottom: 1px solid #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+}
+.time{
+	font-size: 15px;
+	color: #373737;
+	line-height: 34px;
+}
+.bookingInfo p{
+	font-size: 14px;
+	color: #393939;
+}
+.bookingInfo{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.yuyue_wrap.active{display: block;}
+.order_btn{
+	width: 25%;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.date{
+	font-size: 12px;
+}
+.date,.order_btn{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+}
+.date_btn{
+	padding-top: 5px;
+	padding-bottom: 6px;
+}
+.mab16{margin-bottom: 16px;}
+.icon-riqi{color: #4bd7ce;vertical-align: middle;margin-right: 10px;}
+.block{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 20;
+	background-color: rgba(77,77,77,0.5);
+	text-align: center;
+	-webkit-user-select: none;
+}
+.cancel_wrap{
+	display: none;
+	position: fixed;
+	z-index: 30;
+	bottom: 150px;
+	width: 100%;
+	z-index: 9999;
+	text-align: center;
+}
+.cancel_box,.yuyue_or,.tel_box,.code_box{
+	margin: 0 auto;
+	background-color: #fff;
+	width: 72%;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	padding: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.tips{
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+.tips p{
+	font-size: 16px;
+	color: #414141;
+	line-height: 30px;
+}
+.icon-shibai1{float: right;color: #aeaeae;font-size: 16px;}
+.quxiao_btn{
+	border: none;
+	padding: 9px 26px;
+	font-size: 15px;
+	margin-top: 22px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.mui-popup-buttons{
+	background-color: #FAFAFA;
+	height: 60px;
+}
+span.mui-popup-button.mui-popup-button-bold,.mui-popup-button:first-child:last-child{
+	margin: 10px auto;
+    width: 40%;
+    border-radius: 4px;
+	-webkit-border-radius: 4px;
+	height: 40px;
+}
+/*预约情况*/
+.coach_list{
+	background-color: #4bd7ce;
+	line-height: 45px;
+	color: #fff;
+	border-bottom: 1px solid #c7c8c9;
+}
+.icon-jiaolian1 ,.icon-jiaolian1 i,.date_se,.icon-xiala{
+	color: #fff;
+	font-size: 15px;
+}
+.icon-jiaolian1 i{
+	padding-left: 16px;
+}
+.date_se{
+	width: 58%;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	height: 25px;
+	position: relative;
+	top: 10px;
+}
+#result{
+	margin-bottom: 0;
+	background-color: inherit;
+	line-height: 24px;
+	border:none;
+	background:inherit;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	text-align: left;
+	position: absolute;
+	top: 0;
+	padding-left: 10px;
+}
+.date_se .icon-xiala{
+	position: absolute;
+	bottom: -7px;
+	right: 8px;
+}
+.icon-xiala{
+	display: inline-block;
+}
+.time-table{
+	background-color: #fff;
+}
+.time-table{
+	text-align: center;
+	margin-top: 10px;
+}
+.time-table th{
+	color: #575757;
+	font-size: 12px;
+	text-align: center;
+}
+.time-table td{
+	font-size: 15px;
+	color: #f47876;
+}
+.time-table .timing{
+	color: #202020;
+	
+}
+.time-table tr{
+	border-bottom: 1px solid #bdbebf;
+}
+.time-table tr:last-child{
+	border-bottom: none;
+}
+.time-table th,.time-table td{
+	border-right: 1px solid #bdbebf;
+	line-height: 35px;
+}
+.time-table th:nth-child(2),.time-table th:last-child,.time-table td:last-child{
+	border-right: none;
+}
+.icon-shijian,.icon-xingming{
+	color: #4bd7ce;
+	padding-right: 7px;
+}
+
+
+/*预约订单*/
+.coach_box{
+	line-height: 90px;
+}
+.coach_img img{
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	margin-right: 22px;
+}
+.icon-go{
+	font-size: 16px;
+	color: #434343;
+}
+.mui-input-group .mui-input-row{
+	height: 50px;
+	background-color: #fff;
+}
+.mui-input-group:before{height: 0;}
+.mui-input-group:first-child:before{height: 1px;background-color:#c7c8c9}
+.mui-input-group .mui-input-row:after{left: 0;background-color:#c7c8c9}
+.mui-input-row .mui-input-clear~.mui-icon-clear{top: 15px;right: 12px;}
+.information .mui-input-row input,.information .mui-input-row .temps_w{
+	border: 1px solid #bfbfbf;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	height: 30px;
+	margin: 10px 0;
+	float: left;
+	width: 72%;
+	padding: 0 12px;
+}
+.mui-input-row label{
+	padding: 18px 0;
+	font-size: 15px;
+	color: #323232;
+	width: 28%;
+}
+.mui-input-group{
+	background-color: inherit;
+}
+.infon_w .tip_t,.icon-tixing,.tixing,.tixing_kao{
+	color: #f69997;
+	/*line-height: 27px;
+	height: 26px;*/
+	font-size: 10px;
+}
+.icon-tixing{
+	padding-right: 10px;
+	font-size: 13px;
+}
+.tixing2,.tixing2 i,.infon_w .tip_t,.icon-tixing{
+	color: #f69997;
+	padding-top: 5px;
+	font-size: 10px;
+	padding-bottom: 5px;
+}
+.tip_t{
+	border-bottom: 1px solid #c7c8c9;
+}
+.icon-tixing,{padding-right: 8px;}
+/*日期选择*/
+#jcDate{width: 185px;height: 220px;}
+#jcDateBtn{overflow: initial;}
+.mui-input-row select.temps, .information .mui-input-row input.date_s{
+	width: 80%;
+	height: 26px;
+	margin-top: 0;
+	border: none;
+	color: #323232;
+	font-size: 12px;
+	background:inherit;
+	padding: 0;
+}
+.temps_w .icon-xiala{
+	float: right;
+	color: #9b9b9b;
+	padding-top: 3px;
+	}
+.yuyue_btn{
+	margin-top: 28px;
+}
+.yuyue_btn .green_btn{
+	border: none;
+	height: 45px;
+	line-height: 45px;
+	padding: 0;
+}
+.yuyue_orW{
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	z-index: 9999;
+	text-align: center;
+	margin-top: -90px;
+	display: none;
+}
+.yuyue_or{
+	height: 180px;
+}
+.yuyue_orW .icon-check{
+	font-size: 54px;
+	color: #41d4c4;
+	
+}
+.yuyue_orW .icon-shibai{
+	font-size: 54px;
+	color: #f47876;
+}
+.yu_icon{
+	margin-bottom: 25px;
+}
+.yue_tip{
+	margin-top: 15px;
+}
+.yuyue_del .icon-go{
+	padding: 18px 0;
+	color: #9b9b9b;
+}
+/*联系我们*/
+.trainer_list li{
+	padding: 18px 4.5%;
+	border-bottom: 1px solid #cacbcc;
+}
+.trainer_name{
+	color: #2f2f2f;
+}
+.icon-dianhua1{
+	color: #5acc0c;
+	padding-right: 38px;
+}
+.icon-erweima{
+	color: #272636;
+}
+.lianxi{
+	padding-right: 2.9%;
+}
+.icon-dianhua1,.icon-erweima{
+	font-size: 18px;
+}
+/*电话，二维码弹框*/
+.tel_w,.code_w{
+	display: none;
+	position: fixed;
+	top: 50%;
+	width: 100%;
+	z-index: 9999;
+	text-align: center;
+	margin-top: -69px;
+}
+.tel_box{padding: 0;border-radius: 5px;
+	-webkit-border-radius: 5px;}
+.boda_t{color: #272727;padding-top: 18px;padding-bottom: 15px;}
+.tel_num{color: #393939;padding-bottom: 22px;}
+.cal_s a{
+	float: left;
+	width: 50%;
+	text-align: center;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	color: #4bd7ce;
+	font-size: 18px;
+	line-height: 40px;
+	border-right: 1px solid #c0c0c0;
+}
+.cal_s a:last-child{
+	border-right: none;
+}
+.cal_s{
+	border-top: 1px solid #c0c0c0;
+}
+
+
+.code_img{
+	width: 100%;
+}
+.code_w{
+	margin-top: -126px;
+}
+.kiss_car{
+	width: 66%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+.kiss_car img{width: 100%;}
+.kiss_car p{font-size: 10px;color: #2f2f2f;text-align: left;line-height: 20px;} 
+.dizhi{
+	margin-top: 40px;
+	/*padding-bottom: 14px;*/
+}

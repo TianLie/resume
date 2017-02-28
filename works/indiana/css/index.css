@@ -1,0 +1,37 @@
+/*两元夺宝首页*/
+/*头部*/
+.sousuo-icon{width: 24px;height: 22px;background-position:  0 0;}
+.xiaoxi-icon{width: 24px;height: 22px; background-position: 0 -49px;}
+.mat10{margin-top: 10px;}
+/*图片轮播*/
+.mui-slider-item{height:165px;overflow: hidden;}
+.mui-slider-indicator{text-align: right;bottom: 5px;}
+.mui-slider-indicator .mui-indicator{background-color: #f2f2f2;}
+/*最新揭晓*/
+.jiexiao-header{line-height: 38px;padding-left: 2.1%;padding-right: 2.6%;}
+.lh38{line-height: 38px;}
+.jiexiao-list{text-align: center;border-top: 1px solid #cccccc;border-bottom: 1px solid #cccccc;padding: 10px 0;}
+.w33p{width: 33%;}
+.w72p{width: 72%;}
+.mab20{margin-bottom: 20px;}
+.bodr{border-right: 1px solid #cccccc;}
+.time-box{border-radius: 12px;margin-top: 8px;}
+.jiexiaoBox{padding-top: 14px;padding-bottom: 10px;}
+.mui-icon.mui-icon-arrowright,.mui-icon-arrowright:before{color: #444452;}
+
+/*最热 最快 最新 高价 低价*/
+.zui-active a{color: #de2f51;border-bottom: 3px solid #de2f51;}
+.lih40{line-height:40px;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.padl10r20{padding-left: 10px;padding-right: 20px;overflow: hidden;}
+.w73P{width: 73%;}
+.shutiao{width: 100%; background-color: #fde1c5;height: 4px;border-radius: 6px;}
+.yimai{display: inline-block; width: 72%;background-color: #f99215;height: 100%;border-radius: 6px;top: 0;left: 0;}
+.add-cat{background-position: 0 -120px; width: 24px;height: 22px;margin-top: 10px;}
+.mat10{margin-top: 10px;}
+.zuixin-box{border-top: 1px solid #cccccc;}
+.zuixin-box:nth-child(2n+1){border-right: 1px solid #cccccc;}
+.zui-list{display: none;}
+.zui-list:first-child{display: block;}
+/*底部导航*/
+.duobao-icon{background-position: right -174px;}
+

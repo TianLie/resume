@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<select id="province">
+			<option>省</option>
+		</select>
+		<select id="city">
+			<option>市</option>
+		</select>
+		<select id="area">
+			<option>区</option>
+		</select>
+	</form>
+	<script src="js/china.js"></script>
+	<script type="text/javascript">
+		//找节点
+		var province = document.getElementById("province");
+		var city = document.getElementById("city");
+		var area = document.getElementById("area");
+		var chinaArea = JSON.parse(chinaArea);
+		var provinceList = chinaArea.china.province;
+		//传入对象province
+		for(var i = 0; i < provinceList.length; i++){
+			//创建option节点
+			var option = document.createElement("option");
+			option.innerHTML = provinceList[i]["-name"];
+			province.appendChild(option); 
+		}
+		//选中省份后出现对应的城市
+		var cityList = null;
+		province.onchange = function(){
+			//换省份时，把之前选择的城市和区都清空
+			city.innerHTML = "<option>市</option>";
+			area.innerHTML = "<option>区</option>";
+			if(this.selectedIndex > 0){
+				cityList = provinceList[this.selectedIndex-1].city;
+				for(var i = 0; i < cityList.length; i++){
+					var option = document.createElement("option");
+					option.innerHTML = cityList[i]["-name"];
+					city.appendChild(option);
+				}
+			}
+		}
+		var areaList = null;
+		city.onchange = function(){
+			//换城市时，把之前选择的区清空
+			area.innerHTML = "<option>区</option>"
+			if(this.selectedIndex > 0){
+				areaList = cityList[this.selectedIndex].county;
+				for(var i = 0; i < areaList.length; i++){
+					var option = document.createElement("option");
+					option.innerHTML = areaList[i]["-name"];
+					area.appendChild(option);
+				}
+			}
+		} 
+	</script>
+</body>
+</html>

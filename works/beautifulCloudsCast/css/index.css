@@ -1,0 +1,209 @@
+/*首页样式*/
+
+
+/******* 头部 Begin *******/
+
+
+/*logo宽*/
+
+.hpdtb {
+	padding: 8px 0;
+}
+
+.lgW {
+	width: 16.53%;
+	margin-left: 3.6%;
+}
+
+.scW {
+	width: 52%;
+	margin-left: 3.7%;
+}
+
+.sc-box .scBox {
+	text-align: left;
+	background-position: 3% -41px;
+	padding: 9px 10%;
+	background-color: #fff;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.sc-box .bd {
+	border: 1px solid #bfbfbf;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+input.mui-input-clear{ background-color: #ffffff;}
+.mui-search .mui-placeholder{text-align: left;height: 32px;line-height: 32px;}
+.mui-search .mui-placeholder:before{font-size: 24px;}
+.mui-search input[type=search]{padding-left: 14%;}
+.mui-icon.mui-icon-search span{padding-left: 14%;}
+input[type=search]{border-radius: 3px;-webkit-border-radius: 3px;height: 32px;line-height: 32px;}
+.mui-search .mui-placeholder .mui-icon{color: #a3a3a3;}
+.mui-icon-search:before{color: #a3a3a3;font-size: 24px;}
+.mui-search.mui-active:before{color: #a3a3a3;font-size: 24px;}
+.mui-input-row .mui-input-clear~.mui-icon-clear, .mui-input-row .mui-input-password~.mui-icon-eye, .mui-input-row .mui-input-speech~.mui-icon-speech{color: #a3a3a3;}
+.mui-icon-clear:before, .mui-icon-close-filled:before{content: '\e404';color: #a3a3a3;font-size: 24px;}
+.search-box{width: 82.6%;height: 32px;margin-left: 5.3%;}
+.mui-input-row.mui-search .mui-icon-clear{top: 4px;}
+.mui-search:before{margin-top: -9px;}
+.spW {
+	width: 6%;
+	margin-left: 3.4%;
+	margin-right: 6.67%;
+}
+
+.spH {
+	height: 28px;
+	background-position: 0 6px;
+}
+
+.listW {
+	width: 4.8%;
+}
+.lh{padding-top: 5px;}
+.listW a{color: #595656; font-weight: bold;}
+
+.nvtop {
+	top: 10px;
+}
+
+
+/******* 头部 End *******/
+
+
+/******* 导航栏 Begin *******/
+
+.navBox {
+	margin-top: 0;
+	padding-top: 0;
+}
+/*导航图标*/
+.bgC {
+	width: 40px;
+	height: 40px;
+	background-color: #f0efef;
+	border-radius: 50%;
+}
+
+.bgC:before {
+	content: "";
+	display: inline-block;
+	background: 0 0 url(../images/icon-sprite.png) no-repeat;
+	background-size: 100px 500px;
+	-webkit-background-size: 100px 500px;
+	width: 100%;
+	height: 100%;
+}
+.nav-icon1::before{
+	background-position: 11px -83px;
+}
+.nav-icon2::before{
+	background-position: 11px -130px;
+}
+.nav-icon3::before{
+	background-position: 11px -174px;
+}
+.nav-icon4::before{
+	background-position: 12px -212px;
+}
+.nav-icon5::before{
+	background-position: 12px -250px;
+}
+.mui-col-sm-3 {
+	width: 20%;
+}
+
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	border: none;
+}
+
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body {
+	font-size: 10px;
+	text-overflow: clip;
+	color: #333333;
+}
+
+
+/******* 导航栏 End *******/
+/******* 内容 Begin *******/
+/*商品详情*/
+.business{}
+.w50p{width: 50%;}
+.xiangqing{color: #ffffff; text-align: center; padding-top: 9px; padding-bottom: 8px;}
+.padTop6{padding-top: 6px;}
+.bgBlue{background-color: #26a1e3;}
+.bggreen{background-color: #90d01b;}
+.xiangqingBtn{margin: 0 auto;}
+.clBlue{color: #26a1e3;}
+.clGreen{color: #b0dc70;}
+/*新品上市*/
+.title-box{padding: 14px 0 14px 2%;}
+.h2Title{color: #282828;font-weight: bold;}
+.mui-table-view.mui-grid-view .mui-table-view-cell.xinpin{background-color: #ffffff;width: 48%; float: right;margin-right: -3px;margin-bottom: 6px; margin-top:1px;padding-bottom: 6px}
+.mui-table-view.mui-grid-view .mui-table-view-cell.xinpinMg{background-color: #ffffff;float: left; margin-left: 2%; margin-bottom: 6px; margin-right: 0%; width: 49%; padding-bottom: 6px;}
+.mui-table-view:after,.mui-table-view:before{
+	height: 0;
+}
+.mui-table-view.mui-grid-view.bgNone{background-color: #f0efef; float: left;padding-bottom: 0;}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body.clb0{color: #b0b0b0;font-size: 10px;}
+.mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body.clRed{color: #e92a2a;}
+/*热销精选*/
+.mui-table-view.mui-grid-view .mui-table-view-cell.bdrb{padding-bottom: 6px; width: 34%; border-right: 1px solid #a5a5a5;}
+.mui-table-view.mui-grid-view .mui-table-view-cell.bdrb:nth-child(3n){border-right: 0;}
+.mui-table-view.mui-grid-view .mui-table-view-cell a.mrl24{margin-left: -24px;}
+/*配件专区*/
+.padT32{padding-top: 32px;padding-left: 9.7%;}
+.padT14{padding-top: 14px;display: block;}
+.padt10{padding-top: 6px;}
+.padT42{padding-top: 40px;}
+.padB11{padding-bottom: 6px;}
+.padl7p{padding-left: 7%;}
+.mui-table-view-cell a.padR{padding-right: 2px;}
+.bordR{border-right: 2px solid #f1f1f1;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.bordB{border-bottom: 2px solid #f1f1f1;box-sizing: border-box;-webkit-box-sizing: border-box;}
+.cl00c3{color: #00c3f5;}
+/*去padding*/
+.mui-table-view.mui-grid-view .mui-table-view-cell.nopd{padding-left: 9px;}
+.mui-table-view.mui-grid-view.ulnopd{padding: 0;}
+/*新闻资讯*/
+.cl64{color: #646464;}
+a.clc3{color: #c3c3c3;}
+.newpdl{padding-left: 1.73%;}
+.smbor{border: 2px solid #d7d7d7;padding-left: 4px;padding-right: 4px;}
+.more{position: absolute;right: 2.8%;top: 9px;display: inline-block;}
+/*图片大小*/
+.imgWH{max-width: 42.53%;margin-right: 3.33%;}
+.h4{width: 32%;text-align: center;padding-top: 6px;padding-bottom: 6px; background-color: #00c3f5;}
+/*两行字体*/
+.mui-ellipsis.tx2{overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space: normal;line-height: 16px;}
+.txr{right: 6.13%;bottom: 0;}
+.mui-table-view-cell:after{height: 0;}
+/*底部客服中心*/
+.txwhsp{white-space: nowrap;}
+.kefu-icon{
+	display: inline-block;
+	background: 0 0 url(../images/kefu-sprite.png) no-repeat;
+	background-size: 100px 500px;
+	-webkit-background-size: 100px 500px;
+	width: 100%;
+	height: 20px;}
+.kufu-icon1{background-position: 34px 0;}
+.kufu-icon2{background-position: 36px -62px;}
+.kufu-icon3{background-position: 40px -118px;}
+.kufu-icon4{background-position: 38px -167px;}
+.mui-table-view-cell a.kufuPb{padding-bottom: 28px; padding-top: 20px;}
+/*关注我们*/
+.clabb{color: #bbbbbb;}
+.guanzhu{padding-top: 30px;margin-top: 2px;margin-bottom: 80px;}
+.borderRa{width: 34px;height: 34px;background: 0 0 url(../images/guanzhu-sprite.png) no-repeat;background-size: 100px 500px;-webkit-background-size: 100px 500px;}
+.guanzhu1{background-position: 0 0;}
+.guanzhu2{background-position: 0 -78px;}
+.guanzhu3{background-position: 0 -166px;}
+.guanzhu4{background-position: 0 -246px;}
+.marr{margin-right: 5.7%;}
+.guanzhupd{padding-top: 22px; padding-bottom: 12px;}
+/******* 内容 End *******/

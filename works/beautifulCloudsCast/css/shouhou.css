@@ -1,0 +1,7 @@
+/*售后*/
+.mui-table-view-cell a.shouhou{padding-left:10%;background: 0 0 url(../images/shouhou-sprite.png) no-repeat; background-size: 100px 500px;-webkit-background-size: 100px 500px;color: #333333;}
+.mui-table-view-cell a.shouhou1{background-position: 0 13px;}
+.mui-table-view-cell a.shouhou2{background-position: 0 -30px;}
+.mui-table-view-cell a.shouhou3{background-position: 0 -62px;}
+.padl4p{padding-left: 4%;}
+.mui-table-view-cell:after{left: 27px;}

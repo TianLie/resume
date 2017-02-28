@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>预约情况</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/center.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">预约情况</h1>
+	</header>
+	<!--内容-->
+	<div class="mui-content mab50">
+		<div class="pad4 coach_list clearfix">
+			<div class="iconfont icon-jiaolian1 fl"><i>龙华徐教</i></div>
+			<div class="fr date_se" data-options='{"type":"date"}'><span id='result' class="ui-alert">2016年-05月-25日</span><i class="iconfont icon-xiala"></i></div>
+		</div>
+		<div class="w100p borb_c0">
+			<table class="w100p time-table">
+				<tr class="tou"><th><i class="iconfont icon-shijian"></i>时间段</th><th><i class="iconfont icon-xingming"></i>姓名</th><th></th></tr>
+				<!--<tr><td class="timing">7点-8点</td><td class="nane">李先生</td><td class="order_is">已预约</td></tr>-->
+			</table>
+		</div>
+	</div>
+	<footer class="footer">
+		<ul class="footer_icon clearfix">
+			<li class="cur"><a href="../index.html" class="iconfont icon-yuyue"></a></li>
+			<li><a href="myCenter.html" class="iconfont icon-geren"></a></li>
+			<li><a href="contactUs.html" class="iconfont icon-dianhua"></a></li>
+			<li><a href="priceForm.html" class="iconfont icon-biaodanxinxitishi"></a></li>
+		</ul>
+	</footer>
+	<script src="../js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+			(function($) {
+				$.init();
+				var result = $('#result')[0];
+				var btns = $('.date_se');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						/*
+						 * 首次显示时实例化组件
+						 * 示例为了简洁，将 options 放在了按钮的 dom 上
+						 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+						 */
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							result.innerText = rs.y.value + '年-' + rs.m.value +'月-'+rs.d.value + '日';
+							picker.dispose();
+						});
+					}, false);
+				});
+			})(mui);
+	
+	
+	var timeing = ["7点-8点","8点-9点","9点-10点","10点-11点","11点-12点","13点-14点","14点-15点","15点-16点","16点-17点","17点-18点","18点-19点","19点-20点","20点-21点","20点-22点"];
+	var name_is = ["李先生","张先生","未预约","未预约","陈小姐","李小姐","张先生","未预约","张先生","刘小姐","胡先生","未预约","张先生","胡先生"]
+	var order_is = ["未预约","张先生","未预约","未预约","陈小姐","未预约","未预约","未预约","张先生","李小姐","胡先生","未预约","张先生","未预约"]
+	for(var i = 0;i < timeing.length; i++){
+			var h = '<td class="timing">'+timeing[i]+'</td>'+
+				'<td class="nane">'+name_is[i]+'</td>'+
+				'<td class="order_is">'+order_is[i]+'</td>';
+		var tr = $("<tr></tr>");
+		tr.html(h);
+		tr.appendTo($(".time-table"))
+	}
+	
+	var len = $(".order_is").size();
+	var oIndex = 0;
+	for(var k = 0; k < len;k++){
+		var o = $(".order_is").eq(k).text();
+		var n = $(".nane").eq(k).text();
+		if(o == "未预约"){
+			oIndex = k;
+			$(".order_is").eq(oIndex).css({
+				"color":"#5a5a5a"
+			})
+		}
+		if(n == "未预约"){
+			$(".nane").eq(oIndex).css({
+				"color":"#5a5a5a"
+			})
+		}
+	}
+	</script>
+</body>
+</html>

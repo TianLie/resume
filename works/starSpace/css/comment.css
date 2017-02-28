@@ -1,0 +1,204 @@
+.comment_head{
+	background: url("../images/common_head.jpg") 0 -44px repeat-x;
+}
+.comment_left{
+	background: url("../images/common_head.jpg") 0 0 no-repeat;
+}
+.comment_right{
+	background:url("../images/common_head.jpg") right -88px no-repeat; 
+	padding-left: 41px;
+	padding-right: 20px;
+	overflow: hidden;
+	zoom:1;
+}
+.comment_right a{
+	font-size: 14px;
+	color: #b21f27;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 44px;
+	height: 44px;
+}
+.comment_right h2{
+	float: left;
+}
+.more{
+	float:right; 
+}
+
+/* 底部通用部分 */
+.comment_footer{
+	background: url("../images/common_fotter_left.jpg") 0 0 no-repeat;
+}
+.comment_footer-right{
+	height: 29px;
+	background: url("../images/common_fotter_right.jpg") right 0 no-repeat;
+}
+/*通用的主体部分-start*/
+.common_main{
+	padding: 9px 8px 5px 10px;
+	background: url("../images/common_main_bg.jpg") 0 0 repeat-y;
+}
+.common_main_portrait{
+	padding: 0 5px;
+}
+.common_main_portrait img{
+	border-color: #fff;
+	border-width: 6px 21px 6px 18px;
+	border-style: solid;
+}
+.common_main_links{
+	margin-top: 8px;
+}
+.common_main_links a{
+	display: inline-block;
+	width: 66px;
+	height: 24px;
+	background: url("../images/common_btn_bg.jpg") 0 -24px no-repeat;
+	text-align: center;
+	line-height: 24px;
+	font-size: 12px;
+	text-decoration: none;
+	color: black;
+}
+.common_links_center{
+	margin-left: 5px;
+	margin-right: 6px;
+}
+.common_main_links_row{
+	margin-top: 6px;
+}
+.common_main_links a:hover{
+	background-position: 0 0;
+	color: #b61d20;
+}
+/* 经纪公司 */
+.common_main_firmLinks{
+	/* padding: 11px 5px 20px 6px; */
+	/* margin-top: 11px;
+	margin-bottom: 10px; */
+	width: 189px;
+	height: 24px;
+	margin: 0 auto;
+
+}
+.common_main_firmLinks span{
+	display: inline-block;
+	text-align: center;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;/* 超出隐藏 */
+	white-space:nowrap;/* 强制不换行 */
+}
+.common_links_spancenter{
+	width: 39%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+	line-height: 24px;
+	height: 24px;
+	color: #b41d24;
+	font-size: 14px;
+	font-weight: bold;
+} 
+.firmLinks_l{
+	width: 30%;
+}
+.firmLinks_r{
+	width: 30%;
+}
+/* 箭头设置 */
+.common_main_firmLinks a{
+	color: #fff;
+	display: inline-block;
+	width: 54px;
+	height: 24px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 24px;
+	font-weight: bold;
+	background: url("../images/arrows_btn_bg.jpg")  0 0 no-repeat;
+}
+.common_main_firmLinks a:hover{
+	background: url("../images/arrows_btn_bg.jpg")  0 -24px no-repeat;
+}
+/* 中间设置 */
+.common_center_main{
+	padding: 9px 8px 5px 10px;
+	background: url("../images/common_center_main_bg.jpg") 0 0 repeat-y;
+}
+
+
+ .common_center_main_list{
+	overflow: hidden;
+	zoom:1;
+}
+/* 爱的初体验 */
+.common_center_main_tiyan{
+	margin: 0 auto;
+	text-align: center;
+} 
+.common_center_main_tiyan img{
+	border: 3px solid white;
+	border-radius: 3px;
+}
+.common_center_main_tiyan a{
+	width: 126px;
+	font-size: 12px;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 1px;
+	padding: 8px;
+	border-radius: 4px;
+} 
+.common_center_main_tiyan a span{
+	display: block;
+	margin-top: 7px;
+	margin-bottom: 12px;
+}
+.common_center_main_tiyan a:hover{
+	background-color: #fd9a34;
+}
+.common_center_main_tiyan a em{
+	background: url("../images/common_center_main_btnBg.jpg") 0 0px no-repeat;
+	width: 66px;
+	height: 24px;
+	display: block;
+	margin: 0 auto;
+}
+.common_center_main_tiyan a:hover em{
+	background-position: 0 -24px;
+}
+/* 右边设置 */
+
+
+
+.mt13{
+	margin-top: 13px;
+}
+#no_margin{
+	margin-left: 0;
+	margin-right: 0;
+}
+.no_margin{
+	margin-left: 0;
+	margin-right: 0;
+}
+.no_pt{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.no_pl{
+	padding-left: 0;
+	padding-right: 0;
+}
+/* .moodDiary_tb table .last_td .noborder{
+	border-bottom-width: 0;
+	border:none;
+} */
+/* more加下划线 */
+.comment_right .more_haveUnderline{
+	text-decoration: underline;
+}

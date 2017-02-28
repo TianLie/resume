@@ -1,0 +1,90 @@
+/*设置页面*/
+.set-icon{background: url("../images/seting-sprite.png") no-repeat;background-size: 60px 600px;-webkit-background-size: 60px 600px;width: 30px;height: 32px;vertical-align: middle;}
+.wish-icon{background-position: 0 0;}
+.help-icon{background-position: 0 -51px;} 
+.feedback-icon{background-position: 0 -104px;}
+.winver-icon{background-position: 0 -152px;}
+.service-icon{background-position: 0 -202px;}
+.about-icon{background-position: 0 -251px;}
+.renzheng-icon{background-position: 0 -307px;}
+.business-icon{background-position: 0 -361px;}
+.add-icon{background-position: 0 -416px}
+/*退出登录*/
+.out-box{margin-top: 20px;text-align: center;}
+.outload{width: 89%;padding: 8px 0;border-radius: 0;-webkit-border-radius: 0;}
+/*服务协议*/
+.xieyi-box{padding: 0 14px;height: 100%;box-sizing: border-box;width: 100%;padding-top: 28px;}
+.padW{padding: 18px 8px 12px 8px;height: 100%;}
+.atc_Title{color: #dc2d4e;font-size: 18px;}
+.timeBox{padding-top: 12px;padding-bottom: 26px;}
+.padt28{padding-top: 28px;}
+
+/*帮助中心 页面*/
+.bgee{background-color: #eee;}
+.help_pd{padding: 30px 9%;}
+.help_btn{border: 2px solid #dc2d4e;border-radius: 6px;-webkit-border-radius: 6px;line-height: 38px;}
+.help_btn a{width: 50%;float: left;text-align: center; color: #dc2d4e;font-size: 16px;}
+.help_btn a.active{color: #fff;background-color: #dc2d4e;}
+.help_list{margin-top: 10px;}
+.help_list:first-child{margin-top: 0;}
+.help_list a.help_title{color: #de2e51;font-size: 16px;background-color: #fff;margin-left: -20px;position: relative;}
+.help_title:after{color: #de2e51;font-weight: bolder;}
+/*.mui-active .help_title{background-color: #fff;}*/
+.mui-table-view-cell.mui-collapse .mui-collapse-content{background-color: #eeeeee;}
+.mui-table-view:before,.mui-table-view:after{height: 0;}
+.help_list .red_tiao{height: 100%;display: inline-block;background-color: #dc2d4e;width: 4px;position: absolute;z-index: 100;left: 0;top: 0;}
+.mui-table-view-cell{padding-left: 20px;}
+.mui-collapse-content p{color: #747484;}
+.help_box{display: none;}
+.help_box.active{display: block;}
+
+
+
+/*夺宝创业故事 页面*/
+.tex_index p{text-indent: 2em;text-align: left;color: #666666;font-size: 15px;}
+.pd18{padding: 0 18px;}
+.pat30{padding-top: 30px;padding-bottom: 12px;}
+.pat20{padding-top: 20px;}
+.h3_tit{font-size: 20px;padding-top: 26px;padding-bottom: 16px;font-weight: bold;}
+
+
+/*关于我们*/
+.top_tit{padding: 22px 0;}
+.blod_tit{font-size: 23px;font-weight: bold;color: #dc2d4e; vertical-align: top;}
+.net_box{line-height: 12px;text-align: left;color: #646464;}
+.about_box{padding: 16px 12px 14px 12px;}
+.fenge{width: 34%;height: 2px;background-color: #f2f1f3;}
+.fenge_tit{color: #666666;font-size: 16px;vertical-align: middle;width: 32%;text-align: center;}
+.ovh{overflow: hidden;}
+.mui-badge{padding: 0;margin-right: 5px;}
+.list{margin-top: 16px;}
+.mui-badge.mui-badge-inverted{border: 1px solid #dc2d4e;width: 18px;height: 18px;text-align: center;line-height: 18px;padding: 0;color: #dc2d4e;font-size: 16px;}
+.dd_list{padding-top: 14px;}
+.pad8{padding: 0 8px;padding-bottom: 8px;}
+
+/*心愿清单*/
+.add_box{font-size: 14px;color: #fff;line-height: 44px;vertical-align: top;}
+.wish_box{border: 1px solid #cccccc;}
+.wish_list{line-height: 44px; border-bottom: 1px solid #cccccc;padding-left: 2.6%;}
+.wish_list:last-child{border-bottom: none;}
+.heart{width: 17px;height: 15px;margin-right: 12px;}
+.tipsBox .cl9f9{color: #9f9f9f;}
+.tipsBox{margin-top: 12px;}
+
+/*添加心愿清单*/
+.pad17{padding: 17px 17px;}
+input.lih44{line-height: 44px;;height: 44px;font-size: 14px;}
+.link{height: 116px;margin-top: 18px;padding: 8px;}
+.mui-btn.mui-btn-block{background-color: #1ba6ff;color: #fff; padding: 12px 0;}
+.mat20{margin-top: 20px;}
+
+/*意见反馈*/
+.problem_box{padding: 10px 4px 0 15px;}
+.problem{border: none;min-height: 90px;}
+.teal_r{text-align: right;}
+.add_img{width: 66px;margin-top: 9px;}
+
+
+/*夺宝认证体系*/
+.pa5p{padding: 0 5%;}
+.renzheng_list h3{white-space: nowrap;}

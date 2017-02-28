@@ -1,0 +1,21 @@
+/*表单提示*/
+.pad_f{
+	padding-top: 35px;
+}
+.pr_msg,.pr_msg p,.pr_msg h2,.pr_msg h3,.pr_msg h4{
+	font-size: 15px;
+	color: #313131;
+	line-height: 25px;
+	font-family: "Adobe 黑体 Std";
+}
+.pr_msg h4, .zhu{
+	margin-top: 30px;
+}
+.firm{
+	margin-bottom: 5px;
+}
+.firm img{
+	height: 30px;
+	vertical-align: middle;
+}
+.cl_ffd{color: #0062CC;}

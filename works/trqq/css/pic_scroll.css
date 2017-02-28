@@ -1,0 +1,61 @@
+
+.blk_29 {
+    overflow: hidden;
+    position: relative;
+}
+.blk_29 .LeftBotton {
+    background: 0 0 url("../images/pic_right_h.png") no-repeat;
+    margin-left: 5px;
+    *margin-left: -60px;
+    _margin-left: -60px;
+    float: left;
+    width: 23px;
+    height:81px;
+    position: absolute;
+    top: 24px;
+    cursor: pointer;
+}
+.blk_29 .RightBotton {
+    right: 5px;
+    background: 0 0 url("../images/pic_left_h.png") no-repeat;
+    float: right;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    width: 23px;
+    height:81px;
+}
+.blk_29 .Cont {
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 8px;
+    width: 636px;
+}
+.blk_29 .box {
+    border: 2px solid rgb(245, 175, 41);
+    float: left;
+    height: 120px;
+    margin: 0 10px;
+    text-align: center;
+    width: 134px;
+    left: 0;
+}
+.blk_29 .box IMG {
+    display: block;
+    background: #fff;
+}
+.blk_29 .box A:hover IMG {
+    BORDER-RIGHT: #5385cc 1px solid;
+    BORDER-TOP: #5385cc 1px solid;
+    BORDER-LEFT: #5385cc 1px solid;
+    BORDER-BOTTOM: #5385cc 1px solid
+}
+.blk_29 .box P {
+    MARGIN: 6px auto 0px;
+    width: 97px;
+    line-height: 20px;
+}
+.rollphotos {
+    margin: 10px auto;
+    width: 760px;
+}

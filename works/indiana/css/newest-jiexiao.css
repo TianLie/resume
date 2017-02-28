@@ -1,0 +1,11 @@
+/*最新揭晓页面*/
+.mui-content>.mui-table-view:first-child{margin-top: 1px;}
+/*图片*/
+.mui-table-view .mui-media-object{max-width: 90px;height: 90px;}
+.mui-table-view-cell{padding-top: 14px;padding-bottom: 11px;}
+/*字体*/
+.mui-ellipsis{font-size: 12px;color: #999999;}
+.clock-box{background: 0 bottom url("../images/clock-bg.png") no-repeat;background-size: 17px 17px; -webkit-background-size: 17px 17px;padding-left: 25px;margin-top: 18px;}
+.mui-table-view-cell>a:not(.mui-btn){white-space: normal;}
+/*最新揭晓图标*/
+.jiexiaoLogo-box{width: 15%; position: absolute;top: 0;left: 0;}

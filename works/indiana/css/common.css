@@ -1,0 +1,88 @@
+/*头部标题栏*/
+/*body,html{max-width: 750px; margin: 0 auto;position: relative;overflow-x: hidden;}*/
+body{background-color: #eeeeee;}
+header.mui-bar{background-color: #df3051;}
+.mui-title{color: #fff;font-size: 17px;}
+header .mui-icon{color: #fff;font-size: 17px;}
+.mui-bar-nav{box-shadow: none;-webkit-box-shadow: none;}
+/*宽度100%*/
+.w100p{width: 100%;}
+.w50p{width: 50%;}
+.w20p{width: 20%;text-align: center;}
+/*底部,首页图标背景*/
+.index-icon{background: url("../images/index-sprite.png") no-repeat;background-size: 200px 600px;-webkit-background-size: 200px 600px;}
+/*左浮动*/
+.fl{float: left;}
+.fr{float: right;}
+/*字体居中*/
+.teal-c{text-align: center;}
+/*字体居左*/
+.teal_l{text-align: left;}
+/*字体居右*/
+.teal_r{text-align: right;}
+/*定位*/
+.psA{position: absolute;}
+.psR{position: relative;}
+.psF{position: fixed;}
+/*背景颜色*/
+/*白色背景*/
+.bgff{background-color: #fff;}
+.bgde2{background-color: #de2f51;}
+.bgfdfd{background-color: #fdfdfd;}
+.bg1ba{background-color: #1ba6ff;}
+/*字体大小*/
+.fz10{font-size: 10px;}
+.fz11{font-size: 11px;}
+.fz12{font-size: 12px;}
+.fz13{font-size: 13px;}
+.fz14{font-size: 14px;}
+.fz15{font-size: 15px;}
+.fz16{font-size: 16px;}
+.fz18{font-size: 18px;}
+.fz19{font-size: 19px;}
+.fz23{font-size: 23px;}
+.fz30{font-size: 30px;}
+/*字体颜色*/
+.cl444{color: #444452;}
+.cl333{color: #333333;}
+.cl666{color: #666666;}
+.clfff{color: #ffffff;}
+.cl41f{color: #41414f;}
+.cl999{color: #999999;}
+.cldf3{color: #df3758;}
+.cl474{color: #474747;}
+.clde2{color: #de2f51;}
+.cl1ba{color: #1ba6ff;}
+.cl363{color: #363636;}
+.cl7d7{color: #7d7d8a;}
+.cldbd{color: #bdbdbd;}
+.cle93{color: #e93759;}
+.clbab{color: #bab6bb;}
+.cl434{color: #434343;}
+.cl676{color: #676767;}
+.cl8a8{color: #8a8a8a;}
+.cl2e2{color: #2e2e2e;}
+.cl838{color: #838383;}
+.cldc2{color: #dc2d4e;}
+.cl9f9{color: #9f9f9f;}
+.cl11c{color: #11c3bc;}
+a,span,dl{display: inline-block;}
+.mat9{margin-top: 10px;}
+.mat15{margin-top: 15px;}
+/*底部导航*/
+.mab50{margin-bottom: 57px;}
+.footer-active p{color: #de2f51;}
+.footer-active span{background-position-x: right;}
+.footer-box{bottom: 0;border-top: 1px solid #cccccc;background-color: #fdfdfd;padding-top: 8px;position: fixed;}
+.footer-icon{width: 24px;height: 22px;}
+.duobao-icon{background-position: 0 -174px;}
+.jiexiao-icon{background-position: 0 -218px;}
+.shaidan-icon{background-position: 0 -263px;}
+.qingdan-icon{background-position: 0 -310px;}
+.wo-icon{background-position: 0 -355px;}
+/*列表重设*/
+.mui-table-view-cell:after{left: 0;}
+.mar26{margin-right: 26px;}
+.mui-input-group .mui-input-row:after{left: 0;}
+/*两行文本超出隐藏*/
+.line2{overflow: hidden;text-overflow: ellipsis;-webkit-line-clamp: 2;display: -webkit-box;-webkit-box-orient: vertical;}

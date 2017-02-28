@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>找回密码</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/findPwd.css" />
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content bgW texalc findPwd">
+			<h1 class="findTitle fz14">通过验证手机或者邮箱找回密码</h1>
+			<div class="w92p">
+				<!--<form action="" method="post" class=" mui-input-row">-->
+				<input type="text" class="shuru icon-sprite w100p" placeholder="请输入手机号/邮箱" />
+				<input type="submit" value="立即找回" class="findBtn w100p" />
+				<!--</form>-->
+			</div>
+			<p class="w92p psR"><a href="duanxin-register.html" class="icon-sprite duxinRegister psA">短信注册</a></p>
+			<p class="psA tel-box texalc w100p">客服电话：<a href="tel:4006988234" class="fz12 kfTel">4006 988 234</a></p>
+		</div>
+		<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+				//检测输入框是否为空
+			$(".findBtn").on("click", function() {
+				var val = $(".shuru").val();
+				// 去除首尾空格
+				val = $.trim(val);
+				if (val == "") {
+					$(".shuru").focus();
+				} 
+			})
+		</script>
+	</body>
+
+</html>

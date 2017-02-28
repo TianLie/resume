@@ -1,0 +1,50 @@
+/*搜索页样式*/
+body{background-color: #eeeeee;}
+/*头部*/
+.w83P{width: 83%;}
+.mui-search{position: absolute;top: 2px;left: 12%;}
+.mui-bar input[type=search][type=search]{background-color: #fff;border-radius: 3px;}
+.mui-search .mui-placeholder{text-align: left;padding-left: 10px;color: #d2d2d7;}
+.mui-search .mui-placeholder .mui-icon{color: #d2d2d7;}
+.mui-input-row.mui-search .mui-icon-clear{color: #d2d2d7;}
+.mui-search:before{color: #d2d2d7;}
+.bordtm1{border-bottom: 1px solid #aaaaaa;}
+/*主体 内容*/
+.bordercc{border: 1px solid #ccc;border-left: none;}
+/*热门专题*/
+.mui-icon.mui-icon-arrowright,.mui-icon-arrowright{color: #666666;}
+.lih38{line-height: 38px;}
+.borbtmdd{border-bottom: 1px solid #dddddd;}
+.padt15{padding-top: 15px;}
+.padlr16{padding: 0 16px;}
+.zhuangti-box{padding-bottom: 15px;}
+.img-box{width: 90%;height: 96px;border-radius: 8px;-webkit-border-radius: 8px; overflow: hidden;margin: 0 auto;}
+.slide-text{text-align: center;margin-top: 18px;padding-bottom: 8px;}
+/*热门品类*/
+.pinlei-box{border: 1px solid #dddddd;border-left: none;}
+.peilei-header{padding: 0 14px;border-bottom: 1px solid #dddddd;}
+.peilei-icon{background: url(../images/peilei-sprite.png) no-repeat;background-size: 100px 600px;-webkit-background-size: 100px 600px;width: 50px;height: 50px;}
+.iphone-icon{background-position: 0 0;}
+.miui-icon{background-position: 0 -79px;}
+.digital-icon{background-position: 0 -159px;}
+.dianqi-icon{background-position: 0 -236px;}
+.snacks-icon{background-position: 0 -317px;}
+.live-icon{background-position: 0 -398px;}
+.chongzhi-icon{background-position: 0 -473px;}
+.else-icon{background-position: 0 -545px;}
+.pinlei-text{line-height: 50px;vertical-align: top;color: #666666;font-size: 14px;}
+.pinleiBox{padding-top: 10px;padding-bottom: 10px;padding-left: 30px;border-top: 1px solid #dddddd;}
+.pinleiBox:nth-child(2n+1) a{border-right: 1px solid #dddddd;}
+.pinleiBox:first-child,.pinleiBox:nth-child(2){border-top: none;}
+/*搜索详情*/
+.w73P{width: 72%;}
+.cat-icon{background-position: 0 -436px;width: 25px;height: 100%;top: 12px;right: 15px;}
+.mui-icon .mui-badge{background: #16d876;top: -7px;line-height: 1;padding: 1px 4px;}
+.search-list{padding-top: 14px;padding-bottom: 9px;border-top: 1px solid #cccccc;}
+.search-img{width: 18%;padding-left: 2.6%;}
+.search-img img{width: 100%;}
+.list-box{width: 60%;padding-left: 3%;}
+.hengtiao-box{background-color: #fee9c2;width: 100%;height: 4px;border-radius: 6px;-webkit-border-radius: 6px;position: relative;}
+.hengtiao-small{background-color: #feba02;height: 100%;display: inline-block; position: absolute;border-radius: 6px;-webkit-border-radius: 6px;}
+.addCat-box{background-position: 0 -120px;width: 25px;height: 22px;vertical-align: middle;}
+.cat-box{padding-left: 5%;padding-top: 20px;}

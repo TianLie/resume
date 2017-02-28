@@ -1,0 +1,233 @@
+{
+	"index.html": {
+		"resources": [
+			"images/xinwen-img.jpg",
+			"images/renxiao.jpg",
+			"js/jquery-1.11.3.min.js",
+			"images/shujuxian-img.jpg",
+			"images/xinpin-img.jpg",
+			"fonts/mui.ttf",
+			"images/xinwen-shipin-img.jpg",
+			"images/icon-sprite.png",
+			"css/index.css",
+			"images/rexiao-img.jpg",
+			"images/logo.png",
+			"js/mui.min.js",
+			"css/common.css",
+			"js/zepto.min.js",
+			"images/yaokongqi-img.jpg",
+			"css/mui.min.css",
+			"images/slide-img.jpg",
+			"images/peijian-img.jpg",
+			"css/reset.css",
+			"images/gotop.png",
+			"images/guanzhu-sprite.png",
+			"images/dibuBtn-sprite.png",
+			"images/kefu-sprite.png",
+			"html/shopCart.html",
+			"html/fenlei.html",
+			"html/personalCenter.html",
+			"html/xiangqing.html",
+			"html/shouhou.html"
+		],
+		"refer": [
+			"html/shopCart.html",
+			"html/fenlei.html",
+			"html/personalCenter.html",
+			"html/xiangqing.html",
+			"html/shouhou.html"
+		]
+	},
+	"html/shopCart.html": {
+		"resources": [
+			"css/shopCart.css",
+			"images/gouwuche.png",
+			"html/personalCenter.html",
+			"index.html",
+			"images/dibuBtn-sprite.png",
+			"html/fenlei.html"
+		],
+		"refer": [
+			"html/personalCenter.html",
+			"index.html",
+			"html/fenlei.html"
+		]
+	},
+	"html/personalCenter.html": {
+		"resources": [
+			"images/level.png",
+			"images/touxiang.png",
+			"images/gerenzhongxin-sprite.png",
+			"images/check-bg.jpg",
+			"css/personalCenter.css",
+			"index.html",
+			"html/address.html",
+			"images/dibuBtn-sprite.png",
+			"html/fenlei.html",
+			"css/common.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/reset.css",
+			"html/register.html",
+			"html/login.html"
+		],
+		"refer": [
+			"index.html",
+			"html/address.html",
+			"html/fenlei.html",
+			"html/register.html",
+			"html/login.html"
+		]
+	},
+	"html/address.html": {
+		"resources": [
+			"css/address.css",
+			"images/address.png",
+			"html/shouhuo-address.html",
+			"html/personalCenter.html"
+		],
+		"refer": [
+			"html/shouhuo-address.html",
+			"html/personalCenter.html"
+		]
+	},
+	"html/shouhuo-address.html": {
+		"resources": [
+			"js/china.js",
+			"css/shouhuo-address.css",
+			"html/address.html",
+			"css/common.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"html/address.html"
+		]
+	},
+	"html/zhongxin.html": {
+		"resources": [
+			"css/zhongxin.css"
+		]
+	},
+	"html/fenlei.html": {
+		"resources": [
+			"css/fenlei.css",
+			"images/list-img.jpg",
+			"js/jquery-1.11.3.min.js",
+			"css/common.css",
+			"js/mui.min.js",
+			"images/dibuBtn-sprite.png",
+			"js/zepto.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/reset.css",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/search.html": {
+		"resources": [
+			"images/close.png",
+			"css/search.css"
+		]
+	},
+	"html/xiangqing.html": {
+		"resources": [
+			"images/taocan-img.png",
+			"images/xiangqing-img.jpg",
+			"images/xiangqing-sprite.png",
+			"images/gaishu-img.jpg",
+			"css/xiangqing.css",
+			"js/jquery-1.11.3.min.js",
+			"css/common.css",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/mui.min.css",
+			"css/reset.css",
+			"fonts/mui.ttf",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/shouhou.html": {
+		"resources": [
+			"index.html",
+			"css/shouhou.css",
+			"images/shouhou-sprite.png"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"html/register.html": {
+		"resources": [
+			"css/registered.css",
+			"images/register-logo.png",
+			"images/icon-sprite2.png",
+			"html/duanxin-register.html",
+			"html/personalCenter.html",
+			"js/jquery-1.11.3.min.js",
+			"js/zepto.min.js",
+			"html/login.html"
+		],
+		"refer": [
+			"html/duanxin-register.html",
+			"html/personalCenter.html",
+			"html/login.html"
+		]
+	},
+	"html/duanxin-register.html": {
+		"resources": [
+			"html/register.html",
+			"css/common.css",
+			"js/mui.min.js",
+			"css/registered.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"images/register-logo.png",
+			"images/icon-sprite2.png",
+			"css/reset.css",
+			"html/login.html",
+			"js/jquery-1.11.3.min.js",
+			"js/zepto.min.js"
+		],
+		"refer": [
+			"html/register.html",
+			"html/login.html"
+		]
+	},
+	"html/login.html": {
+		"resources": [
+			"css/login.css",
+			"html/duanxin-register.html",
+			"html/register.html",
+			"html/personalCenter.html",
+			"html/findPwd.html",
+			"css/registered.css",
+			"images/register-logo.png",
+			"images/icon-sprite2.png"
+		],
+		"refer": [
+			"html/duanxin-register.html",
+			"html/register.html",
+			"html/personalCenter.html",
+			"html/findPwd.html"
+		]
+	},
+	"html/findPwd.html": {
+		"resources": [
+			"css/findPwd.css",
+			"html/duanxin-register.html"
+		],
+		"refer": [
+			"html/duanxin-register.html"
+		]
+	}
+}

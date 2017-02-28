@@ -1,0 +1,45 @@
+@charset "utf-8"
+/*reset*/
+body,div,a,span,p,h1,h2,h3,h4,h5,h6,img,dl,dt,dd,span,var,th,td,ul,li,form,i,em,strong,pre,textarea,blockquote,fieldset{
+	padding: 0;
+	margin: 0;
+}
+fieldset,img,input{
+border: 0;
+}
+img{
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var,i{
+font-weight: normal;
+font-style: normal;
+}
+ol,ul {
+list-style: none;
+}
+caption,th {
+text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+font-weight: normal;
+font-size: 100%;
+}
+q:before,q:after {
+content:'';
+}
+abbr,acronym { border: 0;
+}
+a:link,a:visited,a:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+input
+{
+	outline: 0;
+}
+img{
+	display: block;
+}
+.clearfix{zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}

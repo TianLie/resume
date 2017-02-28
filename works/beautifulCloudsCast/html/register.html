@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>注册</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/registered.css" />
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<div class="mui-content bgW texalc register-box">
+			<h1 class="w22p"><img src="../images/register-logo.png"/></h1>
+			<div class="ipPd">
+				<div class="mui-input-row psR">
+					<input type="number" class="borno icon-sprite phone inpdl" placeholder="请输入手机号" />
+					<a href="JavaScript:void(0);" class="psA phoneAre icon-sprite"><span class="mui-icon mui-icon-arrowright"></span></a>
+				</div>
+				<div class="mui-input-row  mui-password">
+					<input type="password" class="borno mui-input-password icon-sprite inpdl" placeholder="6-16位字母或者数字" />
+					<span class="mui-icon mui-icon-eye"></span>
+				</div>
+				<div class="mui-input-row psR">
+					<input type="text" class="borno icon-sprite inpdl dunxin" placeholder="请输入短信验证码" />
+					<a href="JavaScript:void(0);" class="psA huoqu">获取</a>
+				</div>
+				<div class="mui-input-row mui-checkbox mui-left">
+					<label class="xieyi fz12">同意《丽彩云投服务使用协议》</label>
+					<input name="checkbox" type="checkbox" checked>
+				</div>
+				<input type="submit" id="" value="注册" class="w100p zhuceBtn" />
+				<p class="w92p psR"><a href="duanxin-register.html" class="icon-sprite duxinRegister psA">短信注册</a></p>
+			</div>
+		</div>
+		<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 失去焦点
+			$(".mui-input-password").blur(function() {
+				var val = $(".mui-input-password").val();
+				// 去除首尾空格
+				val = $.trim(val);
+				if (val == "") {
+					$(".mui-input-password").focus();
+				} else {
+					var val = $(this).val();
+					val = $.trim(val); //去掉首尾空格
+					var reg = /^[a-zA-Z\d+]{6,16}$/;
+					if (reg.test(val)) {
+						console.log(val);
+					} else {
+						$(".mui-input-password").val("");
+						alert("输入错误！");
+					}
+				}
+			})
+		</script>
+	</body>
+
+</html>

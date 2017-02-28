@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>5.将视频转换成灰度，以及反色</title>
+		<style type="text/css">
+			#canvas{
+				border: 1px solid #aaa;
+			}
+			#wrap{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<video id="video" autoplay="true" loop="true">
+				<source src="img/BigBuckBunny_640x360.mp4"></source>
+				<source src="img/BigBuckBunny_640x360.ogv"></source>
+				<p>请在支持HTML5 video标签的浏览器中</p>
+			</video>
+		</div>
+		<canvas id="canvas" width="640" height="360">您的浏览器不支持canvas.</canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById("canvas");
+			var ctx = canvas.getContext("2d");
+			var timer = 0;
+			var fps = 30/1000;
+			var video = document.getElementById("video");
+			video.oncanplay = function() {
+				timer = setInterval(function() {
+					ctx.drawImage(video,0,0);
+					var imgData = ctx.getImageData(0,0,640,360);
+					var d = imgData.data;
+					for(var i =0; i <d.length; i+=4){
+						d[i] = 255 - d[i];
+						d[i+1] = 255 - d[i+1];
+						d[i+2] = 255 - d[i+2];
+//						d[i] = d[i+1] = d[i+2] = r =g=b;
+					}
+					ctx.putImageData(imgData,0,0);
+				},fps);
+				
+			}
+		</script>
+	</body>
+</html>

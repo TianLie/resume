@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>瀑布流</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/renderings.css">
+</head>
+<body>
+	<div id="header">
+		<div class="nav clearfix">
+			<img src="img/logo.png" alt="" class="logo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class="active"><a href="renderings.html">Renderings</a></li>
+				<li><a href="bim.html">BIM</a></li>
+				<li><a href="animate.html">3D Animate</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<a href="javascipt:void(0);" class="toggle-button">button</a>
+		</div>
+	</div>
+	<div id="mainContent">
+		<div class="part part-1">
+			<h2 class="title-h2">DIGITAL EFFECT DRAWING</h2>
+		</div>
+
+		<div class="swiper-container">
+			<a href="###">
+				<img src="img/swiper.jpg" alt="" >
+			</a>
+		</div>
+
+		<ul class="flow-list" id="flowList">
+			<li>
+				<!-- <div>
+					<img src="img/p1.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p2.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片/span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p3.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p5.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p6.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div> -->
+			</li>
+			<li class="center-list">
+				<!-- <div>
+					<img src="img/p4.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p5.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p6.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p2.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p3.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div> -->
+			</li>
+			<li>
+				<!-- <div>
+					<img src="img/p7.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p8.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p9.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p8.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题</span>
+						</p>
+					</div>
+				</div>
+				<div>
+					<img src="img/p9.jpg" alt="">
+					<div>
+						<p>
+							<span>图片标题图片标题图片标题图片标题图片标题图片标题图片标题图片标题图片</span>
+						</p>
+					</div>
+				</div> -->
+			</li>
+		</ul>
+	</div>
+	<div id="footer">
+		<div class="contact-box">
+			<h2 class="title-h2">CONTACT US</h2>
+			<p>Email：eric@shining365.com</p>
+			<p>Mobile Phone：86 138 1690 3400</p>
+			<p>Tel：
+				<a href="tel:021-65986866-304">+86 21 6598 6866-304</a> 
+				<a href="tel:021-65983188-304">+86 21 6598 3188-304</a>
+			</p>
+		</div>
+		<div class="copyright">
+			Copyright © 1998-2015 shining Group
+		</div>
+	</div>
+	<script type="text/javascript">
+	// 找节点
+	var flowList = document.getElementById('flowList');
+	var listArr = flowList.children;
+	// 随机数
+	function rnd(min, max){
+		return parseInt(Math.random() * (max - min + 1) + min);
+	}
+	// 图片数组
+	var imgList = ["img/p1.jpg","img/p2.jpg","img/p3.jpg","img/p4.jpg","img/p5.jpg","img/p6.jpg","img/p7.jpg","img/p8.jpg","img/p9.jpg"];
+	// 标题
+	var context = ["图片标题图片标题图片标题图片标题图片标题图片标题图片标题图片标题","美丽的大兴安岭","桂林山水甲天下","岭南传奇","南越王","周公徒步，天下归心","三国演义","西游记","红楼梦","诗经"];
+	// dom操作添加div函数内容
+	function addElement(){
+		var newList = document.createElement('div');
+		newList.innerHTML = '<img src="'+imgList[rnd(0,8)]+'" alt="">'+
+					'<div>'+
+						'<p>'+
+							'<span>'+context[rnd(0,9)]+'</span>'
+						'</p>'
+					'</div>'
+		// 找最小的offseHeight的列
+		var minList = listArr[0];
+		for(var i = 0; i < listArr.length; i++){
+			if(minList.offsetHeight > listArr[i].offsetHeight){
+				minList = listArr[i];
+			}
+		}
+		minList.appendChild(newList);
+	}
+	// 生成len长度的div函数
+	function addTen(len){
+		for(var j = 0; j < len; j++){
+			addElement();
+		}
+	}
+	// 图片预加载
+	var imgArr = [];
+	var num = 0;
+	for(var i = 0; i < imgList.length; i++){
+		imgArr[i] = new Image();
+		imgArr[i].src = imgList[i];
+		imgArr[i].onload = function(){
+			num++;
+			if(num == imgList.length){
+				addTen(10);
+			}
+		}
+	}
+	// 瀑布流
+	window.onscroll = function(){
+		if(flowList.getBoundingClientRect().bottom <= document.documentElement.clientHeight){
+			addTen(10);
+		}
+	}
+	</script>
+</body>
+</html>

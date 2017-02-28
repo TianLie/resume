@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>会员中心</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/personalCenter.css" />
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">会员中心</h1>
+			<a href="javaScript:void(0);" class="mui-icon mui-pull-right mui-icon-more-filled"></a>
+		</header>
+		<div class="mui-content">
+			<!--头像-->
+			<div class="check-box w100p clearfix psR">
+				<div><img src="../images/check-bg.jpg" /></div>
+				<div class="fl touxiang-box psA w100p">
+					<!--<input type="file" class="disp touxiang psR" />-->
+					<a href="javaScript:void(0);" class="psR touxiang disp">
+						<input type="file" accept="image/*" class="op0" />
+						<span class="disp level-box psR"><img src="../images/level.png"/></span>
+					</a>
+					<div class="denglu-box disp">
+						<p>
+							<a href="login.html" class="clW">登录</a>
+							<a href="register.html" class="clW">注册</a>
+						</p>
+						<p class="clW fz12">登录后查看个人信息</p>
+					</div>
+				</div>
+			</div>
+			<!--全部订单-->
+			<div class="w100p bgW mat10">
+				<div class="clearfix dingdan-box">
+					<h2 class="fl dingdan-title title">全部订单</h2>
+					<a href="###" class="fr rightBd check-dingdan">查看全部订单</a>
+				</div>
+				<div>
+					<ul class="mui-table-view mui-grid-view">
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="#">
+								<span class="mui-icon sprite-box pay"></span>
+								<div class="mui-media-body">待付款</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="#">
+								<span class="mui-icon sprite-box shouhuo"></span>
+								<div class="mui-media-body">待收货</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+							<a href="#">
+								<span class="mui-icon sprite-box weihu"></span>
+								<div class="mui-media-body">售后维护</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--信息列表1-->
+			<div class="mat10">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right title">
+				                               预约信息
+				        </a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="address.html" class="mui-navigate-right title">
+				                               收货地址
+				        </a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right title">
+							分享邀请
+				        </a>
+					</li>
+				</ul>
+			</div>
+			<!--信息列表2-->
+			<div class="mat10 mabm64">
+				<ul class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<a href="zhongxin.html" class="mui-navigate-right title">
+				                               商城公告
+				        </a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a href="shouhou.html" class="mui-navigate-right title">
+				                               售后服务
+				        </a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right title">
+							配送范围查询
+				        </a>
+					</li>
+					<li class="mui-table-view-cell">
+						<a class="mui-navigate-right title">
+							意见反馈
+				        </a>
+					</li>
+				</ul>
+			</div>
+			<!--底部导航-->
+			<div class="w100p bmnav clearfix psf">
+				<a href="../index.html" class="fl disp w25p texalc">
+					<span class="disp dibuBtn dibuBtn1"></span>
+					<p class="fz10 cl2822">商城首页</p>
+				</a>
+				<a href="fenlei.html" class="fl disp w25p texalc">
+					<span class="disp dibuBtn dibuBtn2"></span>
+					<p class="fz10 cl2822">产品中心</p>
+				</a>
+				<a href="shopCart.html" class="fl disp w25p texalc">
+					<span class="disp dibuBtn dibuBtn3"></span>
+					<p class="fz10 cl2822">购物车</p>
+				</a>
+				<a href="personalCenter.html" class="fl disp w25p texalc">
+					<span class="disp dibuBtn dibuBtn4"></span>
+					<p class="fz10 cl2822">个人中心</p>
+				</a>
+			</div>
+		</div>
+	</body>
+
+</html>

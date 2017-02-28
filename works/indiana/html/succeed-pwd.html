@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>找回密码-完成</title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/signIn.css"/>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <h1 class="mui-title">找回密码</h1>
+	</header>
+	<div class="mui-content mat15">
+	    <div class="mui-input-group input-list">
+	    	<div class="mui-input-row">
+				<span class="look-box"></span>
+				<input id='password' type="password" class="mui-input-clear fz14 pwd-box"placeholder="请设置6-20位登陆密码">
+			</div>
+			<div class="mui-input-row">
+				<span class="look-box"></span>
+				<input id='password_confirm' type="password" class="mui-input-clear fz14 pwd-box"placeholder="再次输入确认">
+			</div>
+	    </div>
+		<div class="signIn-box">
+			<button id='btn' class="mui-btn mui-btn-block reg-btn bg1ba">完成</button>
+		</div>
+	</div>
+	<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//点击按钮
+		$("#btn").on("touchstart",function(){
+			//获取首次密码
+			var pwdVal = $("#password").val();
+			//获取第二次输入
+			var twoVal = $("#password_confirm").val();
+			if(twoVal != pwdVal){
+				$("#password").val("");
+				$("#password_confirm").val("");
+				console.log("输入不一致")
+			}else{
+				console.log("找回密码成功")
+			}
+		})
+	</script>
+</body>
+</html>

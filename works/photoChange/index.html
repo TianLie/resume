@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>缩放图片</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#img{
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<img src="img/1.jpeg" id="img">
+	<script type="text/javascript">
+	// 找图片节点
+	var img = document.getElementById('img');
+	// 添加函数事件
+	function mousewheel(element,callback){
+		element.onmousewheel = fn;
+		if(element.addEventListener){
+			element.addEventListener("DOMMouseScroll", fn, false);
+		}
+		function fn(e){
+			var e = e || window.event;
+			if(e.wheelDelta < 0 || e.detail > 0){
+				e.delta = false;//向下
+			}else {
+				e.delta = true;
+			}
+			callback(e);
+		}
+	}
+	mousewheel(img,function(e){
+		var perWidth = img.offsetWidth;
+		var perHeight= img.offsetHeight;
+
+		var imgPos = img.getBoundingClientRect();
+		var oldLeft = imgPos.left;
+		var oldTop = imgPos.top;
+		if(e.delta){
+			img.style.width = perWidth + 10 +"px";
+			/*alert("up");*/
+		}else{
+			/*alert("down");*/
+			img.style.width = perWidth - 10 +"px";
+		}
+		console.log(perWidth + "," + perHeight);
+		var scaleX = (e.clientX - oldLeft) / perWidth;
+		var scaleY = (e.clientY - oldTop) / perHeight;
+		console.log(scaleX + "," + scaleY);
+		img.style.left = e.clientX -  scaleX * img.offsetWidth + "px";
+		img.style.top = e.clientY - scaleY * img.offsetHeight + "px";
+		console.log(img.offsetWidth + "," + img.offsetHeight);
+		console.log(e.clientX+ "," +e.clientY)
+		console.log(scaleX * img.offsetWidth + "," + scaleY * img.offsetHeight);
+	})
+	</script>
+</body>
+</html>

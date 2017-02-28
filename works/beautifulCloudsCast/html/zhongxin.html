@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>会员中心</title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/zhongxin.css"/>
+		<script type="text/javascript" charset="UTF-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">会员中心</h1>
+			<a href="javaScript:void(0);" class="mui-icon mui-pull-right mui-icon-more-filled"></a>
+		</header>
+		<div class="mui-content">
+			<ul class="mui-table-view" id="ul">
+				<!--<li class="mui-table-view-cell">
+					<a href="###">
+	                    <h4 class="h4Tx">关于丽彩云投无屏电视如何下载《当贝市场》</h4>
+	                    <p class="mat14 time">2016-04-14 10：50:11</p>
+	                </a>
+				</li>-->
+			</ul>
+		</div>
+		<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var len = 10;
+			for(var i = 0; i < len; i++){
+				var h = '<a href="###">'+
+	                    '<h4 class="h4Tx">关于丽彩云投无屏电视如何下载《当贝市场》</h4>'+
+	                    '<p class="mat14 time">2016-04-14 10：50:11</p>'+
+			            '</a>';
+			    var li = $('<li class="mui-table-view-cell"></li>');
+			    li.html(h);
+				$("#ul").append(li);
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,33 @@
+html,body{
+	max-width: 720px;
+	margin: 0 auto;
+	background-color: #f8f7e5;
+}
+header{
+	width: 46.875%;
+	margin: 9.375% auto 17.1875%;
+}
+.box{
+	width: 67.1875%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.box li{
+	float: left;
+	width: 25.6%;
+	margin-bottom: 3.75%;
+}
+.box li:nth-child(3n+2){
+	margin: 0 11% 3.75%;
+}
+footer{
+	color: #b18538;
+	background-color: #f0e9bf;
+	font-size: 8px;
+	padding: 4% 0%;
+	/*padding: 4% 16%;*/
+	text-align: center;
+	white-space: nowrap;
+	margin: 4% auto 4.86%;
+	width: 100%;
+}

@@ -1,0 +1,19 @@
+/*信息中心*/
+.mui-content>.mui-table-view:first-child{margin-top: 0;}
+.mui-table-view .mui-media-object{max-width: 45px;height: 45px;line-height: 45px;}
+.pat6{padding-top: 6px;padding-bottom: 6px;}
+
+
+/*系统消息*/
+.check_list{text-align: right;font-size: 13px;color: #23a9ff;}
+.pad12{padding: 18px 2% 0 2%;}
+.mui-table-view-cell{border: 1px solid #ccc;border-radius: 3px;background-color: #fff;margin-bottom: 14px;}
+.mui-table-view:before{height: 0;}
+.mui-table-view{background-color: inherit;}
+.new_list h4{font-size: 15px;color: #333333;}
+.new_list h5{margin-top: 10px;}
+.new_time{font-size: 10px;color: #999999;text-align: right;}
+
+/*信息详情*/
+.pad10{padding: 10px;}
+.tex_in2{text-indent: 2rem;color: #666666;font-size: 13px;margin-top: 12px;}

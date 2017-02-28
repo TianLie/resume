@@ -1,0 +1,32 @@
+body, button, input, select, textarea{font:12px arial;}
+.main{width: 100%;}
+.waper{width: 800px;margin: 0 auto;}
+/*浮动*/
+.fl,.top_left{float: left;}
+.fr,.top_right{float: right;}
+/*定位*/
+.ps_r{position: relative;}
+/*边框*/
+.bor_1c{border: 2px solid #ccc;}
+/*取消右margin*/
+.mar_r,.nav_list li.mar_r{margin-right: 0;}
+/*.mar_l0,.video_tang .box.mar_l0{margin-left: 0;}*/
+.mar_b0,.team_img.mar_b0{margin-bottom: 0;}
+/*字体颜色*/
+a{color: #636363;}
+/*字体大小*/
+.fz24,.bg5da.fz24{font-size: 24px;}
+a,i,span,var{display: inline-block;}
+
+/*字体对齐*/
+.tex_cen,.date_tit{text-align: center;}
+/*背景*/
+.bg5da{background-color: #5dad0e;color: #000000;padding: 0 18px; height: 30px;display: inline-block;line-height: 30px;font-size: 14px;white-space: nowrap;}
+/*padding*/
+.pad12,.info_box{padding: 10px 8px 12px 12px;}
+.mar_top30{margin-top: 30px;}
+.content_box{margin-top: 44px;}
+.mar_r30{margin-right: 30px;}
+
+.quality_tit,.date_tit{width: 220px;height: 36px;line-height: 36px;margin-bottom: 15px;}
+.nav_right .navLeft_tab img{width: 100%;height: auto;}
